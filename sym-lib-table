@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name power1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/power.lib)(options "")(descr ""))
+  (lib (name 74xx1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/74xx.lib)(options "")(descr ""))
+  (lib (name MCU_Module1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/MCU_Module.lib)(options "")(descr ""))
+  (lib (name Connector1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector.lib)(options "")(descr ""))
+  (lib (name Connector_Generic1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector_Generic.lib)(options "")(descr ""))
+  (lib (name Connector_Generic_MountingPin1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector_Generic_MountingPin.lib)(options "")(descr ""))
+  (lib (name Connector_Generic_Shielded1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector_Generic_Shielded.lib)(options "")(descr ""))
+)
