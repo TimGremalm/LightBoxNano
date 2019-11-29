@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L Connector_Generic1:Conn_01x03 J_Addressable
 U 1 1 5DE05544
-P 7050 4250
-F 0 "J_Addressable" H 7050 4450 50  0000 C CNN
-F 1 "Conn_01x03" H 7050 4050 50  0000 C CNN
-F 2 "" H 7050 4250 50  0001 C CNN
-F 3 "" H 7050 4250 50  0001 C CNN
-	1    7050 4250
+P 6450 7000
+F 0 "J_Addressable" H 6450 7200 50  0000 C CNN
+F 1 "Conn_01x03" H 6450 6800 50  0000 C CNN
+F 2 "" H 6450 7000 50  0001 C CNN
+F 3 "" H 6450 7000 50  0001 C CNN
+	1    6450 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -80,31 +80,31 @@ F 3 "~" H 2100 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 6100 1000 950  1150
+S 5600 1000 950  1150
 U 5DE1594D
 F0 "Buck Converter" 50
 F1 "buck_converter.sch" 50
-F2 "BuckVin" I L 6100 1300 50 
-F3 "Buck5VOut" I R 7050 1300 50 
-F4 "BuckGND" I L 6100 1900 50 
+F2 "BuckVin" I L 5600 1300 50 
+F3 "Buck5VOut" I R 6550 1300 50 
+F4 "BuckGND" I L 5600 1900 50 
 $EndSheet
 $Comp
 L power:+5V #PWR?
 U 1 1 5DE4A501
-P 7250 1200
-F 0 "#PWR?" H 7250 1050 50  0001 C CNN
-F 1 "+5V" H 7265 1373 50  0000 C CNN
-F 2 "" H 7250 1200 50  0001 C CNN
-F 3 "" H 7250 1200 50  0001 C CNN
-	1    7250 1200
+P 6700 1100
+F 0 "#PWR?" H 6700 950 50  0001 C CNN
+F 1 "+5V" H 6715 1273 50  0000 C CNN
+F 2 "" H 6700 1100 50  0001 C CNN
+F 3 "" H 6700 1100 50  0001 C CNN
+	1    6700 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1350 1700 1750 1700
 Wire Wire Line
-	7050 1300 7250 1300
+	6550 1300 6700 1300
 Wire Wire Line
-	7250 1300 7250 1200
+	6700 1300 6700 1100
 $Comp
 L Device:CP C1
 U 1 1 5DE52230
@@ -230,16 +230,16 @@ User Interface
 $Comp
 L MCU_Module:WeMos_D1_mini U2
 U 1 1 5DF01EF8
-P 3800 4400
-F 0 "U2" H 3800 3511 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 3800 3420 50  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 3800 3250 50  0001 C CNN
-F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1950 3250 50  0001 C CNN
-	1    3800 4400
+P 3550 4400
+F 0 "U2" H 3550 3511 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 3550 3420 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 3550 3250 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1700 3250 50  0001 C CNN
+	1    3550 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 1300 6100 1300
+	5450 1300 5600 1300
 Connection ~ 1950 1250
 Wire Wire Line
 	1950 1250 1750 1250
@@ -250,22 +250,22 @@ Wire Notes Line
 Wire Notes Line
 	600  800  2900 800 
 Wire Notes Line
-	3050 2400 4700 2400
+	3050 2400 4850 2400
 Wire Notes Line
-	4700 800  3050 800 
+	4850 800  3050 800 
 Wire Notes Line
 	3050 800  3050 2400
 Wire Notes Line
 	4850 800  4850 2400
 Wire Wire Line
-	3250 1800 4000 1800
+	3300 2100 3500 2100
 Text Notes 3050 750  0    118  ~ 0
 Input Protection
-Text Notes 3100 1600 0    50   ~ 0
+Text Notes 3100 1550 0    50   ~ 0
 Add electric P-Fet fuse here ???\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
-Text GLabel 4000 1800 2    50   Input ~ 0
+Text GLabel 4350 2100 2    50   Input ~ 0
 Vin_fused
-Text GLabel 3300 1800 0    50   Input ~ 0
+Text GLabel 3300 2100 0    50   Input ~ 0
 Vin
 Text Notes 3100 1150 0    50   ~ 0
 Add polarity protection here ???
@@ -293,12 +293,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DF44892
-P 5300 2100
-F 0 "#PWR?" H 5300 1850 50  0001 C CNN
-F 1 "GND" H 5305 1927 50  0000 C CNN
-F 2 "" H 5300 2100 50  0001 C CNN
-F 3 "" H 5300 2100 50  0001 C CNN
-	1    5300 2100
+P 5450 2050
+F 0 "#PWR?" H 5450 1800 50  0001 C CNN
+F 1 "GND" H 5455 1877 50  0000 C CNN
+F 2 "" H 5450 2050 50  0001 C CNN
+F 3 "" H 5450 2050 50  0001 C CNN
+	1    5450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -348,7 +348,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 3250 1600 3400
 Wire Wire Line
-	3700 3450 3700 3600
+	3450 3500 3450 3600
 Text GLabel 2550 3450 1    50   Input ~ 0
 POT_1
 Text GLabel 2800 3450 1    50   Input ~ 0
@@ -358,12 +358,12 @@ POT_1
 $Comp
 L power:+5V #PWR?
 U 1 1 5DF4373E
-P 3700 3450
-F 0 "#PWR?" H 3700 3300 50  0001 C CNN
-F 1 "+5V" H 3715 3623 50  0000 C CNN
-F 2 "" H 3700 3450 50  0001 C CNN
-F 3 "" H 3700 3450 50  0001 C CNN
-	1    3700 3450
+P 3450 3500
+F 0 "#PWR?" H 3450 3350 50  0001 C CNN
+F 1 "+5V" H 3465 3673 50  0000 C CNN
+F 2 "" H 3450 3500 50  0001 C CNN
+F 3 "" H 3450 3500 50  0001 C CNN
+	1    3450 3500
 	1    0    0    -1  
 $EndComp
 Text Notes 2850 3050 2    50   ~ 0
@@ -399,7 +399,7 @@ F 3 "~" H 5150 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3900 5150 3900
+	3950 3900 5150 3900
 Wire Wire Line
 	5150 3900 5150 3850
 Wire Wire Line
@@ -410,10 +410,10 @@ Wire Wire Line
 Text Notes 5400 3150 2    50   ~ 0
 ESP8266 only have one analog input\nRescale 5V to 1V by adding a resistor divider
 Wire Wire Line
-	5300 2100 5300 1900
+	5450 2050 5450 1900
 Wire Wire Line
-	5300 1900 6100 1900
-Text GLabel 6550 4000 1    50   Input ~ 0
+	5450 1900 5600 1900
+Text GLabel 5950 6750 1    50   Input ~ 0
 Vin_fused
 Text GLabel 10100 1000 0    50   Input ~ 0
 Vin_fused
@@ -855,15 +855,6 @@ Text Label 4600 4550 0    50   ~ 0
 blueGate
 Text Label 4600 4700 0    50   ~ 0
 whiteGate
-Wire Wire Line
-	5150 4250 5150 5250
-Wire Wire Line
-	5150 5250 3800 5250
-Wire Wire Line
-	3800 5250 3800 5200
-Connection ~ 5150 5250
-Wire Wire Line
-	5150 5250 5150 5450
 Text Label 1050 3800 2    50   ~ 0
 redGate
 Text Label 1050 3950 2    50   ~ 0
@@ -873,41 +864,41 @@ blueGate
 Text Label 1050 4250 2    50   ~ 0
 whiteGate
 Wire Wire Line
-	6550 4350 6850 4350
+	5950 7100 6250 7100
 Wire Wire Line
-	6550 4000 6550 4150
-Text Label 6050 4250 2    50   ~ 0
+	5950 6750 5950 6900
+Text Label 5450 7000 2    50   ~ 0
 adressable
 Wire Wire Line
-	6550 4150 6850 4150
+	5950 6900 6250 6900
 Wire Wire Line
-	6400 4250 6850 4250
+	5800 7000 6250 7000
 $Comp
 L Device:R Raddressable
 U 1 1 5E225DC9
-P 6250 4250
-F 0 "Raddressable" V 6457 4250 50  0000 C CNN
-F 1 "1k" V 6366 4250 50  0000 C CNN
-F 2 "" V 6180 4250 50  0001 C CNN
-F 3 "~" H 6250 4250 50  0001 C CNN
-	1    6250 4250
+P 5650 7000
+F 0 "Raddressable" V 5857 7000 50  0000 C CNN
+F 1 "1k" V 5766 7000 50  0000 C CNN
+F 2 "" V 5580 7000 50  0001 C CNN
+F 3 "~" H 5650 7000 50  0001 C CNN
+	1    5650 7000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6050 4250 6100 4250
+	5450 7000 5500 7000
 $Comp
 L power:GND #PWR?
 U 1 1 5E2158AC
-P 6550 4500
-F 0 "#PWR?" H 6550 4250 50  0001 C CNN
-F 1 "GND" H 6555 4327 50  0000 C CNN
-F 2 "" H 6550 4500 50  0001 C CNN
-F 3 "" H 6550 4500 50  0001 C CNN
-	1    6550 4500
+P 5950 7250
+F 0 "#PWR?" H 5950 7000 50  0001 C CNN
+F 1 "GND" H 5955 7077 50  0000 C CNN
+F 2 "" H 5950 7250 50  0001 C CNN
+F 3 "" H 5950 7250 50  0001 C CNN
+	1    5950 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 4500 6550 4350
+	5950 7250 5950 7100
 Wire Notes Line
 	5600 2950 5600 5700
 Wire Notes Line
@@ -916,7 +907,7 @@ Wire Notes Line
 	7450 5700 7450 2950
 Wire Notes Line
 	7450 2950 5600 2950
-Text Notes 5600 2900 0    118  ~ 0
+Text Notes 5000 6000 0    118  ~ 0
 Addressable LED
 Text Label 4600 4900 0    50   ~ 0
 adressable
@@ -1071,4 +1062,134 @@ Wire Wire Line
 	2600 7000 2550 7000
 Wire Wire Line
 	2550 7000 2550 7300
+Wire Wire Line
+	5150 4250 5150 5250
+Wire Wire Line
+	3550 5200 3550 5250
+Wire Wire Line
+	3550 5250 5150 5250
+Connection ~ 5150 5250
+Wire Wire Line
+	5150 5250 5150 5450
+$Comp
+L Connector_Generic:Conn_01x02 J5V
+U 1 1 5DE4F57E
+P 6900 1700
+F 0 "J5V" H 6980 1692 50  0000 L CNN
+F 1 "Conn_01x02" H 6980 1601 50  0000 L CNN
+F 2 "" H 6900 1700 50  0001 C CNN
+F 3 "~" H 6900 1700 50  0001 C CNN
+	1    6900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE7A5F1
+P 6700 2050
+F 0 "#PWR?" H 6700 1800 50  0001 C CNN
+F 1 "GND" H 6705 1877 50  0000 C CNN
+F 2 "" H 6700 2050 50  0001 C CNN
+F 3 "" H 6700 2050 50  0001 C CNN
+	1    6700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2050 6700 1800
+Wire Wire Line
+	6700 1700 6700 1300
+Connection ~ 6700 1300
+$Comp
+L Connector_Generic:Conn_01x03 Jvin_vfused
+U 1 1 5DE93F0E
+P 3850 1650
+F 0 "Jvin_vfused" V 3814 1462 50  0000 R CNN
+F 1 "Conn_01x03" V 3723 1462 50  0000 R CNN
+F 2 "" H 3850 1650 50  0001 C CNN
+F 3 "~" H 3850 1650 50  0001 C CNN
+	1    3850 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 1850 3750 2000
+Wire Wire Line
+	3750 2000 3500 2000
+Wire Wire Line
+	3500 2000 3500 2100
+Connection ~ 3500 2100
+Wire Wire Line
+	3500 2100 4250 2100
+Wire Wire Line
+	3950 1850 3950 2000
+Wire Wire Line
+	3950 2000 4250 2000
+Wire Wire Line
+	4250 2000 4250 2100
+Connection ~ 4250 2100
+Wire Wire Line
+	4250 2100 4350 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5DEA77D9
+P 3850 1850
+F 0 "#PWR?" H 3850 1600 50  0001 C CNN
+F 1 "GND" H 3855 1677 50  0000 C CNN
+F 2 "" H 3850 1850 50  0001 C CNN
+F 3 "" H 3850 1850 50  0001 C CNN
+	1    3850 1850
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 2900 0    118  ~ 0
+DMX
+$Comp
+L Interface_UART:MAX485E U?
+U 1 1 5DEB6312
+P 6300 4850
+F 0 "U?" H 6300 5531 50  0000 C CNN
+F 1 "MAX485E" H 6300 5440 50  0000 C CNN
+F 2 "" H 6300 4150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6300 4900 50  0001 C CNN
+	1    6300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:XLR3_Ground J?
+U 1 1 5DEB7DDB
+P 7050 3450
+F 0 "J?" H 7050 3815 50  0000 C CNN
+F 1 "XLR3_Ground" H 7050 3724 50  0000 C CNN
+F 2 "" H 7050 3450 50  0001 C CNN
+F 3 " ~" H 7050 3450 50  0001 C CNN
+	1    7050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:XLR3_Ground J?
+U 1 1 5DEB90CA
+P 7050 4150
+F 0 "J?" H 7050 4515 50  0000 C CNN
+F 1 "XLR3_Ground" H 7050 4424 50  0000 C CNN
+F 2 "" H 7050 4150 50  0001 C CNN
+F 3 " ~" H 7050 4150 50  0001 C CNN
+	1    7050 4150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5000 6050 5000 7700
+Wire Notes Line
+	5000 7700 6850 7700
+Wire Notes Line
+	6850 7700 6850 6050
+Wire Notes Line
+	6850 6050 5000 6050
+$Comp
+L Interface_UART:MAX481E U?
+U 1 1 5DF00C1F
+P 6200 3450
+F 0 "U?" H 6200 4131 50  0000 C CNN
+F 1 "MAX481E" H 6200 4040 50  0000 C CNN
+F 2 "" H 6200 2750 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6200 3500 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
