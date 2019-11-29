@@ -6,6 +6,7 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.sch-bak
 *~
 _autosave-*
 *.tmp
@@ -24,3 +25,8 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Directories
+rescue-backup
+sym-lib-table
+
