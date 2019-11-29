@@ -29,9 +29,12 @@ L Connector1:Barrel_Jack_Switch J_Power_BarrelJack
 U 1 1 5DE03891
 P 1050 1800
 F 0 "J_Power_BarrelJack" H 1050 2010 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 1050 1600 50  0000 C CNN
+F 1 "Barrel Jack Switch 5A 2mm" H 1050 1600 50  0000 C CNN
 F 2 "" H 1100 1760 50  0001 C CNN
-F 3 "" H 1100 1760 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1100 1760 50  0001 C CNN
+F 4 "Multicomp" H 1050 1800 50  0001 C CNN "Manufacturer"
+F 5 "SPC21364" H 1050 1800 50  0001 C CNN "Part Number"
+F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1050 1800 50  0001 C CNN "Farnell"
 	1    1050 1800
 	1    0    0    -1  
 $EndComp
@@ -108,12 +111,12 @@ Wire Wire Line
 $Comp
 L Device:CP C1
 U 1 1 5DE52230
-P 1950 1550
-F 0 "C1" H 2068 1596 50  0000 L CNN
-F 1 "100µF" H 2068 1505 50  0000 L CNN
-F 2 "" H 1988 1400 50  0001 C CNN
-F 3 "~" H 1950 1550 50  0001 C CNN
-	1    1950 1550
+P 4550 1750
+F 0 "C1" H 4668 1796 50  0000 L CNN
+F 1 "100µF" H 4668 1705 50  0000 L CNN
+F 2 "" H 4588 1600 50  0001 C CNN
+F 3 "~" H 4550 1750 50  0001 C CNN
+	1    4550 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -129,10 +132,8 @@ F 3 "" H 1550 2100 50  0001 C CNN
 	1    1550 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 1250 2    50   Input ~ 0
+Text GLabel 1950 1250 2    50   Input ~ 0
 Vin
-Wire Wire Line
-	2550 1250 1950 1250
 Wire Wire Line
 	1300 1250 1750 1250
 Connection ~ 1750 1250
@@ -154,7 +155,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 1150 1300 1150
 Wire Notes Line
-	2900 800  2900 2400
+	2200 800  2200 2400
 Wire Notes Line
 	600  2400 600  800 
 Text Notes 600  750  0    118  ~ 0
@@ -171,10 +172,6 @@ Wire Notes Line
 	7450 2400 5000 2400
 Text Notes 5000 750  0    118  ~ 0
 5V Buck
-Wire Wire Line
-	1950 1900 1950 1700
-Wire Wire Line
-	1950 1400 1950 1250
 $Comp
 L power:+5V #PWR?
 U 1 1 5DEDA48D
@@ -240,34 +237,29 @@ F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1700 3250 50  00
 $EndComp
 Wire Wire Line
 	5450 1300 5600 1300
-Connection ~ 1950 1250
-Wire Wire Line
-	1950 1250 1750 1250
-Text Notes 2050 1750 0    50   ~ 0
-Place Close to input
 Wire Notes Line
-	600  2400 2900 2400
+	600  2400 2200 2400
 Wire Notes Line
-	600  800  2900 800 
+	600  800  2200 800 
 Wire Notes Line
-	3050 2400 4850 2400
+	2300 2400 4850 2400
 Wire Notes Line
-	4850 800  3050 800 
+	4850 800  2300 800 
 Wire Notes Line
-	3050 800  3050 2400
+	2300 800  2300 2400
 Wire Notes Line
 	4850 800  4850 2400
 Wire Wire Line
-	3300 2100 3500 2100
-Text Notes 3050 750  0    118  ~ 0
+	3000 1950 3200 1950
+Text Notes 2300 750  0    118  ~ 0
 Input Protection
-Text Notes 3100 1550 0    50   ~ 0
+Text Notes 2300 300  0    50   ~ 0
 Add electric P-Fet fuse here ???\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
-Text GLabel 4350 2100 2    50   Input ~ 0
+Text GLabel 4050 1950 2    50   Input ~ 0
 Vin_fused
-Text GLabel 3300 2100 0    50   Input ~ 0
+Text GLabel 3000 1950 0    50   Input ~ 0
 Vin
-Text Notes 3100 1150 0    50   ~ 0
+Text Notes 2300 -50  0    50   ~ 0
 Add polarity protection here ???
 Text Notes 600  2900 0    118  ~ 0
 MCU Option Nano
@@ -434,9 +426,6 @@ Wire Wire Line
 	1350 1900 1550 1900
 Wire Wire Line
 	1550 2100 1550 1900
-Connection ~ 1550 1900
-Wire Wire Line
-	1550 1900 1950 1900
 Wire Wire Line
 	9350 1150 9350 1100
 Wire Wire Line
@@ -1101,41 +1090,41 @@ Connection ~ 6700 1300
 $Comp
 L Connector_Generic:Conn_01x03 Jvin_vfused
 U 1 1 5DE93F0E
-P 3850 1650
-F 0 "Jvin_vfused" V 3814 1462 50  0000 R CNN
-F 1 "Conn_01x03" V 3723 1462 50  0000 R CNN
-F 2 "" H 3850 1650 50  0001 C CNN
-F 3 "~" H 3850 1650 50  0001 C CNN
-	1    3850 1650
+P 3550 1500
+F 0 "Jvin_vfused" V 3514 1312 50  0000 R CNN
+F 1 "Conn_01x03" V 3423 1312 50  0000 R CNN
+F 2 "" H 3550 1500 50  0001 C CNN
+F 3 "~" H 3550 1500 50  0001 C CNN
+	1    3550 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3750 1850 3750 2000
+	3450 1700 3450 1850
 Wire Wire Line
-	3750 2000 3500 2000
+	3450 1850 3200 1850
 Wire Wire Line
-	3500 2000 3500 2100
-Connection ~ 3500 2100
+	3200 1850 3200 1950
+Connection ~ 3200 1950
 Wire Wire Line
-	3500 2100 4250 2100
+	3200 1950 3950 1950
 Wire Wire Line
-	3950 1850 3950 2000
+	3650 1700 3650 1850
 Wire Wire Line
-	3950 2000 4250 2000
+	3650 1850 3950 1850
 Wire Wire Line
-	4250 2000 4250 2100
-Connection ~ 4250 2100
+	3950 1850 3950 1950
+Connection ~ 3950 1950
 Wire Wire Line
-	4250 2100 4350 2100
+	3950 1950 4050 1950
 $Comp
 L power:GND #PWR?
 U 1 1 5DEA77D9
-P 3850 1850
-F 0 "#PWR?" H 3850 1600 50  0001 C CNN
-F 1 "GND" H 3855 1677 50  0000 C CNN
-F 2 "" H 3850 1850 50  0001 C CNN
-F 3 "" H 3850 1850 50  0001 C CNN
-	1    3850 1850
+P 3550 1700
+F 0 "#PWR?" H 3550 1450 50  0001 C CNN
+F 1 "GND" H 3555 1527 50  0000 C CNN
+F 2 "" H 3550 1700 50  0001 C CNN
+F 3 "" H 3550 1700 50  0001 C CNN
+	1    3550 1700
 	1    0    0    -1  
 $EndComp
 Text Notes 5600 2900 0    118  ~ 0
@@ -1192,4 +1181,6 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6200 3
 	1    6200 3450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1750 1250 1950 1250
 $EndSCHEMATC
