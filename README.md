@@ -1,12 +1,16 @@
 # LightBoxNano
 a generic LED controller with a few buttons that can be populated for either RGBW LED strip or addressable LED strip like WS2812.
+
 It has the option for populating a pair of potentiometer, an a 5 way slider switch for controlling light modes.
+
 An Arduino Nano is mounted using ordinary 2.54mm pitch pin headers.
+
 A RS485 receiver and a pair of XLR connectors can also transform the LED controller into a DMX driver.
 
 # Power Supply and voltage rails
 ## Input rail
 The input voltage to LightBoxNano are called VIN and can range from 5 to 30V.
+
 Make sure to only feed LightBoxNano with a voltage that the LED strip can handle. The maximum voltage is limited by the maximum voltage of the IRLML6344 mosfets and of what the LED strip can handle.
 
 ## RGBW rail
@@ -17,7 +21,9 @@ The positive rail for the addressable LED strip driver is directly fed from VIN,
 
 ## Logic rail
 The Arduino Nano is powered by a 5V buck converter using TI's guide:
+
 https://webench.ti.com/power-designer/switching-regulator/select
+
 https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=572687AF787DDED1
 
 ## Protection circuit
@@ -34,7 +40,9 @@ Addressable LED strip is hooked up directly to VIN and the data pin is going to 
 
 # Controll interface
 Two potentiometers can optionally be mounted and will go to A1 and A2 of Arduino Nano.
+
 A slider switch can be optinally mounted for selecting different modes.
+
 Also a pin header of the Arduino Nano will be easily acessable for hooking up random stuff.
 
 # MCU
