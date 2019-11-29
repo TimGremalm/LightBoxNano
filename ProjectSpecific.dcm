@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRLML6344
+D 30V Vds, 5.0A Id, 29mΩ Rds on, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.farnell.com/datasheets/1911844.pdf
+$ENDCMP
+#
+#End Doc Library

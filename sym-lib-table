@@ -6,4 +6,5 @@
   (lib (name Connector_Generic1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector_Generic.lib)(options "")(descr ""))
   (lib (name Connector_Generic_MountingPin1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector_Generic_MountingPin.lib)(options "")(descr ""))
   (lib (name Connector_Generic_Shielded1)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector_Generic_Shielded.lib)(options "")(descr ""))
+  (lib (name ProjectSpecific)(type Legacy)(uri ${KIPRJMOD}/ProjectSpecific.lib)(options "")(descr ""))
 )
