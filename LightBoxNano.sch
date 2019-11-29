@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module1:Arduino_Nano_v3.x U1
+L MCU_Module1:Arduino_Nano_v3.x MCUnano
 U 1 1 5DE0324F
 P 1700 4400
-F 0 "U1" H 1300 5325 50  0000 L BNN
+F 0 "MCUnano" H 1300 5325 50  0000 L BNN
 F 1 "Arduino_Nano_v3.x" H 1900 3450 50  0000 L TNN
 F 2 "Module:Arduino_Nano" H 1700 4400 50  0001 C CIN
 F 3 "" H 1700 4400 50  0001 C CNN
@@ -27,15 +27,15 @@ $EndComp
 $Comp
 L Connector1:Barrel_Jack_Switch J_Power_BarrelJack
 U 1 1 5DE03891
-P 1050 1800
-F 0 "J_Power_BarrelJack" H 1050 2010 50  0000 C CNN
-F 1 "Barrel Jack Switch 5A 2mm" H 1050 1600 50  0000 C CNN
-F 2 "" H 1100 1760 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1100 1760 50  0001 C CNN
-F 4 "Multicomp" H 1050 1800 50  0001 C CNN "Manufacturer"
-F 5 "SPC21364" H 1050 1800 50  0001 C CNN "Part Number"
-F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1050 1800 50  0001 C CNN "Farnell"
-	1    1050 1800
+P 1200 1800
+F 0 "J_Power_BarrelJack" H 1200 2010 50  0000 C CNN
+F 1 "Barrel Jack Switch 5A 2mm" H 1200 1600 50  0000 C CNN
+F 2 "" H 1250 1760 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1250 1760 50  0001 C CNN
+F 4 "Multicomp" H 1200 1800 50  0001 C CNN "Manufacturer"
+F 5 "SPC21364" H 1200 1800 50  0001 C CNN "Part Number"
+F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1200 1800 50  0001 C CNN "Farnell"
+	1    1200 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -66,8 +66,9 @@ U 1 1 5DE0985A
 P 1150 6650
 F 0 "RV_Pot_1" H 1080 6696 50  0000 R CNN
 F 1 "10k" H 1080 6605 50  0000 R CNN
-F 2 "" H 1150 6650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1150 6650 50  0001 C CNN
 F 3 "~" H 1150 6650 50  0001 C CNN
+F 4 "" H 1150 6650 50  0001 C CNN "Farnell"
 	1    1150 6650
 	1    0    0    -1  
 $EndComp
@@ -77,7 +78,7 @@ U 1 1 5DE0A6EA
 P 2100 6650
 F 0 "RV_Pot_2" H 2030 6696 50  0000 R CNN
 F 1 "10k" H 2030 6605 50  0000 R CNN
-F 2 "" H 2100 6650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2100 6650 50  0001 C CNN
 F 3 "~" H 2100 6650 50  0001 C CNN
 	1    2100 6650
 	1    0    0    -1  
@@ -103,7 +104,7 @@ F 3 "" H 6700 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 1700 1750 1700
+	1500 1700 1800 1700
 Wire Wire Line
 	6550 1300 6700 1300
 Wire Wire Line
@@ -120,23 +121,12 @@ F 3 "~" H 4550 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 1250 1750 1700
-$Comp
-L power:GND #PWR?
-U 1 1 5DE6183E
-P 1550 2100
-F 0 "#PWR?" H 1550 1850 50  0001 C CNN
-F 1 "GND" H 1555 1927 50  0000 C CNN
-F 2 "" H 1550 2100 50  0001 C CNN
-F 3 "" H 1550 2100 50  0001 C CNN
-	1    1550 2100
-	1    0    0    -1  
-$EndComp
+	1800 1250 1800 1700
 Text GLabel 1950 1250 2    50   Input ~ 0
 Vin
 Wire Wire Line
-	1300 1250 1750 1250
-Connection ~ 1750 1250
+	1300 1250 1800 1250
+Connection ~ 1800 1250
 $Comp
 L power:GND #PWR?
 U 1 1 5DE6746F
@@ -225,10 +215,10 @@ Wire Notes Line
 Text Notes 600  6000 0    118  ~ 0
 User Interface
 $Comp
-L MCU_Module:WeMos_D1_mini U2
+L MCU_Module:WeMos_D1_mini MCUesp
 U 1 1 5DF01EF8
 P 3550 4400
-F 0 "U2" H 3550 3511 50  0000 C CNN
+F 0 "MCUesp" H 3550 3511 50  0000 C CNN
 F 1 "WeMos_D1_mini" H 3550 3420 50  0000 C CNN
 F 2 "Module:WEMOS_D1_mini_light" H 3550 3250 50  0001 C CNN
 F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1700 3250 50  0001 C CNN
@@ -374,7 +364,7 @@ U 1 1 5DF9EC70
 P 5150 3700
 F 0 "R1" H 5220 3746 50  0000 L CNN
 F 1 "33k" H 5220 3655 50  0000 L CNN
-F 2 "" V 5080 3700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 3700 50  0001 C CNN
 F 3 "~" H 5150 3700 50  0001 C CNN
 	1    5150 3700
 	1    0    0    -1  
@@ -385,7 +375,7 @@ U 1 1 5DFA2915
 P 5150 4100
 F 0 "R2" H 5220 4146 50  0000 L CNN
 F 1 "47k" H 5220 4055 50  0000 L CNN
-F 2 "" V 5080 4100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 4100 50  0001 C CNN
 F 3 "~" H 5150 4100 50  0001 C CNN
 	1    5150 4100
 	1    0    0    -1  
@@ -423,9 +413,7 @@ $EndComp
 Wire Wire Line
 	10100 1000 10350 1000
 Wire Wire Line
-	1350 1900 1550 1900
-Wire Wire Line
-	1550 2100 1550 1900
+	1500 1900 1800 1900
 Wire Wire Line
 	9350 1150 9350 1100
 Wire Wire Line
@@ -484,7 +472,7 @@ U 1 1 5E051501
 P 8400 1700
 F 0 "Rred_pulldown" H 8470 1746 50  0000 L CNN
 F 1 "10k" H 8470 1655 50  0000 L CNN
-F 2 "" V 8330 1700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 1700 50  0001 C CNN
 F 3 "~" H 8400 1700 50  0001 C CNN
 	1    8400 1700
 	1    0    0    -1  
@@ -495,7 +483,7 @@ U 1 1 5E008B99
 P 8200 1350
 F 0 "Rred" V 7993 1350 50  0000 C CNN
 F 1 "1k" V 8084 1350 50  0000 C CNN
-F 2 "" V 8130 1350 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 1350 50  0001 C CNN
 F 3 "~" H 8200 1350 50  0001 C CNN
 	1    8200 1350
 	0    -1   -1   0   
@@ -581,7 +569,7 @@ U 1 1 5E09EC8B
 P 8400 3000
 F 0 "Rgreen_pulldown" H 8470 3046 50  0000 L CNN
 F 1 "10k" H 8470 2955 50  0000 L CNN
-F 2 "" V 8330 3000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 3000 50  0001 C CNN
 F 3 "~" H 8400 3000 50  0001 C CNN
 	1    8400 3000
 	1    0    0    -1  
@@ -592,7 +580,7 @@ U 1 1 5E09EC95
 P 8200 2650
 F 0 "Rgreen" V 7993 2650 50  0000 C CNN
 F 1 "1k" V 8084 2650 50  0000 C CNN
-F 2 "" V 8130 2650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 2650 50  0001 C CNN
 F 3 "~" H 8200 2650 50  0001 C CNN
 	1    8200 2650
 	0    -1   -1   0   
@@ -678,7 +666,7 @@ U 1 1 5E0DB492
 P 8400 4350
 F 0 "Rblue_pulldown" H 8470 4396 50  0000 L CNN
 F 1 "10k" H 8470 4305 50  0000 L CNN
-F 2 "" V 8330 4350 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 4350 50  0001 C CNN
 F 3 "~" H 8400 4350 50  0001 C CNN
 	1    8400 4350
 	1    0    0    -1  
@@ -689,7 +677,7 @@ U 1 1 5E0DB49C
 P 8200 4000
 F 0 "Rblue" V 7993 4000 50  0000 C CNN
 F 1 "1k" V 8084 4000 50  0000 C CNN
-F 2 "" V 8130 4000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 4000 50  0001 C CNN
 F 3 "~" H 8200 4000 50  0001 C CNN
 	1    8200 4000
 	0    -1   -1   0   
@@ -773,7 +761,7 @@ U 1 1 5E1058E6
 P 8400 5700
 F 0 "Rwhite_pulldown" H 8470 5746 50  0000 L CNN
 F 1 "10k" H 8470 5655 50  0000 L CNN
-F 2 "" V 8330 5700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 5700 50  0001 C CNN
 F 3 "~" H 8400 5700 50  0001 C CNN
 	1    8400 5700
 	1    0    0    -1  
@@ -784,7 +772,7 @@ U 1 1 5E1058F0
 P 8200 5350
 F 0 "Rwhite" V 7993 5350 50  0000 C CNN
 F 1 "1k" V 8084 5350 50  0000 C CNN
-F 2 "" V 8130 5350 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 5350 50  0001 C CNN
 F 3 "~" H 8200 5350 50  0001 C CNN
 	1    8200 5350
 	0    -1   -1   0   
@@ -868,7 +856,7 @@ U 1 1 5E225DC9
 P 5650 7000
 F 0 "Raddressable" V 5857 7000 50  0000 C CNN
 F 1 "1k" V 5766 7000 50  0000 C CNN
-F 2 "" V 5580 7000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 7000 50  0001 C CNN
 F 3 "~" H 5650 7000 50  0001 C CNN
 	1    5650 7000
 	0    -1   -1   0   
@@ -926,7 +914,7 @@ U 1 1 5E4BD26C
 P 4250 7300
 F 0 "Rsw4" V 4043 7300 50  0000 C CNN
 F 1 "10k" V 4134 7300 50  0000 C CNN
-F 2 "" V 4180 7300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7300 50  0001 C CNN
 F 3 "~" H 4250 7300 50  0001 C CNN
 	1    4250 7300
 	0    1    1    0   
@@ -937,7 +925,7 @@ U 1 1 5E4BEC05
 P 4250 7600
 F 0 "Rsw5" V 4043 7600 50  0000 C CNN
 F 1 "10k" V 4134 7600 50  0000 C CNN
-F 2 "" V 4180 7600 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7600 50  0001 C CNN
 F 3 "~" H 4250 7600 50  0001 C CNN
 	1    4250 7600
 	0    1    1    0   
@@ -948,7 +936,7 @@ U 1 1 5E4BEFE9
 P 4250 7000
 F 0 "Rsw3" V 4043 7000 50  0000 C CNN
 F 1 "10k" V 4134 7000 50  0000 C CNN
-F 2 "" V 4180 7000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7000 50  0001 C CNN
 F 3 "~" H 4250 7000 50  0001 C CNN
 	1    4250 7000
 	0    1    1    0   
@@ -959,7 +947,7 @@ U 1 1 5E4BF77A
 P 4250 6700
 F 0 "Rsw2" V 4043 6700 50  0000 C CNN
 F 1 "10k" V 4134 6700 50  0000 C CNN
-F 2 "" V 4180 6700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 6700 50  0001 C CNN
 F 3 "~" H 4250 6700 50  0001 C CNN
 	1    4250 6700
 	0    1    1    0   
@@ -970,7 +958,7 @@ U 1 1 5E4C9983
 P 4250 6400
 F 0 "Rsw1" V 4043 6400 50  0000 C CNN
 F 1 "10k" V 4134 6400 50  0000 C CNN
-F 2 "" V 4180 6400 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 6400 50  0001 C CNN
 F 3 "~" H 4250 6400 50  0001 C CNN
 	1    4250 6400
 	0    1    1    0   
@@ -1182,5 +1170,18 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6200 3
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 1250 1950 1250
+	1800 1250 1950 1250
+Wire Wire Line
+	1800 2100 1800 1900
+$Comp
+L power:GND #PWR?
+U 1 1 5DE6183E
+P 1800 2100
+F 0 "#PWR?" H 1800 1850 50  0001 C CNN
+F 1 "GND" H 1805 1927 50  0000 C CNN
+F 2 "" H 1800 2100 50  0001 C CNN
+F 3 "" H 1800 2100 50  0001 C CNN
+	1    1800 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
