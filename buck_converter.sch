@@ -30,10 +30,10 @@ F 6 "https://se.farnell.com/texas-instruments/lm2596sx-5-0-nopb/dc-dc-conv-buck-
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP Cout
+L Device:CP Cout1
 U 1 1 5DE18AEA
 P 6800 2850
-F 0 "Cout" H 6918 2896 50  0000 L CNN
+F 0 "Cout1" H 6918 2896 50  0000 L CNN
 F 1 "4.7µF 10V 1.4Ω" H 6918 2805 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6838 2700 50  0001 C CNN
 F 3 "" H 6800 2850 50  0001 C CNN
@@ -117,10 +117,10 @@ Wire Wire Line
 Wire Wire Line
 	3250 2100 3250 2650
 $Comp
-L Device:CP Cin
+L Device:CP Cin1
 U 1 1 5DE18376
 P 3250 2800
-F 0 "Cin" H 3368 2846 50  0000 L CNN
+F 0 "Cin1" H 3368 2846 50  0000 L CNN
 F 1 "18µF 50V 35mΩ" H 3368 2755 50  0000 L CNN
 F 2 "Capacitors_SMD:CP_Elec_8x10" H 3288 2650 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/content/data/CP/PDF/OS-CON/S_OS-CON_SVPF_e.pdf" H 3250 2800 50  0001 C CNN

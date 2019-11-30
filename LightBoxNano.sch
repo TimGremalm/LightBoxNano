@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module1:Arduino_Nano_v3.x MCUnano
+L MCU_Module1:Arduino_Nano_v3.x MCUnano1
 U 1 1 5DE0324F
 P 1700 4400
-F 0 "MCUnano" H 1300 5325 50  0000 L BNN
+F 0 "MCUnano1" H 1300 5325 50  0000 L BNN
 F 1 "Arduino_Nano_v3.x" H 1900 3450 50  0000 L TNN
 F 2 "Module:Arduino_Nano" H 1700 4400 50  0001 C CIN
 F 3 "" H 1700 4400 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "" H 1700 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector1:Barrel_Jack_Switch J_Power_BarrelJack
+L Connector1:Barrel_Jack_Switch J_Power_BarrelJack1
 U 1 1 5DE03891
 P 1200 1800
-F 0 "J_Power_BarrelJack" H 1200 2010 50  0000 C CNN
+F 0 "J_Power_BarrelJack1" H 1200 2010 50  0000 C CNN
 F 1 "Barrel Jack Switch 5A 2mm" H 1200 1600 50  0000 C CNN
 F 2 "" H 1250 1760 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1250 1760 50  0001 C CNN
@@ -39,10 +39,10 @@ F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 120
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic1:Conn_01x02 J_Power_Terminal
+L Connector_Generic1:Conn_01x02 J_Power_Terminal1
 U 1 1 5DE0534D
 P 1100 1250
-F 0 "J_Power_Terminal" H 1100 1350 50  0000 C CNN
+F 0 "J_Power_Terminal1" H 1100 1350 50  0000 C CNN
 F 1 "Conn_01x02" H 1100 1050 50  0000 C CNN
 F 2 "" H 1100 1250 50  0001 C CNN
 F 3 "" H 1100 1250 50  0001 C CNN
@@ -50,10 +50,10 @@ F 3 "" H 1100 1250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic1:Conn_01x03 J_Addressable
+L Connector_Generic1:Conn_01x03 J_Addressable1
 U 1 1 5DE05544
 P 6450 7000
-F 0 "J_Addressable" H 6450 7200 50  0000 C CNN
+F 0 "J_Addressable1" H 6450 7200 50  0000 C CNN
 F 1 "Conn_01x03" H 6450 6800 50  0000 C CNN
 F 2 "" H 6450 7000 50  0001 C CNN
 F 3 "" H 6450 7000 50  0001 C CNN
@@ -96,10 +96,10 @@ F3 "Buck5VOut" I R 6550 1300 50
 F4 "BuckGND" I L 5600 1900 50 
 $EndSheet
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0101
 U 1 1 5DE4A501
 P 6700 1100
-F 0 "#PWR?" H 6700 950 50  0001 C CNN
+F 0 "#PWR0101" H 6700 950 50  0001 C CNN
 F 1 "+5V" H 6715 1273 50  0000 C CNN
 F 2 "" H 6700 1100 50  0001 C CNN
 F 3 "" H 6700 1100 50  0001 C CNN
@@ -131,10 +131,10 @@ Wire Wire Line
 	1300 1250 1800 1250
 Connection ~ 1800 1250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5DE6746F
 P 1550 900
-F 0 "#PWR?" H 1550 650 50  0001 C CNN
+F 0 "#PWR0102" H 1550 650 50  0001 C CNN
 F 1 "GND" H 1555 727 50  0000 C CNN
 F 2 "" H 1550 900 50  0001 C CNN
 F 3 "" H 1550 900 50  0001 C CNN
@@ -166,10 +166,10 @@ Wire Notes Line
 Text Notes 5000 750  0    118  ~ 0
 5V Buck
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 5DEDA48D
 P 1150 6350
-F 0 "#PWR?" H 1150 6200 50  0001 C CNN
+F 0 "#PWR0103" H 1150 6200 50  0001 C CNN
 F 1 "+5V" H 1165 6523 50  0000 C CNN
 F 2 "" H 1150 6350 50  0001 C CNN
 F 3 "" H 1150 6350 50  0001 C CNN
@@ -177,10 +177,10 @@ F 3 "" H 1150 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 5DEDA793
 P 1150 7050
-F 0 "#PWR?" H 1150 6800 50  0001 C CNN
+F 0 "#PWR0104" H 1150 6800 50  0001 C CNN
 F 1 "GND" H 1155 6877 50  0000 C CNN
 F 2 "" H 1150 7050 50  0001 C CNN
 F 3 "" H 1150 7050 50  0001 C CNN
@@ -218,10 +218,10 @@ Wire Notes Line
 Text Notes 600  6000 0    118  ~ 0
 User Interface
 $Comp
-L MCU_Module:WeMos_D1_mini MCUesp
+L MCU_Module:WeMos_D1_mini MCUesp1
 U 1 1 5DF01EF8
 P 3550 4400
-F 0 "MCUesp" H 3550 3511 50  0000 C CNN
+F 0 "MCUesp1" H 3550 3511 50  0000 C CNN
 F 1 "WeMos_D1_mini" H 3550 3420 50  0000 C CNN
 F 2 "Module:WEMOS_D1_mini_light" H 3550 3250 50  0001 C CNN
 F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1700 3250 50  0001 C CNN
@@ -265,10 +265,10 @@ Wire Notes Line
 Wire Notes Line
 	5450 2950 3050 2950
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 5DF44121
 P 1600 3250
-F 0 "#PWR?" H 1600 3100 50  0001 C CNN
+F 0 "#PWR0105" H 1600 3100 50  0001 C CNN
 F 1 "+5V" H 1615 3423 50  0000 C CNN
 F 2 "" H 1600 3250 50  0001 C CNN
 F 3 "" H 1600 3250 50  0001 C CNN
@@ -276,10 +276,10 @@ F 3 "" H 1600 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5DF44892
 P 5450 2050
-F 0 "#PWR?" H 5450 1800 50  0001 C CNN
+F 0 "#PWR0106" H 5450 1800 50  0001 C CNN
 F 1 "GND" H 5455 1877 50  0000 C CNN
 F 2 "" H 5450 2050 50  0001 C CNN
 F 3 "" H 5450 2050 50  0001 C CNN
@@ -287,10 +287,10 @@ F 3 "" H 5450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 5DF44D7B
 P 850 5500
-F 0 "#PWR?" H 850 5250 50  0001 C CNN
+F 0 "#PWR0107" H 850 5250 50  0001 C CNN
 F 1 "GND" H 855 5327 50  0000 C CNN
 F 2 "" H 850 5500 50  0001 C CNN
 F 3 "" H 850 5500 50  0001 C CNN
@@ -298,10 +298,10 @@ F 3 "" H 850 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0108
 U 1 1 5DF45201
 P 5150 5450
-F 0 "#PWR?" H 5150 5200 50  0001 C CNN
+F 0 "#PWR0108" H 5150 5200 50  0001 C CNN
 F 1 "GND" H 5155 5277 50  0000 C CNN
 F 2 "" H 5150 5450 50  0001 C CNN
 F 3 "" H 5150 5450 50  0001 C CNN
@@ -341,10 +341,10 @@ POT_2
 Text GLabel 5150 3500 1    50   Input ~ 0
 POT_1
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0109
 U 1 1 5DF4373E
 P 3450 3500
-F 0 "#PWR?" H 3450 3350 50  0001 C CNN
+F 0 "#PWR0109" H 3450 3350 50  0001 C CNN
 F 1 "+5V" H 3465 3673 50  0000 C CNN
 F 2 "" H 3450 3500 50  0001 C CNN
 F 3 "" H 3450 3500 50  0001 C CNN
@@ -407,10 +407,10 @@ Vin_fused
 Text GLabel 10100 1000 0    50   Input ~ 0
 Vin_fused
 $Comp
-L Connector_Generic:Conn_01x05 J_RGBW
+L Connector_Generic:Conn_01x05 J_RGBW1
 U 1 1 5DFDEA6C
 P 10550 1200
-F 0 "J_RGBW" H 10630 1242 50  0000 L CNN
+F 0 "J_RGBW1" H 10630 1242 50  0000 L CNN
 F 1 "Conn_01x05" H 10630 1151 50  0000 L CNN
 F 2 "" H 10550 1200 50  0001 C CNN
 F 3 "~" H 10550 1200 50  0001 C CNN
@@ -426,10 +426,10 @@ Wire Wire Line
 Wire Wire Line
 	9350 1100 10350 1100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 5E009609
 P 8700 1950
-F 0 "#PWR?" H 8700 1700 50  0001 C CNN
+F 0 "#PWR0110" H 8700 1700 50  0001 C CNN
 F 1 "GND" H 8705 1777 50  0000 C CNN
 F 2 "" H 8700 1950 50  0001 C CNN
 F 3 "" H 8700 1950 50  0001 C CNN
@@ -437,10 +437,10 @@ F 3 "" H 8700 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Qred
+L ProjectSpecific:IRLML6344 Qred1
 U 1 1 5E00B511
 P 8600 1350
-F 0 "Qred" H 8805 1350 50  0000 L CNN
+F 0 "Qred1" H 8805 1350 50  0000 L CNN
 F 1 "IRLML6344" H 8804 1305 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 1260 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8600 1350 50  0001 L CNN
@@ -474,10 +474,10 @@ Wire Wire Line
 Wire Wire Line
 	8350 1350 8400 1350
 $Comp
-L Device:R Rred_pulldown
+L Device:R Rred_pulldown1
 U 1 1 5E051501
 P 8400 1700
-F 0 "Rred_pulldown" H 8470 1746 50  0000 L CNN
+F 0 "Rred_pulldown1" H 8470 1746 50  0000 L CNN
 F 1 "10k" H 8470 1655 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 1700 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 1700 50  0001 C CNN
@@ -487,10 +487,10 @@ F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-06
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R Rred
+L Device:R Rred1
 U 1 1 5E008B99
 P 8200 1350
-F 0 "Rred" V 7993 1350 50  0000 C CNN
+F 0 "Rred1" V 7993 1350 50  0000 C CNN
 F 1 "1k" V 8084 1350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 1350 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 1350 50  0001 C CNN
@@ -508,10 +508,10 @@ Connection ~ 8700 1850
 Wire Wire Line
 	8700 1850 8700 1550
 $Comp
-L ProjectSpecific:IRLML6344 Qred_optional
+L ProjectSpecific:IRLML6344 Qred_optional1
 U 1 1 5DFE38F5
 P 9250 1350
-F 0 "Qred_optional" H 9454 1396 50  0000 L CNN
+F 0 "Qred_optional1" H 9454 1396 50  0000 L CNN
 F 1 "IRLML6344" H 9454 1305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 1260 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9250 1350 50  0001 L CNN
@@ -527,10 +527,10 @@ Wire Wire Line
 Wire Wire Line
 	9350 2400 10000 2400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0111
 U 1 1 5E09EC67
 P 8700 3250
-F 0 "#PWR?" H 8700 3000 50  0001 C CNN
+F 0 "#PWR0111" H 8700 3000 50  0001 C CNN
 F 1 "GND" H 8705 3077 50  0000 C CNN
 F 2 "" H 8700 3250 50  0001 C CNN
 F 3 "" H 8700 3250 50  0001 C CNN
@@ -538,10 +538,10 @@ F 3 "" H 8700 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Qgreen
+L ProjectSpecific:IRLML6344 Qgreen1
 U 1 1 5E09EC75
 P 8600 2650
-F 0 "Qgreen" H 8804 2650 50  0000 L CNN
+F 0 "Qgreen1" H 8804 2650 50  0000 L CNN
 F 1 "IRLML6344" H 8804 2605 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 2560 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8600 2650 50  0001 L CNN
@@ -575,10 +575,10 @@ Wire Wire Line
 Wire Wire Line
 	8350 2650 8400 2650
 $Comp
-L Device:R Rgreen_pulldown
+L Device:R Rgreen_pulldown1
 U 1 1 5E09EC8B
 P 8400 3000
-F 0 "Rgreen_pulldown" H 8470 3046 50  0000 L CNN
+F 0 "Rgreen_pulldown1" H 8470 3046 50  0000 L CNN
 F 1 "10k" H 8470 2955 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 3000 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 3000 50  0001 C CNN
@@ -588,10 +588,10 @@ F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-06
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R Rgreen
+L Device:R Rgreen1
 U 1 1 5E09EC95
 P 8200 2650
-F 0 "Rgreen" V 7993 2650 50  0000 C CNN
+F 0 "Rgreen1" V 7993 2650 50  0000 C CNN
 F 1 "1k" V 8084 2650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 2650 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 2650 50  0001 C CNN
@@ -609,10 +609,10 @@ Connection ~ 8700 3150
 Wire Wire Line
 	8700 3150 8700 2850
 $Comp
-L ProjectSpecific:IRLML6344 Qgreen_optional
+L ProjectSpecific:IRLML6344 Qgreen_optional1
 U 1 1 5E09ECA8
 P 9250 2650
-F 0 "Qgreen_optional" H 9454 2696 50  0000 L CNN
+F 0 "Qgreen_optional1" H 9454 2696 50  0000 L CNN
 F 1 "IRLML6344" H 9454 2605 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 2560 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9250 2650 50  0001 L CNN
@@ -628,10 +628,10 @@ Wire Wire Line
 Wire Wire Line
 	9350 3750 10100 3750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 5E0DB46E
 P 8700 4600
-F 0 "#PWR?" H 8700 4350 50  0001 C CNN
+F 0 "#PWR0112" H 8700 4350 50  0001 C CNN
 F 1 "GND" H 8705 4427 50  0000 C CNN
 F 2 "" H 8700 4600 50  0001 C CNN
 F 3 "" H 8700 4600 50  0001 C CNN
@@ -639,10 +639,10 @@ F 3 "" H 8700 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Qblue
+L ProjectSpecific:IRLML6344 Qblue1
 U 1 1 5E0DB47C
 P 8600 4000
-F 0 "Qblue" H 8804 4000 50  0000 L CNN
+F 0 "Qblue1" H 8804 4000 50  0000 L CNN
 F 1 "IRLML6344" H 8804 3955 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 3910 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8600 4000 50  0001 L CNN
@@ -676,10 +676,10 @@ Wire Wire Line
 Wire Wire Line
 	8350 4000 8400 4000
 $Comp
-L Device:R Rblue_pulldown
+L Device:R Rblue_pulldown1
 U 1 1 5E0DB492
 P 8400 4350
-F 0 "Rblue_pulldown" H 8470 4396 50  0000 L CNN
+F 0 "Rblue_pulldown1" H 8470 4396 50  0000 L CNN
 F 1 "10k" H 8470 4305 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 4350 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 4350 50  0001 C CNN
@@ -689,10 +689,10 @@ F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-06
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R Rblue
+L Device:R Rblue1
 U 1 1 5E0DB49C
 P 8200 4000
-F 0 "Rblue" V 7993 4000 50  0000 C CNN
+F 0 "Rblue1" V 7993 4000 50  0000 C CNN
 F 1 "1k" V 8084 4000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 4000 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 4000 50  0001 C CNN
@@ -710,10 +710,10 @@ Connection ~ 8700 4500
 Wire Wire Line
 	8700 4500 8700 4200
 $Comp
-L ProjectSpecific:IRLML6344 Qblue_optional
+L ProjectSpecific:IRLML6344 Qblue_optional1
 U 1 1 5E0DB4AF
 P 9250 4000
-F 0 "Qblue_optional" H 9455 4046 50  0000 L CNN
+F 0 "Qblue_optional1" H 9455 4046 50  0000 L CNN
 F 1 "IRLML6344" H 9455 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 3910 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9250 4000 50  0001 L CNN
@@ -727,10 +727,10 @@ $EndComp
 Wire Wire Line
 	9350 5150 9350 5100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0113
 U 1 1 5E1058C2
 P 8700 5950
-F 0 "#PWR?" H 8700 5700 50  0001 C CNN
+F 0 "#PWR0113" H 8700 5700 50  0001 C CNN
 F 1 "GND" H 8705 5777 50  0000 C CNN
 F 2 "" H 8700 5950 50  0001 C CNN
 F 3 "" H 8700 5950 50  0001 C CNN
@@ -738,10 +738,10 @@ F 3 "" H 8700 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Qwhite
+L ProjectSpecific:IRLML6344 Qwhite1
 U 1 1 5E1058D0
 P 8600 5350
-F 0 "Qwhite" H 8805 5350 50  0000 L CNN
+F 0 "Qwhite1" H 8805 5350 50  0000 L CNN
 F 1 "IRLML6344" H 8804 5305 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 5260 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8600 5350 50  0001 L CNN
@@ -775,10 +775,10 @@ Wire Wire Line
 Wire Wire Line
 	8350 5350 8400 5350
 $Comp
-L Device:R Rwhite_pulldown
+L Device:R Rwhite_pulldown1
 U 1 1 5E1058E6
 P 8400 5700
-F 0 "Rwhite_pulldown" H 8470 5746 50  0000 L CNN
+F 0 "Rwhite_pulldown1" H 8470 5746 50  0000 L CNN
 F 1 "10k" H 8470 5655 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 5700 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 5700 50  0001 C CNN
@@ -788,10 +788,10 @@ F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-06
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R Rwhite
+L Device:R Rwhite1
 U 1 1 5E1058F0
 P 8200 5350
-F 0 "Rwhite" V 7993 5350 50  0000 C CNN
+F 0 "Rwhite1" V 7993 5350 50  0000 C CNN
 F 1 "1k" V 8084 5350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 5350 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 5350 50  0001 C CNN
@@ -809,10 +809,10 @@ Connection ~ 8700 5850
 Wire Wire Line
 	8700 5850 8700 5550
 $Comp
-L ProjectSpecific:IRLML6344 Qwhite_optional
+L ProjectSpecific:IRLML6344 Qwhite_optional1
 U 1 1 5E105903
 P 9250 5350
-F 0 "Qwhite_optional" H 9454 5396 50  0000 L CNN
+F 0 "Qwhite_optional1" H 9454 5396 50  0000 L CNN
 F 1 "IRLML6344" H 9454 5305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 5260 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9250 5350 50  0001 L CNN
@@ -874,10 +874,10 @@ Wire Wire Line
 Wire Wire Line
 	5800 7000 6250 7000
 $Comp
-L Device:R Raddressable
+L Device:R Raddressable1
 U 1 1 5E225DC9
 P 5650 7000
-F 0 "Raddressable" V 5857 7000 50  0000 C CNN
+F 0 "Raddressable1" V 5857 7000 50  0000 C CNN
 F 1 "1k" V 5766 7000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 7000 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5650 7000 50  0001 C CNN
@@ -889,10 +889,10 @@ $EndComp
 Wire Wire Line
 	5450 7000 5500 7000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0114
 U 1 1 5E2158AC
 P 5950 7250
-F 0 "#PWR?" H 5950 7000 50  0001 C CNN
+F 0 "#PWR0114" H 5950 7000 50  0001 C CNN
 F 1 "GND" H 5955 7077 50  0000 C CNN
 F 2 "" H 5950 7250 50  0001 C CNN
 F 3 "" H 5950 7250 50  0001 C CNN
@@ -916,10 +916,10 @@ adressable
 Text Label 1050 4450 2    50   ~ 0
 adressable
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0115
 U 1 1 5E49F4A7
 P 2550 7300
-F 0 "#PWR?" H 2550 7050 50  0001 C CNN
+F 0 "#PWR0115" H 2550 7050 50  0001 C CNN
 F 1 "GND" H 2555 7127 50  0000 C CNN
 F 2 "" H 2550 7300 50  0001 C CNN
 F 3 "" H 2550 7300 50  0001 C CNN
@@ -999,10 +999,10 @@ F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-06
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0116
 U 1 1 5E4D786A
 P 4500 6300
-F 0 "#PWR?" H 4500 6150 50  0001 C CNN
+F 0 "#PWR0116" H 4500 6150 50  0001 C CNN
 F 1 "+5V" H 4515 6473 50  0000 C CNN
 F 2 "" H 4500 6300 50  0001 C CNN
 F 3 "" H 4500 6300 50  0001 C CNN
@@ -1060,10 +1060,10 @@ Wire Wire Line
 Wire Wire Line
 	3750 7600 4100 7600
 $Comp
-L Switch:SW_Rotary12 5_way_pos
+L Switch:SW_Rotary12 5_way_pos1
 U 1 1 5E47EEBD
 P 3200 7000
-F 0 "5_way_pos" H 3100 7781 50  0000 C CNN
+F 0 "5_way_pos1" H 3100 7781 50  0000 C CNN
 F 1 "SW_Rotary12" H 3100 7690 50  0000 C CNN
 F 2 "" H 3000 7700 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 3000 7700 50  0001 C CNN
@@ -1084,10 +1084,10 @@ Connection ~ 5150 5250
 Wire Wire Line
 	5150 5250 5150 5450
 $Comp
-L Connector_Generic:Conn_01x02 J5V
+L Connector_Generic:Conn_01x02 J5V1
 U 1 1 5DE4F57E
 P 6900 1700
-F 0 "J5V" H 6980 1692 50  0000 L CNN
+F 0 "J5V1" H 6980 1692 50  0000 L CNN
 F 1 "Conn_01x02" H 6980 1601 50  0000 L CNN
 F 2 "" H 6900 1700 50  0001 C CNN
 F 3 "~" H 6900 1700 50  0001 C CNN
@@ -1095,10 +1095,10 @@ F 3 "~" H 6900 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0117
 U 1 1 5DE7A5F1
 P 6700 2050
-F 0 "#PWR?" H 6700 1800 50  0001 C CNN
+F 0 "#PWR0117" H 6700 1800 50  0001 C CNN
 F 1 "GND" H 6705 1877 50  0000 C CNN
 F 2 "" H 6700 2050 50  0001 C CNN
 F 3 "" H 6700 2050 50  0001 C CNN
@@ -1111,10 +1111,10 @@ Wire Wire Line
 	6700 1700 6700 1300
 Connection ~ 6700 1300
 $Comp
-L Connector_Generic:Conn_01x03 Jvin_vfused
+L Connector_Generic:Conn_01x03 Jvin_vfused1
 U 1 1 5DE93F0E
 P 3550 1500
-F 0 "Jvin_vfused" V 3514 1312 50  0000 R CNN
+F 0 "Jvin_vfused1" V 3514 1312 50  0000 R CNN
 F 1 "Conn_01x03" V 3423 1312 50  0000 R CNN
 F 2 "" H 3550 1500 50  0001 C CNN
 F 3 "~" H 3550 1500 50  0001 C CNN
@@ -1140,10 +1140,10 @@ Connection ~ 3950 1950
 Wire Wire Line
 	3950 1950 4050 1950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0118
 U 1 1 5DEA77D9
 P 3550 1700
-F 0 "#PWR?" H 3550 1450 50  0001 C CNN
+F 0 "#PWR0118" H 3550 1450 50  0001 C CNN
 F 1 "GND" H 3555 1527 50  0000 C CNN
 F 2 "" H 3550 1700 50  0001 C CNN
 F 3 "" H 3550 1700 50  0001 C CNN
@@ -1153,10 +1153,10 @@ $EndComp
 Text Notes 5600 2900 0    118  ~ 0
 DMX
 $Comp
-L Interface_UART:MAX485E U?
+L Interface_UART:MAX485E U3
 U 1 1 5DEB6312
 P 6300 4850
-F 0 "U?" H 6300 5531 50  0000 C CNN
+F 0 "U3" H 6300 5531 50  0000 C CNN
 F 1 "MAX485E" H 6300 5440 50  0000 C CNN
 F 2 "" H 6300 4150 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6300 4900 50  0001 C CNN
@@ -1164,10 +1164,10 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6300 4
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:XLR3_Ground J?
+L Connector:XLR3_Ground J1
 U 1 1 5DEB7DDB
 P 7050 3450
-F 0 "J?" H 7050 3815 50  0000 C CNN
+F 0 "J1" H 7050 3815 50  0000 C CNN
 F 1 "XLR3_Ground" H 7050 3724 50  0000 C CNN
 F 2 "" H 7050 3450 50  0001 C CNN
 F 3 " ~" H 7050 3450 50  0001 C CNN
@@ -1175,10 +1175,10 @@ F 3 " ~" H 7050 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:XLR3_Ground J?
+L Connector:XLR3_Ground J2
 U 1 1 5DEB90CA
 P 7050 4150
-F 0 "J?" H 7050 4515 50  0000 C CNN
+F 0 "J2" H 7050 4515 50  0000 C CNN
 F 1 "XLR3_Ground" H 7050 4424 50  0000 C CNN
 F 2 "" H 7050 4150 50  0001 C CNN
 F 3 " ~" H 7050 4150 50  0001 C CNN
@@ -1194,10 +1194,10 @@ Wire Notes Line
 Wire Notes Line
 	6850 6050 5000 6050
 $Comp
-L Interface_UART:MAX481E U?
+L Interface_UART:MAX481E U2
 U 1 1 5DF00C1F
 P 6200 3450
-F 0 "U?" H 6200 4131 50  0000 C CNN
+F 0 "U2" H 6200 4131 50  0000 C CNN
 F 1 "MAX481E" H 6200 4040 50  0000 C CNN
 F 2 "" H 6200 2750 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6200 3500 50  0001 C CNN
@@ -1209,10 +1209,10 @@ Wire Wire Line
 Wire Wire Line
 	1800 2100 1800 1900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0119
 U 1 1 5DE6183E
 P 1800 2100
-F 0 "#PWR?" H 1800 1850 50  0001 C CNN
+F 0 "#PWR0119" H 1800 1850 50  0001 C CNN
 F 1 "GND" H 1805 1927 50  0000 C CNN
 F 2 "" H 1800 2100 50  0001 C CNN
 F 3 "" H 1800 2100 50  0001 C CNN
