@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
+Title "LightBoxNano - Main"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Tim Gremalm"
+Comment1 "a generic PCB for controlling LED's both LED strip and WS2812 "
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "https://github.com/TimGremalm/LightBoxNano"
+Comment4 "http://tim.gremalm.se/"
 $EndDescr
 $Comp
 L MCU_Module:Arduino_Nano_v3.x MCUnano1
@@ -68,10 +68,10 @@ U 1 1 5DE0985A
 P 1150 6650
 F 0 "RV_Pot_1" H 1080 6696 50  0000 R CNN
 F 1 "10k" H 1080 6605 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 1150 6650 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 1150 6650 50  0001 C CNN
-F 4 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 1150 6650 50  0001 C CNN "Farnell"
-F 5 "MC0100W0603110K" H 1150 6650 50  0001 C CNN "Part Number"
+F 2 "" H 1150 6650 50  0001 C CNN
+F 3 "" H 1150 6650 50  0001 C CNN
+F 4 "" H 1150 6650 50  0001 C CNN "Farnell"
+F 5 "" H 1150 6650 50  0001 C CNN "Part Number"
 	1    1150 6650
 	1    0    0    -1  
 $EndComp
@@ -81,10 +81,10 @@ U 1 1 5DE0A6EA
 P 2100 6650
 F 0 "RV_Pot_2" H 2030 6696 50  0000 R CNN
 F 1 "10k" H 2030 6605 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 2100 6650 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2100 6650 50  0001 C CNN
-F 4 "MC0100W0603110K" H 2100 6650 50  0001 C CNN "Part Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 2100 6650 50  0001 C CNN "Farnell"
+F 2 "" H 2100 6650 50  0001 C CNN
+F 3 "" H 2100 6650 50  0001 C CNN
+F 4 "" H 2100 6650 50  0001 C CNN "Part Number"
+F 5 "" H 2100 6650 50  0001 C CNN "Farnell"
 	1    2100 6650
 	1    0    0    -1  
 $EndComp

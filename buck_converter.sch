@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
+Title "LightBoxNano - Buck Converter"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Tim Gremalm"
+Comment1 "a generic PCB for controlling LED's both LED strip and WS2812 "
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "https://github.com/TimGremalm/LightBoxNano"
+Comment4 "http://tim.gremalm.se/"
 $EndDescr
 Text HLabel 2750 2100 0    50   Input ~ 0
 BuckVin
