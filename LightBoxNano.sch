@@ -67,8 +67,9 @@ P 1150 6650
 F 0 "RV_Pot_1" H 1080 6696 50  0000 R CNN
 F 1 "10k" H 1080 6605 50  0000 R CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 1150 6650 50  0001 C CNN
-F 3 "~" H 1150 6650 50  0001 C CNN
-F 4 "" H 1150 6650 50  0001 C CNN "Farnell"
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 1150 6650 50  0001 C CNN
+F 4 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 1150 6650 50  0001 C CNN "Farnell"
+F 5 "MC0100W0603110K" H 1150 6650 50  0001 C CNN "Part Number"
 	1    1150 6650
 	1    0    0    -1  
 $EndComp
@@ -79,7 +80,9 @@ P 2100 6650
 F 0 "RV_Pot_2" H 2030 6696 50  0000 R CNN
 F 1 "10k" H 2030 6605 50  0000 R CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2100 6650 50  0001 C CNN
-F 3 "~" H 2100 6650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2100 6650 50  0001 C CNN
+F 4 "MC0100W0603110K" H 2100 6650 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 2100 6650 50  0001 C CNN "Farnell"
 	1    2100 6650
 	1    0    0    -1  
 $EndComp
@@ -365,7 +368,9 @@ P 5150 3700
 F 0 "R1" H 5220 3746 50  0000 L CNN
 F 1 "33k" H 5220 3655 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 3700 50  0001 C CNN
-F 3 "~" H 5150 3700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5150 3700 50  0001 C CNN
+F 4 "MC0100W0603133K" H 5150 3700 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603133k/motst-tjockfilm-33k-1-0-063w-0603/dp/2845872" H 5150 3700 50  0001 C CNN "Farnell"
 	1    5150 3700
 	1    0    0    -1  
 $EndComp
@@ -376,7 +381,9 @@ P 5150 4100
 F 0 "R2" H 5220 4146 50  0000 L CNN
 F 1 "47k" H 5220 4055 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 4100 50  0001 C CNN
-F 3 "~" H 5150 4100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5150 4100 50  0001 C CNN
+F 4 "MC0100W0603147K" H 5150 4100 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603147k/motst-tjockfilm-47k-1-0-063w-0603/dp/2845909" H 5150 4100 50  0001 C CNN "Farnell"
 	1    5150 4100
 	1    0    0    -1  
 $EndComp
@@ -473,7 +480,9 @@ P 8400 1700
 F 0 "Rred_pulldown" H 8470 1746 50  0000 L CNN
 F 1 "10k" H 8470 1655 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 1700 50  0001 C CNN
-F 3 "~" H 8400 1700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 1700 50  0001 C CNN
+F 4 "MC0100W0603110K" H 8400 1700 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 8400 1700 50  0001 C CNN "Farnell"
 	1    8400 1700
 	1    0    0    -1  
 $EndComp
@@ -484,7 +493,9 @@ P 8200 1350
 F 0 "Rred" V 7993 1350 50  0000 C CNN
 F 1 "1k" V 8084 1350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 1350 50  0001 C CNN
-F 3 "~" H 8200 1350 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 1350 50  0001 C CNN
+F 4 "MC0100W060311K" V 8200 1350 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 8200 1350 50  0001 C CNN "Farnell"
 	1    8200 1350
 	0    -1   -1   0   
 $EndComp
@@ -570,7 +581,9 @@ P 8400 3000
 F 0 "Rgreen_pulldown" H 8470 3046 50  0000 L CNN
 F 1 "10k" H 8470 2955 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 3000 50  0001 C CNN
-F 3 "~" H 8400 3000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 3000 50  0001 C CNN
+F 4 "MC0100W0603110K" H 8400 3000 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 8400 3000 50  0001 C CNN "Farnell"
 	1    8400 3000
 	1    0    0    -1  
 $EndComp
@@ -581,7 +594,9 @@ P 8200 2650
 F 0 "Rgreen" V 7993 2650 50  0000 C CNN
 F 1 "1k" V 8084 2650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 2650 50  0001 C CNN
-F 3 "~" H 8200 2650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 2650 50  0001 C CNN
+F 4 "MC0100W060311K" V 8200 2650 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 8200 2650 50  0001 C CNN "Farnell"
 	1    8200 2650
 	0    -1   -1   0   
 $EndComp
@@ -667,7 +682,9 @@ P 8400 4350
 F 0 "Rblue_pulldown" H 8470 4396 50  0000 L CNN
 F 1 "10k" H 8470 4305 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 4350 50  0001 C CNN
-F 3 "~" H 8400 4350 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 4350 50  0001 C CNN
+F 4 "MC0100W0603110K" H 8400 4350 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 8400 4350 50  0001 C CNN "Farnell"
 	1    8400 4350
 	1    0    0    -1  
 $EndComp
@@ -678,7 +695,9 @@ P 8200 4000
 F 0 "Rblue" V 7993 4000 50  0000 C CNN
 F 1 "1k" V 8084 4000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 4000 50  0001 C CNN
-F 3 "~" H 8200 4000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 4000 50  0001 C CNN
+F 4 "MC0100W060311K" V 8200 4000 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 8200 4000 50  0001 C CNN "Farnell"
 	1    8200 4000
 	0    -1   -1   0   
 $EndComp
@@ -762,7 +781,9 @@ P 8400 5700
 F 0 "Rwhite_pulldown" H 8470 5746 50  0000 L CNN
 F 1 "10k" H 8470 5655 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 5700 50  0001 C CNN
-F 3 "~" H 8400 5700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8400 5700 50  0001 C CNN
+F 4 "MC0100W0603110K" H 8400 5700 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" H 8400 5700 50  0001 C CNN "Farnell"
 	1    8400 5700
 	1    0    0    -1  
 $EndComp
@@ -773,7 +794,9 @@ P 8200 5350
 F 0 "Rwhite" V 7993 5350 50  0000 C CNN
 F 1 "1k" V 8084 5350 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8130 5350 50  0001 C CNN
-F 3 "~" H 8200 5350 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8200 5350 50  0001 C CNN
+F 4 "MC0100W060311K" V 8200 5350 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 8200 5350 50  0001 C CNN "Farnell"
 	1    8200 5350
 	0    -1   -1   0   
 $EndComp
@@ -857,7 +880,9 @@ P 5650 7000
 F 0 "Raddressable" V 5857 7000 50  0000 C CNN
 F 1 "1k" V 5766 7000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 7000 50  0001 C CNN
-F 3 "~" H 5650 7000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5650 7000 50  0001 C CNN
+F 4 "MC0100W060311K" V 5650 7000 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 5650 7000 50  0001 C CNN "Farnell"
 	1    5650 7000
 	0    -1   -1   0   
 $EndComp
@@ -915,7 +940,9 @@ P 4250 7300
 F 0 "Rsw4" V 4043 7300 50  0000 C CNN
 F 1 "10k" V 4134 7300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7300 50  0001 C CNN
-F 3 "~" H 4250 7300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 4250 7300 50  0001 C CNN
+F 4 "MC0100W0603110K" V 4250 7300 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 4250 7300 50  0001 C CNN "Farnell"
 	1    4250 7300
 	0    1    1    0   
 $EndComp
@@ -926,7 +953,9 @@ P 4250 7600
 F 0 "Rsw5" V 4043 7600 50  0000 C CNN
 F 1 "10k" V 4134 7600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7600 50  0001 C CNN
-F 3 "~" H 4250 7600 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 4250 7600 50  0001 C CNN
+F 4 "MC0100W0603110K" V 4250 7600 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 4250 7600 50  0001 C CNN "Farnell"
 	1    4250 7600
 	0    1    1    0   
 $EndComp
@@ -937,7 +966,9 @@ P 4250 7000
 F 0 "Rsw3" V 4043 7000 50  0000 C CNN
 F 1 "10k" V 4134 7000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7000 50  0001 C CNN
-F 3 "~" H 4250 7000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 4250 7000 50  0001 C CNN
+F 4 "MC0100W0603110K" V 4250 7000 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 4250 7000 50  0001 C CNN "Farnell"
 	1    4250 7000
 	0    1    1    0   
 $EndComp
@@ -948,7 +979,9 @@ P 4250 6700
 F 0 "Rsw2" V 4043 6700 50  0000 C CNN
 F 1 "10k" V 4134 6700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 6700 50  0001 C CNN
-F 3 "~" H 4250 6700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 4250 6700 50  0001 C CNN
+F 4 "MC0100W0603110K" V 4250 6700 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 4250 6700 50  0001 C CNN "Farnell"
 	1    4250 6700
 	0    1    1    0   
 $EndComp
@@ -959,7 +992,9 @@ P 4250 6400
 F 0 "Rsw1" V 4043 6400 50  0000 C CNN
 F 1 "10k" V 4134 6400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 6400 50  0001 C CNN
-F 3 "~" H 4250 6400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 4250 6400 50  0001 C CNN
+F 4 "MC0100W0603110K" V 4250 6400 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 4250 6400 50  0001 C CNN "Farnell"
 	1    4250 6400
 	0    1    1    0   
 $EndComp
