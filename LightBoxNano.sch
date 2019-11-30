@@ -448,7 +448,7 @@ F 4 "IRLML6344TRPbF" H 9120 1160 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 8880 1060 50  0001 C CNN "VDS"
 F 6 "±12V" H 9080 1060 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 9500 970 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 8600 1350 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 8600 1350 50  0001 C CNN "Farnell"
 	1    8600 1350
 	1    0    0    -1  
 $EndComp
@@ -520,7 +520,7 @@ F 4 "IRLML6344TRPbF" H 9770 1160 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 9530 1060 50  0001 C CNN "VDS"
 F 6 "±12V" H 9730 1060 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 10150 970 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 9250 1350 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 9250 1350 50  0001 C CNN "Farnell"
 	1    9250 1350
 	1    0    0    -1  
 $EndComp
@@ -551,7 +551,7 @@ F 4 "IRLML6344TRPbF" H 9120 2460 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 8880 2360 50  0001 C CNN "VDS"
 F 6 "±12V" H 9080 2360 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 9500 2270 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 8600 2650 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 8600 2650 50  0001 C CNN "Farnell"
 	1    8600 2650
 	1    0    0    -1  
 $EndComp
@@ -623,7 +623,7 @@ F 4 "IRLML6344TRPbF" H 9770 2460 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 9530 2360 50  0001 C CNN "VDS"
 F 6 "±12V" H 9730 2360 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 10150 2270 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 9250 2650 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 9250 2650 50  0001 C CNN "Farnell"
 	1    9250 2650
 	1    0    0    -1  
 $EndComp
@@ -654,7 +654,7 @@ F 4 "IRLML6344TRPbF" H 9120 3810 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 8880 3710 50  0001 C CNN "VDS"
 F 6 "±12V" H 9080 3710 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 9500 3620 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 8600 4000 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 8600 4000 50  0001 C CNN "Farnell"
 	1    8600 4000
 	1    0    0    -1  
 $EndComp
@@ -726,7 +726,7 @@ F 4 "IRLML6344TRPbF" H 9770 3810 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 9530 3710 50  0001 C CNN "VDS"
 F 6 "±12V" H 9730 3710 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 10150 3620 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 9250 4000 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 9250 4000 50  0001 C CNN "Farnell"
 	1    9250 4000
 	1    0    0    -1  
 $EndComp
@@ -755,7 +755,7 @@ F 4 "IRLML6344TRPbF" H 9120 5160 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 8880 5060 50  0001 C CNN "VDS"
 F 6 "±12V" H 9080 5060 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 9500 4970 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 8600 5350 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 8600 5350 50  0001 C CNN "Farnell"
 	1    8600 5350
 	1    0    0    -1  
 $EndComp
@@ -827,7 +827,7 @@ F 4 "IRLML6344TRPbF" H 9770 5160 50  0001 C CNN "Orderable part number"
 F 5 "30V" H 9530 5060 50  0001 C CNN "VDS"
 F 6 "±12V" H 9730 5060 50  0001 C CNN "VGS Max"
 F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 10150 4970 50  0001 C CNN "RDSON Max"
-F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299RL" H 9250 5350 50  0001 C CNN "Farnell"
+F 8 "https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299" H 9250 5350 50  0001 C CNN "Farnell"
 	1    9250 5350
 	1    0    0    -1  
 $EndComp
