@@ -20,7 +20,9 @@ P 1700 4400
 F 0 "MCUnano1" H 1300 5325 50  0000 L BNN
 F 1 "Arduino_Nano_v3.x" H 1900 3450 50  0000 L TNN
 F 2 "Module:Arduino_Nano" H 1700 4400 50  0001 C CIN
-F 3 "" H 1700 4400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1682238.pdf" H 1700 4400 50  0001 C CNN
+F 4 "https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691" H 1700 4400 50  0001 C CNN "Farnell"
+F 5 "http://www.farnell.com/datasheets/1682238.pdf" H 1700 4400 50  0001 C CNN "Part Number"
 	1    1700 4400
 	1    0    0    -1  
 $EndComp
@@ -225,6 +227,7 @@ F 0 "MCUesp1" H 3550 3511 50  0000 C CNN
 F 1 "WeMos_D1_mini" H 3550 3420 50  0000 C CNN
 F 2 "Module:WEMOS_D1_mini_light" H 3550 3250 50  0001 C CNN
 F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1700 3250 50  0001 C CNN
+F 4 "https://www.lawicel-shop.se/wemos-d1-mini-pro" H 3550 4400 50  0001 C CNN "Lawicel"
 	1    3550 4400
 	1    0    0    -1  
 $EndComp

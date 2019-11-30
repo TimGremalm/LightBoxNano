@@ -5,7 +5,7 @@ It has the option for populating a pair of potentiometer, an a 5 way slider swit
 
 An Arduino Nano is mounted using ordinary 2.54mm pitch pin headers.
 
-Optionally an ESP8266 can be mounted instead of the Nano, this is much more expensive it is a more powerful MCU and have WiFi.
+Optionally an WeMos D1 mini can be mounted instead of the Nano, this is much more expensive it is a more powerful MCU and have WiFi.
 
 A RS485 receiver and a pair of XLR connectors can also transform the LED controller into a DMX driver.
 
@@ -40,6 +40,8 @@ A 5m LED strip consisting of 300 LED's will draw 6A (20mAx300) when fully lit. A
 # Addressable LED driver
 Addressable LED strip is hooked up directly to VIN and the data pin is going to pin ???x on the Arduino via a 1k resistor.
 
+And if WeMos is use it goes to pin ???x.
+
 # Control interface
 Two potentiometers can optionally be mounted and will go to A1 and A2 of Arduino Nano.
 
@@ -48,8 +50,9 @@ A slider switch can be optionally mounted for selecting different modes.
 Also a pin header of the Arduino Nano will be easily assessable for hooking up random stuff.
 
 # MCU
-An Arduino Nano V3 is selected because it's cheap, available and have enough power for most applications.
-Optionally and ESP32 ??? can be mounted to replace the Arduino.
+An Arduino Nano V3 (ATmega328) is selected because it's cheap, available and have enough power for most applications.
+
+But there is a option for mounting a WeMos D1 mini (ESP8266) instead which is much more powerful and have built in WiFi.
 
 # BOM (Bill Of Material)
 | Amount	| Manufacturer		| Modell				| Article Number		| Description				| URL																									|
