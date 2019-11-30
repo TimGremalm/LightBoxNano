@@ -40,7 +40,7 @@ A 5m LED strip consisting of 300 LED's will draw 6A (20mAx300) when fully lit. A
 # Addressable LED driver
 Addressable LED strip is hooked up directly to VIN and the data pin is going to pin ???x on the Arduino via a 1k resistor.
 
-And if WeMos is use it goes to pin ???x.
+And if WeMos is used it goes to pin ???x.
 
 # Control interface
 Two potentiometers can optionally be mounted and will go to A1 and A2 of Arduino Nano.
@@ -60,7 +60,7 @@ But there is a option for mounting a WeMos D1 mini (ESP8266) instead which is mu
 | 1			| Arduino			| Nano V3.1 			| A000005				| Arduino Nano 3 ATmega328	| https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691						|
 | 1			| Arduino			| WeMos D1 mini			| K-W-D1-M-P			| WeMos D1 mini ESP8266		| https://www.lawicel-shop.se/wemos-d1-mini-pro															|
 | 2			| Alps Alpine		| RK11K1120A4C			| RK11K1120A4C			| 10k Log Pot				| https://se.farnell.com/alps/rk11k1120a4c/potentiometer-10-ka/dp/1191744								|
-| 6			| Infineon			| IRLML6344TRPBF		| IRLML6344TRPBF		| N-Ch Mosfet 5A SOT-23		| https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299					|
+| 8			| Infineon			| IRLML6344TRPBF		| IRLML6344TRPBF		| N-Ch Mosfet 5A SOT-23		| https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299					|
 | 1			| Phoenix Contact	| MSTBA 2,5/ 2-G-5,08	| 1757242				| Connector Male 2 pin		| https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171				|
 | 1			| Phoenix Contact	| MSTBA 2,5/ 3-G-5,08	| 1757255				| Connector Male 3 pin		| https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08mm/dp/3705183				|
 | 1			| Phoenix Contact	| MSTBA 2,5/ 5-G-5,08	| 1757271				| Connector Male 5 pin		| https://se.farnell.com/phoenix-contact/1757271/header-right-angle-5-08mm-5way/dp/3705201				|
