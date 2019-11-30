@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module1:Arduino_Nano_v3.x MCUnano1
+L MCU_Module:Arduino_Nano_v3.x MCUnano1
 U 1 1 5DE0324F
 P 1700 4400
 F 0 "MCUnano1" H 1300 5325 50  0000 L BNN
@@ -25,7 +25,7 @@ F 3 "" H 1700 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector1:Barrel_Jack_Switch J_Power_BarrelJack1
+L Connector:Barrel_Jack_Switch J_Power_BarrelJack1
 U 1 1 5DE03891
 P 1200 1800
 F 0 "J_Power_BarrelJack1" H 1200 2010 50  0000 C CNN
@@ -39,7 +39,7 @@ F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 120
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic1:Conn_01x02 J_Power_Terminal1
+L Connector_Generic:Conn_01x02 J_Power_Terminal1
 U 1 1 5DE0534D
 P 1100 1250
 F 0 "J_Power_Terminal1" H 1100 1350 50  0000 C CNN
@@ -50,7 +50,7 @@ F 3 "" H 1100 1250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic1:Conn_01x03 J_Addressable1
+L Connector_Generic:Conn_01x03 J_Addressable1
 U 1 1 5DE05544
 P 6450 7000
 F 0 "J_Addressable1" H 6450 7200 50  0000 C CNN

@@ -49,10 +49,6 @@ Also a pin header of the Arduino Nano will be easily acessable for hooking up ra
 An Arduino Nano V3 is selected because it's cheap, available and have enough power for most applications.
 Optionally and ESP32 ??? can be mounted to replace the Arduino.
 
-# Submodules
-* KiCad schematic symbols https://github.com/KiCad/kicad-symbols
-* KiCad footprints https://github.com/KiCad/kicad-footprints
-
 # BOM (Bill Of Material)
 | Amount	| Manufacturer		| Modell				| Article Number		| Description				| URL																									|
 | --------- | ----------------- | --------------------- | --------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
