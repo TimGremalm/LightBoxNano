@@ -57,7 +57,8 @@ But there is a option for mounting a WeMos D1 mini (ESP8266) instead which is mu
 # BOM (Bill Of Material)
 | Amount	| Manufacturer		| Modell				| Article Number		| Description				| URL																									|
 | --------- | ----------------- | --------------------- | --------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
-| 1			| Arduino			| Nano V3.1 ATmega328	| A000005				| Arduino Nano 3			| https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691						|
+| 1			| Arduino			| Nano V3.1 			| A000005				| Arduino Nano 3 ATmega328	| https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691						|
+| 1			| Arduino			| WeMos D1 mini			| K-W-D1-M-P			| WeMos D1 mini ESP8266		| https://www.lawicel-shop.se/wemos-d1-mini-pro															|
 | 2			| Alps Alpine		| RK11K1120A4C			| RK11K1120A4C			| 10k Log Pot				| https://se.farnell.com/alps/rk11k1120a4c/potentiometer-10-ka/dp/1191744								|
 | 6			| Infineon			| IRLML6344TRPBF		| IRLML6344TRPBF		| N-Ch Mosfet 5A SOT-23		| https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299					|
 | 1			| Phoenix Contact	| MSTBA 2,5/ 2-G-5,08	| 1757242				| Connector Male 2 pin		| https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171				|
