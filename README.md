@@ -5,13 +5,15 @@ It has the option for populating a pair of potentiometer, an a 5 way slider swit
 
 An Arduino Nano is mounted using ordinary 2.54mm pitch pin headers.
 
+Optionally an ESP8266 can be mounted instead of the Nano, this is much more expensive it is a more powerful MCU and have WiFi.
+
 A RS485 receiver and a pair of XLR connectors can also transform the LED controller into a DMX driver.
 
 # Power Supply and voltage rails
 ## Input rail
 The input voltage to LightBoxNano are called VIN and can range from 5 to 30V.
 
-Make sure to only feed LightBoxNano with a voltage that the LED strip can handle. The maximum voltage is limited by the maximum voltage of the IRLML6344 mosfets and of what the LED strip can handle.
+Make sure to only feed LightBoxNano with a voltage that the LED strip can handle. The maximum voltage is limited by the maximum voltage of the IRLML6344 Mosfets and of what the LED strip can handle.
 
 ## RGBW rail
 The positive rail for the LED strip driver is directly fed from VIN, it's usually 12V.
@@ -27,23 +29,23 @@ https://webench.ti.com/power-designer/switching-regulator/select
 https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=572687AF787DDED1
 
 ## Protection circuit
-* Polartity protection.
+* Polarity protection.
 * Over current protection selectable via resistor.
 
 # RGBW driver
 This is made for LED strip that have red, green, blue and white channels that have a common positive rail like +12V.
 The LED driver can drive 4 output channels in constant voltage mode at 5A each. The channel can drive up to 10A current if an optional IRLML6344 is mounted.
-A 5m LED strip concisting of 300 LED's will draw 6A (20mAx300) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
+A 5m LED strip consisting of 300 LED's will draw 6A (20mAx300) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
 
 # Addressable LED driver
 Addressable LED strip is hooked up directly to VIN and the data pin is going to pin ???x on the Arduino via a 1k resistor.
 
-# Controll interface
+# Control interface
 Two potentiometers can optionally be mounted and will go to A1 and A2 of Arduino Nano.
 
-A slider switch can be optinally mounted for selecting different modes.
+A slider switch can be optionally mounted for selecting different modes.
 
-Also a pin header of the Arduino Nano will be easily acessable for hooking up random stuff.
+Also a pin header of the Arduino Nano will be easily assessable for hooking up random stuff.
 
 # MCU
 An Arduino Nano V3 is selected because it's cheap, available and have enough power for most applications.
