@@ -168,17 +168,6 @@ Wire Notes Line
 Text Notes 5000 750  0    118  ~ 0
 5V Buck
 $Comp
-L power:+5V #PWR0103
-U 1 1 5DEDA48D
-P 1000 6600
-F 0 "#PWR0103" H 1000 6450 50  0001 C CNN
-F 1 "+5V" H 1015 6773 50  0000 C CNN
-F 2 "" H 1000 6600 50  0001 C CNN
-F 3 "" H 1000 6600 50  0001 C CNN
-	1    1000 6600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5DEDA793
 P 1000 7300
@@ -244,24 +233,24 @@ Vin
 Text Notes 2300 -50  0    50   ~ 0
 Add polarity protection here ???
 Text Notes 600  2700 0    118  ~ 0
-MCU Option Arduino Nano
-Text Notes 3050 2700 0    118  ~ 0
-MCU Option ESP32-PICO
+MCU Option Nano
+Text Notes 2650 2700 0    118  ~ 0
+MCU Option ESP32
 Wire Notes Line
-	600  2750 2900 2750
+	600  2750 2500 2750
 Wire Notes Line
-	2900 5550 600  5550
+	2500 5550 600  5550
 Wire Notes Line
-	5450 2750 3050 2750
+	5450 2750 2650 2750
 $Comp
 L power:+5V #PWR0105
 U 1 1 5DF44121
-P 1900 3100
-F 0 "#PWR0105" H 1900 2950 50  0001 C CNN
-F 1 "+5V" H 1915 3273 50  0000 C CNN
-F 2 "" H 1900 3100 50  0001 C CNN
-F 3 "" H 1900 3100 50  0001 C CNN
-	1    1900 3100
+P 1950 3100
+F 0 "#PWR0105" H 1950 2950 50  0001 C CNN
+F 1 "+5V" H 1965 3273 50  0000 C CNN
+F 2 "" H 1950 3100 50  0001 C CNN
+F 3 "" H 1950 3100 50  0001 C CNN
+	1    1950 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -295,33 +284,31 @@ Wire Notes Line
 Wire Notes Line
 	600  2750 600  5550
 Wire Notes Line
-	2900 2750 2900 5550
+	2500 2750 2500 5550
 Wire Notes Line
-	3050 2750 3050 5500
+	2650 2750 2650 5550
 Wire Notes Line
-	3050 5500 5450 5500
+	2650 5550 5450 5550
 Wire Notes Line
-	5450 2750 5450 5500
+	5450 2750 5450 5550
 Wire Wire Line
 	850  5300 850  5250
 Wire Wire Line
 	850  5250 1700 5250
 Wire Wire Line
 	1700 5250 1700 5200
-Text GLabel 2550 3250 1    50   Input ~ 0
+Text GLabel 2300 4200 1    50   Input ~ 0
 POT_1
-Text GLabel 2800 3250 1    50   Input ~ 0
+Text GLabel 2400 4200 1    50   Input ~ 0
 POT_2
-Text Notes 2850 2850 2    50   ~ 0
-328 can handle 5V from pot
 Wire Wire Line
-	2550 3250 2550 4300
+	2300 4200 2300 4300
 Wire Wire Line
-	2550 4300 2200 4300
+	2300 4300 2200 4300
 Wire Wire Line
-	2800 3250 2800 4400
+	2400 4200 2400 4400
 Wire Wire Line
-	2800 4400 2200 4400
+	2400 4400 2200 4400
 Wire Wire Line
 	5450 2050 5450 1900
 Wire Wire Line
@@ -1132,24 +1119,8 @@ Wire Wire Line
 	1250 6450 1250 6900
 Wire Wire Line
 	2150 6900 2150 6450
-Text GLabel 1100 4100 0    50   Input ~ 0
-Gate_red
-Text GLabel 1100 4200 0    50   Input ~ 0
-Gate_green
-Text GLabel 1100 3900 0    50   Input ~ 0
-Adressable
-Text GLabel 1100 4500 0    50   Input ~ 0
-Gate_blue
 Text GLabel 1100 4600 0    50   Input ~ 0
 Gate_white
-Wire Wire Line
-	1100 3900 1200 3900
-Wire Wire Line
-	1100 4100 1200 4100
-Wire Wire Line
-	1100 4200 1200 4200
-Wire Wire Line
-	1100 4500 1200 4500
 Wire Wire Line
 	1100 4600 1200 4600
 NoConn ~ 1200 3600
@@ -1162,7 +1133,6 @@ NoConn ~ 1200 4700
 NoConn ~ 1200 4800
 NoConn ~ 1200 4900
 NoConn ~ 2200 4900
-NoConn ~ 1800 5200
 NoConn ~ 2200 4700
 NoConn ~ 2200 4800
 NoConn ~ 2200 4500
@@ -1170,22 +1140,19 @@ NoConn ~ 2200 4200
 NoConn ~ 2200 4000
 NoConn ~ 2200 3700
 NoConn ~ 2200 3600
-NoConn ~ 1800 3200
 NoConn ~ 1600 3200
-Wire Wire Line
-	1900 3100 1900 3200
-Text GLabel 5000 4050 2    50   Input ~ 0
+Text GLabel 3250 3850 0    50   Input ~ 0
 Adressable
-Text GLabel 5000 4200 2    50   Input ~ 0
+Text GLabel 3250 3950 0    50   Input ~ 0
 Gate_red
-Text GLabel 5000 4350 2    50   Input ~ 0
+Text GLabel 3250 4250 0    50   Input ~ 0
 Gate_green
-Text GLabel 5000 4450 2    50   Input ~ 0
+Text GLabel 3250 4350 0    50   Input ~ 0
 Gate_blue
-Text GLabel 5000 4650 2    50   Input ~ 0
+Text GLabel 3250 4450 0    50   Input ~ 0
 Gate_white
-Text Notes 650  3200 0    50   ~ 0
-Pin3  PD3 addressable\nPin5  PD5 red\nPin6  PD6 green\nPin9  PB1 blue\nPin10 PB2 white
+Text Notes 650  3350 0    50   ~ 0
+D3   PD3 addressable\nD5   PD5 red\nD6   PD6 green\nD9   PB1 blue\nD10  PB2 white\nA1   POT_1\nA2   POT_2
 $Comp
 L ESP32:ESP32-PICO-KIT MCU_esp1
 U 1 1 5E88C067
@@ -1197,6 +1164,177 @@ F 3 "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf" H
 	1    4050 4300
 	1    0    0    -1  
 $EndComp
-Text Notes 5400 2950 2    50   ~ 0
-ESP8266 only have one analog input\nRescale 5V to 1V by adding a resistor divider
+Wire Wire Line
+	1800 5200 1800 5250
+Wire Wire Line
+	1800 5250 1700 5250
+Connection ~ 1700 5250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E8A34E7
+P 1750 3100
+F 0 "#PWR?" H 1750 2950 50  0001 C CNN
+F 1 "+3.3V" H 1765 3273 50  0000 C CNN
+F 2 "" H 1750 3100 50  0001 C CNN
+F 3 "" H 1750 3100 50  0001 C CNN
+	1    1750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3100 1800 3100
+Wire Wire Line
+	1800 3100 1800 3200
+Wire Wire Line
+	1900 3200 1900 3100
+Wire Wire Line
+	1900 3100 1950 3100
+$Comp
+L power:+5V #PWR?
+U 1 1 5E8D2999
+P 2900 5450
+F 0 "#PWR?" H 2900 5300 50  0001 C CNN
+F 1 "+5V" H 2915 5623 50  0000 C CNN
+F 2 "" H 2900 5450 50  0001 C CNN
+F 3 "" H 2900 5450 50  0001 C CNN
+	1    2900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E8D368D
+P 2900 5050
+F 0 "#PWR?" H 2900 4900 50  0001 C CNN
+F 1 "+3.3V" H 2915 5223 50  0000 C CNN
+F 2 "" H 2900 5050 50  0001 C CNN
+F 3 "" H 2900 5050 50  0001 C CNN
+	1    2900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4500 1200 4500
+Text GLabel 1100 4500 0    50   Input ~ 0
+Gate_blue
+Wire Wire Line
+	1100 4200 1200 4200
+Text GLabel 1100 4200 0    50   Input ~ 0
+Gate_green
+Wire Wire Line
+	1100 4100 1200 4100
+Text GLabel 1100 4100 0    50   Input ~ 0
+Gate_red
+Wire Wire Line
+	1100 3900 1200 3900
+Text GLabel 1100 3900 0    50   Input ~ 0
+Adressable
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E93FFB4
+P 1000 6600
+F 0 "#PWR?" H 1000 6450 50  0001 C CNN
+F 1 "+3.3V" H 1015 6773 50  0000 C CNN
+F 2 "" H 1000 6600 50  0001 C CNN
+F 3 "" H 1000 6600 50  0001 C CNN
+	1    1000 6600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2200 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5E94AB2B
+P 3200 5150
+F 0 "#PWR?" H 3200 4900 50  0001 C CNN
+F 1 "GND" H 3205 4977 50  0000 C CNN
+F 2 "" H 3200 5150 50  0001 C CNN
+F 3 "" H 3200 5150 50  0001 C CNN
+	1    3200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5050 3350 5050
+Wire Wire Line
+	3200 5150 3350 5150
+Wire Wire Line
+	2900 5450 3350 5450
+Wire Wire Line
+	3350 5450 3350 5250
+Text GLabel 4950 4600 1    50   Input ~ 0
+POT_1
+Text GLabel 5050 4600 1    50   Input ~ 0
+POT_2
+Text Notes 2700 3350 0    50   ~ 0
+IO25  addressable\nIO26  red\nIO27  green\nIO14  blue\nIO12  white\nIO35  POT_1\nIO34  POT_2
+$Comp
+L power:GND #PWR?
+U 1 1 5E9AB3D4
+P 4900 5150
+F 0 "#PWR?" H 4900 4900 50  0001 C CNN
+F 1 "GND" H 4905 4977 50  0000 C CNN
+F 2 "" H 4900 5150 50  0001 C CNN
+F 3 "" H 4900 5150 50  0001 C CNN
+	1    4900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9ABD3A
+P 5200 5450
+F 0 "#PWR?" H 5200 5300 50  0001 C CNN
+F 1 "+3.3V" H 5215 5623 50  0000 C CNN
+F 2 "" H 5200 5450 50  0001 C CNN
+F 3 "" H 5200 5450 50  0001 C CNN
+	1    5200 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5450 4750 5450
+Wire Wire Line
+	4750 5450 4750 5250
+Wire Wire Line
+	4900 5150 4750 5150
+Wire Wire Line
+	5050 4600 5050 4750
+Wire Wire Line
+	5050 4750 4750 4750
+Wire Wire Line
+	4950 4600 4950 4650
+Wire Wire Line
+	4950 4650 4750 4650
+Wire Wire Line
+	3250 3850 3350 3850
+Wire Wire Line
+	3250 3950 3350 3950
+Wire Wire Line
+	3250 4250 3350 4250
+Wire Wire Line
+	3250 4350 3350 4350
+Wire Wire Line
+	3250 4450 3350 4450
+NoConn ~ 3350 3350
+NoConn ~ 3350 3450
+NoConn ~ 3350 3550
+NoConn ~ 3350 3650
+NoConn ~ 3350 3750
+NoConn ~ 3350 4050
+NoConn ~ 3350 4150
+NoConn ~ 3350 4550
+NoConn ~ 3350 4650
+NoConn ~ 3350 4750
+NoConn ~ 3350 4850
+NoConn ~ 3350 4950
+NoConn ~ 4750 5050
+NoConn ~ 4750 4950
+NoConn ~ 4750 4850
+NoConn ~ 4750 4550
+NoConn ~ 4750 4450
+NoConn ~ 4750 4350
+NoConn ~ 4750 4250
+NoConn ~ 4750 4150
+NoConn ~ 4750 4050
+NoConn ~ 4750 3950
+NoConn ~ 4750 3850
+NoConn ~ 4750 3750
+NoConn ~ 4750 3650
+NoConn ~ 4750 3550
+NoConn ~ 4750 3450
+NoConn ~ 4750 3350
 $EndSCHEMATC
