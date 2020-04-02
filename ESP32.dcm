@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESP32-PICO-KIT
+F https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf
+$ENDCMP
+#
+#End Doc Library
