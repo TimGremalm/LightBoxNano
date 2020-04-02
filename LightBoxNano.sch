@@ -217,18 +217,6 @@ Wire Notes Line
 	600  5850 4900 5850
 Text Notes 600  5800 0    118  ~ 0
 User Interface
-$Comp
-L MCU_Module:WeMos_D1_mini MCU_esp1
-U 1 1 5DF01EF8
-P 3550 4200
-F 0 "MCU_esp1" H 3550 3250 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 3650 3150 50  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 3550 3050 50  0001 C CNN
-F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1700 3050 50  0001 C CNN
-F 4 "https://www.lawicel-shop.se/wemos-d1-mini-pro" H 3550 4200 50  0001 C CNN "Lawicel"
-	1    3550 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 1300 5600 1300
 Wire Notes Line
@@ -256,9 +244,9 @@ Vin
 Text Notes 2300 -50  0    50   ~ 0
 Add polarity protection here ???
 Text Notes 600  2700 0    118  ~ 0
-MCU Option Nano
+MCU Option Arduino Nano
 Text Notes 3050 2700 0    118  ~ 0
-MCU Option Wemos
+MCU Option ESP32-PICO
 Wire Notes Line
 	600  2750 2900 2750
 Wire Notes Line
@@ -298,17 +286,6 @@ F 3 "" H 850 5300 50  0001 C CNN
 	1    850  5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 5DF45201
-P 5150 5250
-F 0 "#PWR0108" H 5150 5000 50  0001 C CNN
-F 1 "GND" H 5155 5077 50  0000 C CNN
-F 2 "" H 5150 5250 50  0001 C CNN
-F 3 "" H 5150 5250 50  0001 C CNN
-	1    5150 5250
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	600  5850 600  7700
 Wire Notes Line
@@ -331,25 +308,10 @@ Wire Wire Line
 	850  5250 1700 5250
 Wire Wire Line
 	1700 5250 1700 5200
-Wire Wire Line
-	3450 3300 3450 3400
 Text GLabel 2550 3250 1    50   Input ~ 0
 POT_1
 Text GLabel 2800 3250 1    50   Input ~ 0
 POT_2
-Text GLabel 5150 3300 1    50   Input ~ 0
-POT_1
-$Comp
-L power:+5V #PWR0109
-U 1 1 5DF4373E
-P 3450 3300
-F 0 "#PWR0109" H 3450 3150 50  0001 C CNN
-F 1 "+5V" H 3465 3473 50  0000 C CNN
-F 2 "" H 3450 3300 50  0001 C CNN
-F 3 "" H 3450 3300 50  0001 C CNN
-	1    3450 3300
-	1    0    0    -1  
-$EndComp
 Text Notes 2850 2850 2    50   ~ 0
 328 can handle 5V from pot
 Wire Wire Line
@@ -360,43 +322,6 @@ Wire Wire Line
 	2800 3250 2800 4400
 Wire Wire Line
 	2800 4400 2200 4400
-$Comp
-L Device:R R1
-U 1 1 5DF9EC70
-P 5150 3500
-F 0 "R1" H 5220 3546 50  0000 L CNN
-F 1 "33k" H 5220 3455 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 3500 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5150 3500 50  0001 C CNN
-F 4 "MC0100W0603133K" H 5150 3500 50  0001 C CNN "Part Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603133k/motst-tjockfilm-33k-1-0-063w-0603/dp/2845872" H 5150 3500 50  0001 C CNN "Farnell"
-	1    5150 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5DFA2915
-P 5150 3900
-F 0 "R2" H 5220 3946 50  0000 L CNN
-F 1 "47k" H 5220 3855 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 3900 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5150 3900 50  0001 C CNN
-F 4 "MC0100W0603147K" H 5150 3900 50  0001 C CNN "Part Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603147k/motst-tjockfilm-47k-1-0-063w-0603/dp/2845909" H 5150 3900 50  0001 C CNN "Farnell"
-	1    5150 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 3700 5150 3700
-Wire Wire Line
-	5150 3700 5150 3650
-Wire Wire Line
-	5150 3700 5150 3750
-Connection ~ 5150 3700
-Wire Wire Line
-	5150 3350 5150 3300
-Text Notes 5400 2950 2    50   ~ 0
-ESP8266 only have one analog input\nRescale 5V to 1V by adding a resistor divider
 Wire Wire Line
 	5450 2050 5450 1900
 Wire Wire Line
@@ -1041,15 +966,6 @@ F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 2900
 $EndComp
 Wire Wire Line
 	2500 6800 2500 7100
-Wire Wire Line
-	5150 4050 5150 5050
-Wire Wire Line
-	3550 5000 3550 5050
-Wire Wire Line
-	3550 5050 5150 5050
-Connection ~ 5150 5050
-Wire Wire Line
-	5150 5050 5150 5250
 $Comp
 L Connector_Generic:Conn_01x02 J_5V1
 U 1 1 5DE4F57E
@@ -1258,18 +1174,29 @@ NoConn ~ 1800 3200
 NoConn ~ 1600 3200
 Wire Wire Line
 	1900 3100 1900 3200
-Text GLabel 4200 4000 2    50   Input ~ 0
+Text GLabel 5000 4050 2    50   Input ~ 0
 Adressable
-Text GLabel 4250 4300 2    50   Input ~ 0
+Text GLabel 5000 4200 2    50   Input ~ 0
 Gate_red
-Text GLabel 4250 4400 2    50   Input ~ 0
+Text GLabel 5000 4350 2    50   Input ~ 0
 Gate_green
-Text GLabel 4250 4500 2    50   Input ~ 0
+Text GLabel 5000 4450 2    50   Input ~ 0
 Gate_blue
-Text GLabel 4250 4600 2    50   Input ~ 0
+Text GLabel 5000 4650 2    50   Input ~ 0
 Gate_white
 Text Notes 650  3200 0    50   ~ 0
 Pin3  PD3 addressable\nPin5  PD5 red\nPin6  PD6 green\nPin9  PB1 blue\nPin10 PB2 white
-Text Notes 4100 3550 0    50   ~ 0
-Pin3  PD3 addressable\nPin5  PD5 red\nPin6  PD6 green\nPin9  PB1 blue\nPin10 PB2 white
+$Comp
+L ESP32:ESP32-PICO-KIT MCU_esp1
+U 1 1 5E88C067
+P 4050 4300
+F 0 "MCU_esp1" H 4050 5515 50  0000 C CNN
+F 1 "ESP32-PICO-KIT" H 4050 5424 50  0000 C CNN
+F 2 "ESP32:ESP32-PICO-KIT_Jumper" V 3950 3950 50  0001 C CNN
+F 3 "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf" H 3925 4800 50  0001 C CNN
+	1    4050 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 5400 2950 2    50   ~ 0
+ESP8266 only have one analog input\nRescale 5V to 1V by adding a resistor divider
 $EndSCHEMATC
