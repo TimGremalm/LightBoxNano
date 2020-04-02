@@ -2,4 +2,5 @@
   (lib (name ProjectSpecific)(type Legacy)(uri ${KIPRJMOD}/ProjectSpecific.lib)(options "")(descr ""))
   (lib (name ESP32)(type Legacy)(uri ${KIPRJMOD}/ESP32.lib)(options "")(descr ""))
   (lib (name ArduinoNano)(type Legacy)(uri ${KIPRJMOD}/ArduinoNano.lib)(options "")(descr ""))
+  (lib (name LightBoxNano-rescue)(type Legacy)(uri ${KIPRJMOD}/LightBoxNano-rescue.lib)(options "")(descr ""))
 )

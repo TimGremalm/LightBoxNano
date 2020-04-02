@@ -16,37 +16,37 @@ $EndDescr
 $Comp
 L Connector:Barrel_Jack_Switch J_power_jack1
 U 1 1 5DE03891
-P 1200 1800
-F 0 "J_power_jack1" H 1200 1600 50  0000 C CNN
-F 1 "Barrel Jack Switch 5A 2mm" H 1200 2000 50  0000 C CNN
-F 2 "LightBoxNanoFootprints:BarrelJack_SPC21364" H 1250 1760 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1250 1760 50  0001 C CNN
-F 4 "Multicomp" H 1200 1800 50  0001 C CNN "Manufacturer"
-F 5 "SPC21364" H 1200 1800 50  0001 C CNN "Part Number"
-F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1200 1800 50  0001 C CNN "Farnell"
-	1    1200 1800
+P 1200 1750
+F 0 "J_power_jack1" H 1200 1550 50  0000 C CNN
+F 1 "Barrel Jack Switch 5A 2mm" H 1200 1950 50  0000 C CNN
+F 2 "LightBoxNanoFootprints:BarrelJack_SPC21364" H 1250 1710 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1250 1710 50  0001 C CNN
+F 4 "Multicomp" H 1200 1750 50  0001 C CNN "Manufacturer"
+F 5 "SPC21364" H 1200 1750 50  0001 C CNN "Part Number"
+F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1200 1750 50  0001 C CNN "Farnell"
+	1    1200 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J_power_terminal1
 U 1 1 5DE0534D
-P 1100 1250
-F 0 "J_power_terminal1" H 1100 1350 50  0000 C CNN
-F 1 "Conn_01x02" H 1100 1050 50  0000 C CNN
-F 2 "" H 1100 1250 50  0001 C CNN
-F 3 "" H 1100 1250 50  0001 C CNN
-	1    1100 1250
+P 1100 1200
+F 0 "J_power_terminal1" H 1100 1300 50  0000 C CNN
+F 1 "Conn_01x02" H 1100 1000 50  0000 C CNN
+F 2 "" H 1100 1200 50  0001 C CNN
+F 3 "" H 1100 1200 50  0001 C CNN
+	1    1100 1200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J_addressable1
 U 1 1 5DE05544
-P 6500 6800
-F 0 "J_addressable1" H 6500 7000 50  0000 C CNN
-F 1 "Conn_01x03" H 6500 6600 50  0000 C CNN
-F 2 "" H 6500 6800 50  0001 C CNN
-F 3 "" H 6500 6800 50  0001 C CNN
-	1    6500 6800
+P 6500 7150
+F 0 "J_addressable1" H 6500 7350 50  0000 C CNN
+F 1 "Conn_01x03" H 6500 6950 50  0000 C CNN
+F 2 "" H 6500 7150 50  0001 C CNN
+F 3 "" H 6500 7150 50  0001 C CNN
+	1    6500 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -76,83 +76,83 @@ F 5 "" H 1900 6900 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5600 1000 900  1050
+S 5600 950  900  1050
 U 5DE1594D
 F0 "Buck Converter" 50
 F1 "buck_converter.sch" 50
-F2 "BuckVin" I L 5600 1300 50 
-F3 "Buck5VOut" I R 6500 1300 50 
-F4 "BuckGND" I L 5600 1900 50 
+F2 "BuckVin" I L 5600 1250 50 
+F3 "Buck5VOut" I R 6500 1250 50 
+F4 "BuckGND" I L 5600 1850 50 
 $EndSheet
 $Comp
 L power:+5V #PWR0101
 U 1 1 5DE4A501
-P 6650 1100
-F 0 "#PWR0101" H 6650 950 50  0001 C CNN
-F 1 "+5V" H 6665 1273 50  0000 C CNN
-F 2 "" H 6650 1100 50  0001 C CNN
-F 3 "" H 6650 1100 50  0001 C CNN
-	1    6650 1100
+P 6650 1050
+F 0 "#PWR0101" H 6650 900 50  0001 C CNN
+F 1 "+5V" H 6665 1223 50  0000 C CNN
+F 2 "" H 6650 1050 50  0001 C CNN
+F 3 "" H 6650 1050 50  0001 C CNN
+	1    6650 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 1700 1800 1700
+	1500 1650 1800 1650
 Wire Wire Line
-	6500 1300 6650 1300
+	6500 1250 6650 1250
 Wire Wire Line
-	6650 1300 6650 1100
+	6650 1250 6650 1050
 $Comp
 L Device:CP C1
 U 1 1 5DE52230
-P 4550 1750
-F 0 "C1" H 4668 1796 50  0000 L CNN
-F 1 "100µF" H 4668 1705 50  0000 L CNN
-F 2 "" H 4588 1600 50  0001 C CNN
-F 3 "~" H 4550 1750 50  0001 C CNN
-	1    4550 1750
+P 4550 1700
+F 0 "C1" H 4668 1746 50  0000 L CNN
+F 1 "100µF" H 4668 1655 50  0000 L CNN
+F 2 "" H 4588 1550 50  0001 C CNN
+F 3 "~" H 4550 1700 50  0001 C CNN
+	1    4550 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 1250 1800 1700
-Text GLabel 1950 1250 2    50   Input ~ 0
+	1800 1200 1800 1650
+Text GLabel 1950 1200 2    50   Input ~ 0
 Vin
 Wire Wire Line
-	1300 1250 1800 1250
-Connection ~ 1800 1250
+	1300 1200 1800 1200
+Connection ~ 1800 1200
 $Comp
 L power:GND #PWR0102
 U 1 1 5DE6746F
-P 1550 900
-F 0 "#PWR0102" H 1550 650 50  0001 C CNN
-F 1 "GND" H 1555 727 50  0000 C CNN
-F 2 "" H 1550 900 50  0001 C CNN
-F 3 "" H 1550 900 50  0001 C CNN
-	1    1550 900 
+P 1550 850
+F 0 "#PWR0102" H 1550 600 50  0001 C CNN
+F 1 "GND" H 1555 677 50  0000 C CNN
+F 2 "" H 1550 850 50  0001 C CNN
+F 3 "" H 1550 850 50  0001 C CNN
+	1    1550 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 900  1400 900 
+	1550 850  1400 850 
 Wire Wire Line
-	1400 900  1400 1150
+	1400 850  1400 1100
 Wire Wire Line
-	1400 1150 1300 1150
+	1400 1100 1300 1100
 Wire Notes Line
-	2200 800  2200 2400
+	2200 750  2200 2350
 Wire Notes Line
-	600  2400 600  800 
-Text Notes 600  750  0    118  ~ 0
+	600  2350 600  750 
+Text Notes 600  700  0    118  ~ 0
 Input Connectors
-Text GLabel 5450 1300 0    50   Input ~ 0
+Text GLabel 5450 1250 0    50   Input ~ 0
 Vin_fused
 Wire Notes Line
-	5000 800  5000 2400
+	5000 750  5000 2350
 Wire Notes Line
-	5000 800  7450 800 
+	5000 750  7450 750 
 Wire Notes Line
-	7450 800  7450 2400
+	7450 750  7450 2350
 Wire Notes Line
-	7450 2400 5000 2400
-Text Notes 5000 750  0    118  ~ 0
+	7450 2350 5000 2350
+Text Notes 5000 700  0    118  ~ 0
 5V Buck
 $Comp
 L power:GND #PWR0104
@@ -194,72 +194,61 @@ Wire Notes Line
 Text Notes 600  5800 0    118  ~ 0
 User Interface
 Wire Wire Line
-	5450 1300 5600 1300
+	5450 1250 5600 1250
 Wire Notes Line
-	600  2400 2200 2400
+	600  2350 2200 2350
 Wire Notes Line
-	600  800  2200 800 
+	600  750  2200 750 
 Wire Notes Line
-	2300 2400 4850 2400
+	2300 2350 4850 2350
 Wire Notes Line
-	4850 800  2300 800 
+	4850 750  2300 750 
 Wire Notes Line
-	2300 800  2300 2400
+	2300 750  2300 2350
 Wire Notes Line
-	4850 800  4850 2400
+	4850 750  4850 2350
 Wire Wire Line
-	3000 1950 3200 1950
-Text Notes 2300 750  0    118  ~ 0
+	3000 1900 3200 1900
+Text Notes 2300 700  0    118  ~ 0
 Input Protection
 Text Notes 2300 300  0    50   ~ 0
 Add electric P-Fet fuse here ???\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
-Text GLabel 4050 1950 2    50   Input ~ 0
+Text GLabel 4050 1900 2    50   Input ~ 0
 Vin_fused
-Text GLabel 3000 1950 0    50   Input ~ 0
+Text GLabel 3000 1900 0    50   Input ~ 0
 Vin
 Text Notes 2300 -50  0    50   ~ 0
 Add polarity protection here ???
-Text Notes 600  2700 0    118  ~ 0
+Text Notes 600  2600 0    118  ~ 0
 MCU Option Nano
-Text Notes 2650 2700 0    118  ~ 0
+Text Notes 2650 2600 0    118  ~ 0
 MCU Option ESP32
 Wire Notes Line
-	600  2750 2500 2750
+	600  2650 2500 2650
 Wire Notes Line
-	2500 5550 600  5550
+	2500 5450 600  5450
 Wire Notes Line
-	5450 2750 2650 2750
+	5450 2650 2650 2650
 $Comp
 L power:+5V #PWR0105
 U 1 1 5DF44121
-P 2400 3300
-F 0 "#PWR0105" H 2400 3150 50  0001 C CNN
-F 1 "+5V" H 2415 3473 50  0000 C CNN
-F 2 "" H 2400 3300 50  0001 C CNN
-F 3 "" H 2400 3300 50  0001 C CNN
-	1    2400 3300
+P 2000 3000
+F 0 "#PWR0105" H 2000 2850 50  0001 C CNN
+F 1 "+5V" H 2015 3173 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0001 C CNN
+	1    2000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5DF44892
-P 5450 2050
-F 0 "#PWR0106" H 5450 1800 50  0001 C CNN
-F 1 "GND" H 5455 1877 50  0000 C CNN
-F 2 "" H 5450 2050 50  0001 C CNN
-F 3 "" H 5450 2050 50  0001 C CNN
-	1    5450 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5DF44D7B
-P 2300 3500
-F 0 "#PWR0107" H 2300 3250 50  0001 C CNN
-F 1 "GND" H 2300 3350 50  0000 C CNN
-F 2 "" H 2300 3500 50  0001 C CNN
-F 3 "" H 2300 3500 50  0001 C CNN
-	1    2300 3500
+P 5450 2000
+F 0 "#PWR0106" H 5450 1750 50  0001 C CNN
+F 1 "GND" H 5455 1827 50  0000 C CNN
+F 2 "" H 5450 2000 50  0001 C CNN
+F 3 "" H 5450 2000 50  0001 C CNN
+	1    5450 2000
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -269,22 +258,22 @@ Wire Notes Line
 Wire Notes Line
 	4900 5850 4900 7700
 Wire Notes Line
-	600  2750 600  5550
+	600  2650 600  5450
 Wire Notes Line
-	2650 2750 2650 5550
+	2650 2650 2650 5750
 Wire Notes Line
-	2650 5550 5450 5550
+	2650 5750 5450 5750
 Wire Notes Line
-	5450 2750 5450 5550
-Text GLabel 2400 4250 1    50   Input ~ 0
+	5450 2650 5450 5750
+Text GLabel 2400 4400 1    50   Input ~ 0
 POT_1
-Text GLabel 2300 4250 1    50   Input ~ 0
+Text GLabel 2300 4400 1    50   Input ~ 0
 POT_2
 Wire Wire Line
-	5450 2050 5450 1900
+	5450 2000 5450 1850
 Wire Wire Line
-	5450 1900 5600 1900
-Text GLabel 6000 6550 1    50   Input ~ 0
+	5450 1850 5600 1850
+Text GLabel 6000 6900 1    50   Input ~ 0
 Vin_fused
 Text GLabel 10250 1000 0    50   Input ~ 0
 Vin_fused
@@ -300,7 +289,7 @@ F 3 "~" H 10450 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 1900 1800 1900
+	1500 1850 1800 1850
 Wire Wire Line
 	9350 1150 9350 1100
 Wire Wire Line
@@ -726,50 +715,50 @@ Wire Notes Line
 Text Notes 7650 750  0    118  ~ 0
 RGBW LED Driver (CV-mode)
 Wire Wire Line
-	6000 6900 6300 6900
+	6000 7250 6300 7250
 Wire Wire Line
-	6000 6550 6000 6700
+	6000 6900 6000 7050
 Wire Wire Line
-	6000 6700 6300 6700
+	6000 7050 6300 7050
 Wire Wire Line
-	5850 6800 6300 6800
+	5850 7150 6300 7150
 $Comp
 L Device:R R_addressable1
 U 1 1 5E225DC9
-P 5700 6800
-F 0 "R_addressable1" V 5907 6800 50  0000 C CNN
-F 1 "1k" V 5816 6800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 6800 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5700 6800 50  0001 C CNN
-F 4 "MC0100W060311K" V 5700 6800 50  0001 C CNN "Part Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 5700 6800 50  0001 C CNN "Farnell"
-	1    5700 6800
+P 5700 7150
+F 0 "R_addressable1" V 5907 7150 50  0000 C CNN
+F 1 "1k" V 5816 7150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 7150 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5700 7150 50  0001 C CNN
+F 4 "MC0100W060311K" V 5700 7150 50  0001 C CNN "Part Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 5700 7150 50  0001 C CNN "Farnell"
+	1    5700 7150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5500 6800 5550 6800
+	5500 7150 5550 7150
 $Comp
 L power:GND #PWR0114
 U 1 1 5E2158AC
-P 6000 7050
-F 0 "#PWR0114" H 6000 6800 50  0001 C CNN
-F 1 "GND" H 6005 6877 50  0000 C CNN
-F 2 "" H 6000 7050 50  0001 C CNN
-F 3 "" H 6000 7050 50  0001 C CNN
-	1    6000 7050
+P 6000 7400
+F 0 "#PWR0114" H 6000 7150 50  0001 C CNN
+F 1 "GND" H 6005 7227 50  0000 C CNN
+F 2 "" H 6000 7400 50  0001 C CNN
+F 3 "" H 6000 7400 50  0001 C CNN
+	1    6000 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 7050 6000 6900
+	6000 7400 6000 7250
 Wire Notes Line
-	5600 2750 5600 5500
+	5600 2650 5600 5400
 Wire Notes Line
-	5600 5500 7450 5500
+	5600 5400 7450 5400
 Wire Notes Line
-	7450 5500 7450 2750
+	7450 5400 7450 2650
 Wire Notes Line
-	7450 2750 5600 2750
-Text Notes 5000 5800 0    118  ~ 0
+	7450 2650 5600 2650
+Text Notes 5000 6200 0    118  ~ 0
 Addressable LED
 $Comp
 L power:GND #PWR0115
@@ -927,137 +916,137 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J_5V1
 U 1 1 5DE4F57E
-P 6850 1700
-F 0 "J_5V1" H 6930 1692 50  0000 L CNN
-F 1 "Conn_01x02" H 6930 1601 50  0000 L CNN
-F 2 "" H 6850 1700 50  0001 C CNN
-F 3 "~" H 6850 1700 50  0001 C CNN
-	1    6850 1700
+P 6850 1650
+F 0 "J_5V1" H 6930 1642 50  0000 L CNN
+F 1 "Conn_01x02" H 6930 1551 50  0000 L CNN
+F 2 "" H 6850 1650 50  0001 C CNN
+F 3 "~" H 6850 1650 50  0001 C CNN
+	1    6850 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0117
 U 1 1 5DE7A5F1
-P 6650 2050
-F 0 "#PWR0117" H 6650 1800 50  0001 C CNN
-F 1 "GND" H 6655 1877 50  0000 C CNN
-F 2 "" H 6650 2050 50  0001 C CNN
-F 3 "" H 6650 2050 50  0001 C CNN
-	1    6650 2050
+P 6650 2000
+F 0 "#PWR0117" H 6650 1750 50  0001 C CNN
+F 1 "GND" H 6655 1827 50  0000 C CNN
+F 2 "" H 6650 2000 50  0001 C CNN
+F 3 "" H 6650 2000 50  0001 C CNN
+	1    6650 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 2050 6650 1800
+	6650 2000 6650 1750
 Wire Wire Line
-	6650 1700 6650 1300
-Connection ~ 6650 1300
+	6650 1650 6650 1250
+Connection ~ 6650 1250
 $Comp
 L Connector_Generic:Conn_01x03 J_vin_vfused1
 U 1 1 5DE93F0E
-P 3550 1500
-F 0 "J_vin_vfused1" V 3514 1312 50  0000 R CNN
-F 1 "Conn_01x03" V 3423 1312 50  0000 R CNN
-F 2 "" H 3550 1500 50  0001 C CNN
-F 3 "~" H 3550 1500 50  0001 C CNN
-	1    3550 1500
+P 3550 1450
+F 0 "J_vin_vfused1" V 3514 1262 50  0000 R CNN
+F 1 "Conn_01x03" V 3423 1262 50  0000 R CNN
+F 2 "" H 3550 1450 50  0001 C CNN
+F 3 "~" H 3550 1450 50  0001 C CNN
+	1    3550 1450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3450 1700 3450 1850
+	3450 1650 3450 1800
 Wire Wire Line
-	3450 1850 3200 1850
+	3450 1800 3200 1800
 Wire Wire Line
-	3200 1850 3200 1950
-Connection ~ 3200 1950
+	3200 1800 3200 1900
+Connection ~ 3200 1900
 Wire Wire Line
-	3200 1950 3950 1950
+	3200 1900 3950 1900
 Wire Wire Line
-	3650 1700 3650 1850
+	3650 1650 3650 1800
 Wire Wire Line
-	3650 1850 3950 1850
+	3650 1800 3950 1800
 Wire Wire Line
-	3950 1850 3950 1950
-Connection ~ 3950 1950
+	3950 1800 3950 1900
+Connection ~ 3950 1900
 Wire Wire Line
-	3950 1950 4050 1950
+	3950 1900 4050 1900
 $Comp
 L power:GND #PWR0118
 U 1 1 5DEA77D9
-P 3550 1700
-F 0 "#PWR0118" H 3550 1450 50  0001 C CNN
-F 1 "GND" H 3555 1527 50  0000 C CNN
-F 2 "" H 3550 1700 50  0001 C CNN
-F 3 "" H 3550 1700 50  0001 C CNN
-	1    3550 1700
+P 3550 1650
+F 0 "#PWR0118" H 3550 1400 50  0001 C CNN
+F 1 "GND" H 3555 1477 50  0000 C CNN
+F 2 "" H 3550 1650 50  0001 C CNN
+F 3 "" H 3550 1650 50  0001 C CNN
+	1    3550 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 5600 2700 0    118  ~ 0
+Text Notes 5600 2600 0    118  ~ 0
 DMX
 $Comp
 L Interface_UART:MAX485E U3
 U 1 1 5DEB6312
-P 6500 4800
-F 0 "U3" H 6500 5481 50  0000 C CNN
-F 1 "MAX485E" H 6500 5390 50  0000 C CNN
-F 2 "" H 6500 4100 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6500 4850 50  0001 C CNN
-	1    6500 4800
+P 6500 4700
+F 0 "U3" H 6500 5381 50  0000 C CNN
+F 1 "MAX485E" H 6500 5290 50  0000 C CNN
+F 2 "" H 6500 4000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6500 4750 50  0001 C CNN
+	1    6500 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:XLR3_Ground J1
 U 1 1 5DEB7DDB
-P 7050 3250
-F 0 "J1" H 7050 3615 50  0000 C CNN
-F 1 "XLR3_Ground" H 7050 3524 50  0000 C CNN
-F 2 "" H 7050 3250 50  0001 C CNN
-F 3 " ~" H 7050 3250 50  0001 C CNN
-	1    7050 3250
+P 7050 3150
+F 0 "J1" H 7050 3515 50  0000 C CNN
+F 1 "XLR3_Ground" H 7050 3424 50  0000 C CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 " ~" H 7050 3150 50  0001 C CNN
+	1    7050 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:XLR3_Ground J2
 U 1 1 5DEB90CA
-P 7050 4150
-F 0 "J2" H 7050 4515 50  0000 C CNN
-F 1 "XLR3_Ground" H 7050 4424 50  0000 C CNN
-F 2 "" H 7050 4150 50  0001 C CNN
-F 3 " ~" H 7050 4150 50  0001 C CNN
-	1    7050 4150
+P 7050 4050
+F 0 "J2" H 7050 4415 50  0000 C CNN
+F 1 "XLR3_Ground" H 7050 4324 50  0000 C CNN
+F 2 "" H 7050 4050 50  0001 C CNN
+F 3 " ~" H 7050 4050 50  0001 C CNN
+	1    7050 4050
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5000 5850 5000 7700
+	5000 6250 5000 7700
 Wire Notes Line
 	5000 7700 6850 7700
 Wire Notes Line
-	6850 7700 6850 5850
+	6850 7700 6850 6250
 Wire Notes Line
-	6850 5850 5000 5850
+	6850 6250 5000 6250
 $Comp
 L Interface_UART:MAX481E U2
 U 1 1 5DF00C1F
-P 6100 3550
-F 0 "U2" H 6100 4231 50  0000 C CNN
-F 1 "MAX481E" H 6100 4140 50  0000 C CNN
-F 2 "" H 6100 2850 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6100 3600 50  0001 C CNN
-	1    6100 3550
+P 6100 3450
+F 0 "U2" H 6100 4131 50  0000 C CNN
+F 1 "MAX481E" H 6100 4040 50  0000 C CNN
+F 2 "" H 6100 2750 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 6100 3500 50  0001 C CNN
+	1    6100 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 1250 1950 1250
+	1800 1200 1950 1200
 Wire Wire Line
-	1800 2100 1800 1900
+	1800 2050 1800 1850
 $Comp
 L power:GND #PWR0119
 U 1 1 5DE6183E
-P 1800 2100
-F 0 "#PWR0119" H 1800 1850 50  0001 C CNN
-F 1 "GND" H 1805 1927 50  0000 C CNN
-F 2 "" H 1800 2100 50  0001 C CNN
-F 3 "" H 1800 2100 50  0001 C CNN
-	1    1800 2100
+P 1800 2050
+F 0 "#PWR0119" H 1800 1800 50  0001 C CNN
+F 1 "GND" H 1805 1877 50  0000 C CNN
+F 2 "" H 1800 2050 50  0001 C CNN
+F 3 "" H 1800 2050 50  0001 C CNN
+	1    1800 2050
 	1    0    0    -1  
 $EndComp
 Text GLabel 8150 1350 0    50   Input ~ 0
@@ -1068,7 +1057,7 @@ Text GLabel 8150 4000 0    50   Input ~ 0
 Gate_blue
 Text GLabel 8150 5350 0    50   Input ~ 0
 Gate_white
-Text GLabel 5500 6800 0    50   Input ~ 0
+Text GLabel 5500 7150 0    50   Input ~ 0
 Adressable
 Text GLabel 4300 6200 3    50   Input ~ 0
 SW_1
@@ -1090,81 +1079,70 @@ Wire Wire Line
 	1250 6450 1250 6900
 Wire Wire Line
 	2150 6900 2150 6450
-Text GLabel 1100 4600 0    50   Input ~ 0
+Text GLabel 1100 4750 0    50   Input ~ 0
 Gate_white
 Wire Wire Line
-	1100 4600 1200 4600
-Text GLabel 3250 3850 0    50   Input ~ 0
+	1100 4750 1200 4750
+Text GLabel 3250 4000 0    50   Input ~ 0
 Adressable
-Text GLabel 3250 3950 0    50   Input ~ 0
+Text GLabel 3250 4100 0    50   Input ~ 0
 Gate_red
-Text GLabel 3250 4250 0    50   Input ~ 0
+Text GLabel 3250 4400 0    50   Input ~ 0
 Gate_green
-Text GLabel 3250 4350 0    50   Input ~ 0
+Text GLabel 3250 4500 0    50   Input ~ 0
 Gate_blue
-Text GLabel 3250 4450 0    50   Input ~ 0
+Text GLabel 3250 4600 0    50   Input ~ 0
 Gate_white
-Text Notes 650  3350 0    50   ~ 0
+Text Notes 650  3250 0    50   ~ 0
 D3   PD3 addressable\nD5   PD5 red\nD6   PD6 green\nD9   PB1 blue\nD10  PB2 white\nA1   POT_1\nA2   POT_2
-$Comp
-L ESP32:ESP32-PICO-KIT MCU_esp1
-U 1 1 5E88C067
-P 4050 4300
-F 0 "MCU_esp1" H 4050 5515 50  0000 C CNN
-F 1 "ESP32-PICO-KIT" H 4050 5424 50  0000 C CNN
-F 2 "ESP32:ESP32-PICO-KIT_Jumper" V 3950 3950 50  0001 C CNN
-F 3 "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf" H 3925 4800 50  0001 C CNN
-	1    4050 4300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8A34E7
-P 2350 4700
-F 0 "#PWR?" H 2350 4550 50  0001 C CNN
-F 1 "+3.3V" H 2365 4873 50  0000 C CNN
-F 2 "" H 2350 4700 50  0001 C CNN
-F 3 "" H 2350 4700 50  0001 C CNN
-	1    2350 4700
+P 1750 3000
+F 0 "#PWR?" H 1750 2850 50  0001 C CNN
+F 1 "+3.3V" H 1765 3173 50  0000 C CNN
+F 2 "" H 1750 3000 50  0001 C CNN
+F 3 "" H 1750 3000 50  0001 C CNN
+	1    1750 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5E8D2999
-P 2900 5450
-F 0 "#PWR?" H 2900 5300 50  0001 C CNN
-F 1 "+5V" H 2915 5623 50  0000 C CNN
-F 2 "" H 2900 5450 50  0001 C CNN
-F 3 "" H 2900 5450 50  0001 C CNN
-	1    2900 5450
+P 3950 2900
+F 0 "#PWR?" H 3950 2750 50  0001 C CNN
+F 1 "+5V" H 3965 3073 50  0000 C CNN
+F 2 "" H 3950 2900 50  0001 C CNN
+F 3 "" H 3950 2900 50  0001 C CNN
+	1    3950 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8D368D
-P 2900 5050
-F 0 "#PWR?" H 2900 4900 50  0001 C CNN
-F 1 "+3.3V" H 2915 5223 50  0000 C CNN
-F 2 "" H 2900 5050 50  0001 C CNN
-F 3 "" H 2900 5050 50  0001 C CNN
-	1    2900 5050
+P 4250 2900
+F 0 "#PWR?" H 4250 2750 50  0001 C CNN
+F 1 "+3.3V" H 4265 3073 50  0000 C CNN
+F 2 "" H 4250 2900 50  0001 C CNN
+F 3 "" H 4250 2900 50  0001 C CNN
+	1    4250 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 4500 1200 4500
-Text GLabel 1100 4500 0    50   Input ~ 0
+	1100 4650 1200 4650
+Text GLabel 1100 4650 0    50   Input ~ 0
 Gate_blue
 Wire Wire Line
-	1100 4200 1200 4200
-Text GLabel 1100 4200 0    50   Input ~ 0
+	1100 4350 1200 4350
+Text GLabel 1100 4350 0    50   Input ~ 0
 Gate_green
 Wire Wire Line
-	1100 4100 1200 4100
-Text GLabel 1100 4100 0    50   Input ~ 0
+	1100 4250 1200 4250
+Text GLabel 1100 4250 0    50   Input ~ 0
 Gate_red
 Wire Wire Line
-	1100 3900 1200 3900
-Text GLabel 1100 3900 0    50   Input ~ 0
+	1100 4050 1200 4050
+Text GLabel 1100 4050 0    50   Input ~ 0
 Adressable
 $Comp
 L power:+3.3V #PWR?
@@ -1180,146 +1158,141 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E94AB2B
-P 3200 5150
-F 0 "#PWR?" H 3200 4900 50  0001 C CNN
-F 1 "GND" H 3205 4977 50  0000 C CNN
-F 2 "" H 3200 5150 50  0001 C CNN
-F 3 "" H 3200 5150 50  0001 C CNN
-	1    3200 5150
+P 3950 5500
+F 0 "#PWR?" H 3950 5250 50  0001 C CNN
+F 1 "GND" H 3955 5327 50  0000 C CNN
+F 2 "" H 3950 5500 50  0001 C CNN
+F 3 "" H 3950 5500 50  0001 C CNN
+	1    3950 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 5050 3350 5050
-Wire Wire Line
-	3200 5150 3350 5150
-Wire Wire Line
-	2900 5450 3350 5450
-Wire Wire Line
-	3350 5450 3350 5250
-Text GLabel 4950 4600 1    50   Input ~ 0
+Text GLabel 5050 4750 1    50   Input ~ 0
 POT_1
-Text GLabel 5050 4600 1    50   Input ~ 0
+Text GLabel 4950 4750 1    50   Input ~ 0
 POT_2
-Text Notes 2700 3350 0    50   ~ 0
-IO25  addressable\nIO26  red\nIO27  green\nIO14  blue\nIO12  white\nIO35  POT_1\nIO34  POT_2
-$Comp
-L power:GND #PWR?
-U 1 1 5E9AB3D4
-P 4900 5150
-F 0 "#PWR?" H 4900 4900 50  0001 C CNN
-F 1 "GND" H 4905 4977 50  0000 C CNN
-F 2 "" H 4900 5150 50  0001 C CNN
-F 3 "" H 4900 5150 50  0001 C CNN
-	1    4900 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E9ABD3A
-P 5200 5450
-F 0 "#PWR?" H 5200 5300 50  0001 C CNN
-F 1 "+3.3V" H 5215 5623 50  0000 C CNN
-F 2 "" H 5200 5450 50  0001 C CNN
-F 3 "" H 5200 5450 50  0001 C CNN
-	1    5200 5450
-	1    0    0    -1  
-$EndComp
+Text Notes 2700 3250 0    50   ~ 0
+IO25  addressable\nIO26  red\nIO27  green\nIO14  blue\nIO12  white\nIO34  POT_1\nIO35  POT_2
 Wire Wire Line
-	5200 5450 4750 5450
+	5050 4750 5050 4900
 Wire Wire Line
-	4750 5450 4750 5250
+	4950 4750 4950 4800
 Wire Wire Line
-	4900 5150 4750 5150
+	3250 4000 3350 4000
 Wire Wire Line
-	5050 4600 5050 4750
+	3250 4100 3350 4100
 Wire Wire Line
-	5050 4750 4750 4750
+	3250 4400 3350 4400
 Wire Wire Line
-	4950 4600 4950 4650
+	3250 4500 3350 4500
 Wire Wire Line
-	4950 4650 4750 4650
-Wire Wire Line
-	3250 3850 3350 3850
-Wire Wire Line
-	3250 3950 3350 3950
-Wire Wire Line
-	3250 4250 3350 4250
-Wire Wire Line
-	3250 4350 3350 4350
-Wire Wire Line
-	3250 4450 3350 4450
-NoConn ~ 3350 3350
-NoConn ~ 3350 3450
-NoConn ~ 3350 3550
-NoConn ~ 3350 3650
-NoConn ~ 3350 3750
-NoConn ~ 3350 4050
-NoConn ~ 3350 4150
-NoConn ~ 3350 4550
-NoConn ~ 3350 4650
-NoConn ~ 3350 4750
-NoConn ~ 3350 4850
-NoConn ~ 3350 4950
-NoConn ~ 4750 5050
-NoConn ~ 4750 4950
-NoConn ~ 4750 4850
-NoConn ~ 4750 4550
-NoConn ~ 4750 4450
-NoConn ~ 4750 4350
-NoConn ~ 4750 4250
-NoConn ~ 4750 4150
-NoConn ~ 4750 4050
-NoConn ~ 4750 3950
-NoConn ~ 4750 3850
-NoConn ~ 4750 3750
-NoConn ~ 4750 3650
-NoConn ~ 4750 3550
-NoConn ~ 4750 3450
-NoConn ~ 4750 3350
-$Comp
-L ArduinoNano:Arduino-Nano-V3 MCU_nano1
-U 1 1 5EB2D0F5
-P 1700 4100
-F 0 "MCU_nano1" H 1700 5065 50  0000 C CNN
-F 1 "Arduino-Nano-V3" H 1700 4974 50  0000 C CNN
-F 2 "ArduinoNano:Arduino-Nano-V3_Jumper" H 1750 5000 50  0001 C CNN
-F 3 "https://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1700 4100 50  0001 C CNN
-	1    1700 4100
-	1    0    0    -1  
-$EndComp
+	3250 4600 3350 4600
+NoConn ~ 3350 3500
+NoConn ~ 3350 3600
+NoConn ~ 3350 3700
+NoConn ~ 3350 3800
+NoConn ~ 3350 3900
+NoConn ~ 3350 4200
+NoConn ~ 3350 4300
+NoConn ~ 3350 4700
+NoConn ~ 3350 4800
+NoConn ~ 3350 4900
+NoConn ~ 3350 5000
+NoConn ~ 3350 5100
+NoConn ~ 4750 5200
+NoConn ~ 4750 5100
+NoConn ~ 4750 5000
+NoConn ~ 4750 4700
+NoConn ~ 4750 4600
+NoConn ~ 4750 4500
+NoConn ~ 4750 4400
+NoConn ~ 4750 4300
+NoConn ~ 4750 4200
+NoConn ~ 4750 4100
+NoConn ~ 4750 4000
+NoConn ~ 4750 3900
+NoConn ~ 4750 3800
+NoConn ~ 4750 3700
+NoConn ~ 4750 3600
+NoConn ~ 4750 3500
 $Comp
 L power:GND #PWR?
 U 1 1 5EB39AD3
-P 900 3650
-F 0 "#PWR?" H 900 3400 50  0001 C CNN
-F 1 "GND" H 900 3500 50  0000 C CNN
-F 2 "" H 900 3650 50  0001 C CNN
-F 3 "" H 900 3650 50  0001 C CNN
-	1    900  3650
+P 1650 5250
+F 0 "#PWR?" H 1650 5000 50  0001 C CNN
+F 1 "GND" H 1650 5100 50  0000 C CNN
+F 2 "" H 1650 5250 50  0001 C CNN
+F 3 "" H 1650 5250 50  0001 C CNN
+	1    1650 5250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2500 2650 2500 5450
+Wire Wire Line
+	2300 4400 2300 4450
+Wire Wire Line
+	2300 4450 2200 4450
+Wire Wire Line
+	2400 4400 2400 4550
+Wire Wire Line
+	2200 4550 2400 4550
+$Comp
+L ArduinoNano:Arduino-Nano-V3 MCU_nano1
+U 1 1 5EBE5347
+P 1700 4250
+F 0 "MCU_nano1" H 1300 3350 50  0000 C CNN
+F 1 "Arduino-Nano-V3" V 1700 4250 50  0000 C CNN
+F 2 "ArduinoNano:Arduino-Nano-V3_Jumper" V 2500 4400 50  0001 C CNN
+F 3 "https://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1700 4250 50  0001 C CNN
+	1    1700 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  3650 1100 3650
+	1750 5250 1650 5250
+Connection ~ 1650 5250
 Wire Wire Line
-	1100 3650 1100 3700
+	1750 3000 1750 3100
 Wire Wire Line
-	1100 3700 1200 3700
+	2000 3000 1900 3000
 Wire Wire Line
-	2300 3500 2200 3500
+	1900 3000 1900 3100
+NoConn ~ 1200 3550
+NoConn ~ 1200 3650
+NoConn ~ 1200 3750
+NoConn ~ 1200 3950
+NoConn ~ 1200 4150
+NoConn ~ 1200 4450
+NoConn ~ 1200 4550
+NoConn ~ 1200 4850
+NoConn ~ 1200 4950
+NoConn ~ 2200 4950
+NoConn ~ 2200 4750
+NoConn ~ 2200 4650
+NoConn ~ 2200 4350
+NoConn ~ 2200 4250
+NoConn ~ 2200 4150
+NoConn ~ 2200 4050
+NoConn ~ 2200 3950
+NoConn ~ 2200 3750
+NoConn ~ 1600 3100
 Wire Wire Line
-	2400 3300 2400 3700
+	4950 4800 4750 4800
 Wire Wire Line
-	2400 3700 2200 3700
+	5050 4900 4750 4900
+$Comp
+L ESP32:ESP32-PICO-KIT MCU_esp1
+U 1 1 5ECC2DB7
+P 4050 4450
+F 0 "MCU_esp1" H 3600 3500 50  0000 C CNN
+F 1 "ESP32-PICO-KIT" V 4050 4500 50  0000 C CNN
+F 2 "ESP32:ESP32-PICO-KIT_Jumper" V 4150 4500 50  0001 C CNN
+F 3 "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf" H 3925 4950 50  0001 C CNN
+	1    4050 4450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2350 4700 2200 4700
-Wire Notes Line
-	2500 2750 2500 5550
+	4250 2900 4100 2900
+Connection ~ 4250 2900
 Wire Wire Line
-	2300 4250 2300 4300
-Wire Wire Line
-	2300 4300 2200 4300
-Wire Wire Line
-	2400 4250 2400 4400
-Wire Wire Line
-	2200 4400 2400 4400
+	3950 5500 4150 5500
+Connection ~ 3950 5500
 $EndSCHEMATC
