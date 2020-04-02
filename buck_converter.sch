@@ -20,7 +20,7 @@ L Regulator_Switching:LM2596S-5 U_buck1
 U 1 1 5DE17061
 P 4600 2200
 F 0 "U_buck1" H 4600 2567 50  0000 C CNN
-F 1 "Buck 5V 3A" H 4600 2476 50  0000 C CNN
+F 1 "LM2596SX 5V 3A" H 4600 2476 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin3" H 4650 1950 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 4600 2200 50  0001 C CNN
 F 4 "Texas Instruments" H 4600 2200 50  0001 C CNN "Manufacturer"

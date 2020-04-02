@@ -14,19 +14,6 @@ Comment3 "https://github.com/TimGremalm/LightBoxNano"
 Comment4 "http://tim.gremalm.se/"
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v3.x MCU_nano1
-U 1 1 5DE0324F
-P 1700 4200
-F 0 "MCU_nano1" H 1500 3050 50  0000 L BNN
-F 1 "Arduino_Nano_v3.x" H 1500 3000 50  0000 L TNN
-F 2 "Module:Arduino_Nano" H 1700 4200 50  0001 C CIN
-F 3 "http://www.farnell.com/datasheets/1682238.pdf" H 1700 4200 50  0001 C CNN
-F 4 "https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691" H 1700 4200 50  0001 C CNN "Farnell"
-F 5 "http://www.farnell.com/datasheets/1682238.pdf" H 1700 4200 50  0001 C CNN "Part Number"
-	1    1700 4200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Barrel_Jack_Switch J_power_jack1
 U 1 1 5DE03891
 P 1200 1800
@@ -245,12 +232,12 @@ Wire Notes Line
 $Comp
 L power:+5V #PWR0105
 U 1 1 5DF44121
-P 1950 3100
-F 0 "#PWR0105" H 1950 2950 50  0001 C CNN
-F 1 "+5V" H 1965 3273 50  0000 C CNN
-F 2 "" H 1950 3100 50  0001 C CNN
-F 3 "" H 1950 3100 50  0001 C CNN
-	1    1950 3100
+P 2400 3300
+F 0 "#PWR0105" H 2400 3150 50  0001 C CNN
+F 1 "+5V" H 2415 3473 50  0000 C CNN
+F 2 "" H 2400 3300 50  0001 C CNN
+F 3 "" H 2400 3300 50  0001 C CNN
+	1    2400 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -267,12 +254,12 @@ $EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 5DF44D7B
-P 850 5300
-F 0 "#PWR0107" H 850 5050 50  0001 C CNN
-F 1 "GND" H 855 5127 50  0000 C CNN
-F 2 "" H 850 5300 50  0001 C CNN
-F 3 "" H 850 5300 50  0001 C CNN
-	1    850  5300
+P 2300 3500
+F 0 "#PWR0107" H 2300 3250 50  0001 C CNN
+F 1 "GND" H 2300 3350 50  0000 C CNN
+F 2 "" H 2300 3500 50  0001 C CNN
+F 3 "" H 2300 3500 50  0001 C CNN
+	1    2300 3500
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -284,31 +271,15 @@ Wire Notes Line
 Wire Notes Line
 	600  2750 600  5550
 Wire Notes Line
-	2500 2750 2500 5550
-Wire Notes Line
 	2650 2750 2650 5550
 Wire Notes Line
 	2650 5550 5450 5550
 Wire Notes Line
 	5450 2750 5450 5550
-Wire Wire Line
-	850  5300 850  5250
-Wire Wire Line
-	850  5250 1700 5250
-Wire Wire Line
-	1700 5250 1700 5200
-Text GLabel 2300 4200 1    50   Input ~ 0
+Text GLabel 2400 4250 1    50   Input ~ 0
 POT_1
-Text GLabel 2400 4200 1    50   Input ~ 0
+Text GLabel 2300 4250 1    50   Input ~ 0
 POT_2
-Wire Wire Line
-	2300 4200 2300 4300
-Wire Wire Line
-	2300 4300 2200 4300
-Wire Wire Line
-	2400 4200 2400 4400
-Wire Wire Line
-	2400 4400 2200 4400
 Wire Wire Line
 	5450 2050 5450 1900
 Wire Wire Line
@@ -1123,24 +1094,6 @@ Text GLabel 1100 4600 0    50   Input ~ 0
 Gate_white
 Wire Wire Line
 	1100 4600 1200 4600
-NoConn ~ 1200 3600
-NoConn ~ 1200 3700
-NoConn ~ 1200 3800
-NoConn ~ 1200 4000
-NoConn ~ 1200 4300
-NoConn ~ 1200 4400
-NoConn ~ 1200 4700
-NoConn ~ 1200 4800
-NoConn ~ 1200 4900
-NoConn ~ 2200 4900
-NoConn ~ 2200 4700
-NoConn ~ 2200 4800
-NoConn ~ 2200 4500
-NoConn ~ 2200 4200
-NoConn ~ 2200 4000
-NoConn ~ 2200 3700
-NoConn ~ 2200 3600
-NoConn ~ 1600 3200
 Text GLabel 3250 3850 0    50   Input ~ 0
 Adressable
 Text GLabel 3250 3950 0    50   Input ~ 0
@@ -1164,30 +1117,17 @@ F 3 "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf" H
 	1    4050 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 5200 1800 5250
-Wire Wire Line
-	1800 5250 1700 5250
-Connection ~ 1700 5250
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8A34E7
-P 1750 3100
-F 0 "#PWR?" H 1750 2950 50  0001 C CNN
-F 1 "+3.3V" H 1765 3273 50  0000 C CNN
-F 2 "" H 1750 3100 50  0001 C CNN
-F 3 "" H 1750 3100 50  0001 C CNN
-	1    1750 3100
+P 2350 4700
+F 0 "#PWR?" H 2350 4550 50  0001 C CNN
+F 1 "+3.3V" H 2365 4873 50  0000 C CNN
+F 2 "" H 2350 4700 50  0001 C CNN
+F 3 "" H 2350 4700 50  0001 C CNN
+	1    2350 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 3100 1800 3100
-Wire Wire Line
-	1800 3100 1800 3200
-Wire Wire Line
-	1900 3200 1900 3100
-Wire Wire Line
-	1900 3100 1950 3100
 $Comp
 L power:+5V #PWR?
 U 1 1 5E8D2999
@@ -1237,7 +1177,6 @@ F 3 "" H 1000 6600 50  0001 C CNN
 	1    1000 6600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2200 4600
 $Comp
 L power:GND #PWR?
 U 1 1 5E94AB2B
@@ -1337,4 +1276,50 @@ NoConn ~ 4750 3650
 NoConn ~ 4750 3550
 NoConn ~ 4750 3450
 NoConn ~ 4750 3350
+$Comp
+L ArduinoNano:Arduino-Nano-V3 MCU_nano1
+U 1 1 5EB2D0F5
+P 1700 4100
+F 0 "MCU_nano1" H 1700 5065 50  0000 C CNN
+F 1 "Arduino-Nano-V3" H 1700 4974 50  0000 C CNN
+F 2 "ArduinoNano:Arduino-Nano-V3_Jumper" H 1750 5000 50  0001 C CNN
+F 3 "https://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1700 4100 50  0001 C CNN
+	1    1700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB39AD3
+P 900 3650
+F 0 "#PWR?" H 900 3400 50  0001 C CNN
+F 1 "GND" H 900 3500 50  0000 C CNN
+F 2 "" H 900 3650 50  0001 C CNN
+F 3 "" H 900 3650 50  0001 C CNN
+	1    900  3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3650 1100 3650
+Wire Wire Line
+	1100 3650 1100 3700
+Wire Wire Line
+	1100 3700 1200 3700
+Wire Wire Line
+	2300 3500 2200 3500
+Wire Wire Line
+	2400 3300 2400 3700
+Wire Wire Line
+	2400 3700 2200 3700
+Wire Wire Line
+	2350 4700 2200 4700
+Wire Notes Line
+	2500 2750 2500 5550
+Wire Wire Line
+	2300 4250 2300 4300
+Wire Wire Line
+	2300 4300 2200 4300
+Wire Wire Line
+	2400 4250 2400 4400
+Wire Wire Line
+	2200 4400 2400 4400
 $EndSCHEMATC
