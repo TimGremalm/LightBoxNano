@@ -2,4 +2,5 @@
   (lib (name LightBoxNanoFootprints)(type KiCad)(uri ${KIPRJMOD}/LightBoxNanoFootprints.pretty)(options "")(descr ""))
   (lib (name ESP32)(type KiCad)(uri ${KIPRJMOD}/ESP32.pretty)(options "")(descr ""))
   (lib (name ArduinoNano)(type KiCad)(uri ${KIPRJMOD}/ArduinoNano.pretty)(options "")(descr ""))
+  (lib (name PhoenixContact)(type KiCad)(uri ${KIPRJMOD}/PhoenixContact.pretty)(options "")(descr ""))
 )
