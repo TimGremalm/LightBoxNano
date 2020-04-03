@@ -111,6 +111,8 @@ But there is a option for mounting a ESP32 Pico Kit instead which is much more p
 | 1			| Phoenix Contact	| Connector Female 3 pin MSTB 2,5/ 3-ST-5,08	| 1757022				| https://se.farnell.com/phoenix-contact/mstb2-5-3-st-5-08/terminal-block-pluggable-3pos/dp/3705365		|
 | 1			| Phoenix Contact	| Connector Female 5 pin MSTB 2,5/ 5-ST-5,08	| 1757048				| https://se.farnell.com/phoenix-contact/1757048/terminal-block-pluggable-5pos/dp/3705389				|
 | 1			| Multicomp			| Barrel Jack Switch 5A 2mm						| SPC21364				| https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842									|
+| 1			| Neutrik			| XLR 3-pole female Horizontal PCB mount		| NC3FAAH2				| https://se.farnell.com/neutrik/nc3faah2/socket-xlr-pcb-horizontal-3pole/dp/1310023					|
+| 1			| Neutrik			| XLR 3-pole male Horizontal PCB mount			| NC3MAAH				| https://se.farnell.com/neutrik/nc3maah/plug-xlr-pcb-horizontal-3pole/dp/1310044						|
 | 1			| Panasonic			| Cap 18µF 50V 35mΩ								| 50SVPF18M				| https://se.farnell.com/panasonic/50svpf18m/cap-18-f-50v-20-radial/dp/2354813							|
 | 1			| AVX				| Cap 4.7µF 10V 1.4Ω 1206						| TPSA475K010R1400		| https://se.farnell.com/avx/tpsa475k010r1400/cap-4-7-f-10v-10-1206-smd/dp/1135104						|
 | 1			| Littelfuse		| Schottky 200V 10A								| MBRD10200CT			| https://se.farnell.com/littelfuse/mbrd10200ct/schottky-rect-200v-10a-to-252/dp/2773825				|

@@ -708,32 +708,6 @@ F 3 "" H 2650 1700 50  0001 C CNN
 	1    2650 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:XLR3_Ground XLR_Female1
-U 1 1 5DEB7DDB
-P 6500 6350
-F 0 "XLR_Female1" H 6500 6600 50  0000 C CNN
-F 1 "XLR3_Ground" H 6500 6624 50  0001 C CNN
-F 2 "" H 6500 6350 50  0001 C CNN
-F 3 " ~" H 6500 6350 50  0001 C CNN
-F 4 "" H 6500 6350 50  0001 C CNN "Article Number"
-F 5 "" H 6500 6350 50  0001 C CNN "Seller"
-	1    6500 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:XLR3_Ground XLR_Male1
-U 1 1 5DEB90CA
-P 6500 7200
-F 0 "XLR_Male1" H 6500 7450 50  0000 C CNN
-F 1 "XLR3_Ground" H 6500 7474 50  0001 C CNN
-F 2 "" H 6500 7200 50  0001 C CNN
-F 3 " ~" H 6500 7200 50  0001 C CNN
-F 4 "" H 6500 7200 50  0001 C CNN "Article Number"
-F 5 "" H 6500 7200 50  0001 C CNN "Seller"
-	1    6500 7200
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	7600 5400 7600 6500
 Wire Notes Line
@@ -1779,4 +1753,30 @@ Wire Wire Line
 	6200 7150 6200 7200
 Text Notes 7450 5700 2    50   ~ 0
 Fix a nice switch\n 
+$Comp
+L XLR:XLR_3pin_Female_Ground XLR_Female1
+U 1 1 6018CB3F
+P 6500 6350
+F 0 "XLR_Female1" H 6500 6623 50  0000 C CNN
+F 1 "XLR_3pin_Female_Ground" H 6500 6700 50  0001 C CNN
+F 2 "" H 6500 6350 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2119816.pdf" H 6500 6350 50  0001 C CNN
+F 4 "NC3FAAH2" H 6500 6350 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/neutrik/nc3faah2/socket-xlr-pcb-horizontal-3pole/dp/1310023" H 6500 6350 50  0001 C CNN "Seller"
+	1    6500 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L XLR:XLR_3pin_Male_Ground XLR_Male1
+U 1 1 6018E7B4
+P 6500 7200
+F 0 "XLR_Male1" H 6500 7473 50  0000 C CNN
+F 1 "XLR_3pin_Male_Ground" H 6500 7550 50  0001 C CNN
+F 2 "" H 6500 7200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/53968.pdf" H 6500 7200 50  0001 C CNN
+F 4 "NC3MAAH" H 6500 7200 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/neutrik/nc3maah/plug-xlr-pcb-horizontal-3pole/dp/1310044" H 6500 7200 50  0001 C CNN "Seller"
+	1    6500 7200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

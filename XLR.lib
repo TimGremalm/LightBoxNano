@@ -1,0 +1,62 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# XLR_3pin_Female_Ground
+#
+DEF XLR_3pin_Female_Ground XLR_Female 0 20 Y N 1 F N
+F0 "XLR_Female" 0 250 50 H V C CNN
+F1 "XLR_3pin_Female_Ground" 0 350 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jack*XLR*
+$ENDFPLIST
+DRAW
+C -140 0 40 0 1 0 N
+C 0 -140 40 0 1 0 N
+C 0 0 200 0 1 0 f
+C 140 0 40 0 1 0 N
+T 0 140 70 40 0 0 1 1 Normal 1 C C
+T 0 -140 70 40 0 0 1 2 Normal 1 C C
+T 0 0 -70 40 0 0 1 3 Normal 1 C C
+P 2 0 1 0 -200 0 -180 0 N
+P 2 0 1 0 -100 -200 -100 -175 N
+P 2 0 1 0 0 -200 0 -180 N
+P 2 0 1 0 200 0 180 0 N
+X ~ 1 300 0 100 L 50 50 0 1 P
+X ~ 2 -300 0 100 R 50 50 0 1 P
+X ~ 3 0 -300 100 U 50 50 0 1 P
+X ~ G -100 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# XLR_3pin_Male_Ground
+#
+DEF XLR_3pin_Male_Ground XLR_Male 0 20 Y N 1 F N
+F0 "XLR_Male" 0 250 50 H V C CNN
+F1 "XLR_3pin_Male_Ground" 0 350 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jack*XLR*
+$ENDFPLIST
+DRAW
+C -140 0 40 0 1 0 N
+C 0 -140 40 0 1 0 N
+C 0 0 200 0 1 0 f
+C 140 0 40 0 1 0 N
+T 0 -140 70 40 0 0 1 1 Normal 1 C C
+T 0 140 70 40 0 0 1 2 Normal 1 C C
+T 0 0 -70 40 0 0 1 3 Normal 1 C C
+P 2 0 1 0 -200 0 -180 0 N
+P 2 0 1 0 -100 -200 -100 -175 N
+P 2 0 1 0 0 -200 0 -180 N
+P 2 0 1 0 200 0 180 0 N
+X ~ 1 -300 0 100 R 50 50 0 1 P
+X ~ 2 300 0 100 L 50 50 0 1 P
+X ~ 3 0 -300 100 U 50 50 0 1 P
+X ~ G -100 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

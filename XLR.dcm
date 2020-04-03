@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XLR_3pin_Female_Ground
+D XLR Connector, Female, 3 Pins, Discrete Ground Pin
+K xlr connector
+F  ~
+$ENDCMP
+#
+$CMP XLR_3pin_Male_Ground
+D XLR Connector, Male, 3 Pins, Discrete Ground Pin
+K xlr connector
+F  ~
+$ENDCMP
+#
+#End Doc Library

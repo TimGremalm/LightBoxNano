@@ -4,4 +4,5 @@
   (lib (name ArduinoNano)(type Legacy)(uri ${KIPRJMOD}/ArduinoNano.lib)(options "")(descr ""))
   (lib (name LightBoxNano-rescue)(type Legacy)(uri ${KIPRJMOD}/LightBoxNano-rescue.lib)(options "")(descr ""))
   (lib (name Analog-Devices-ADM2687E)(type Legacy)(uri ${KIPRJMOD}/Analog-Devices-ADM2687E.lib)(options "")(descr ""))
+  (lib (name XLR)(type Legacy)(uri ${KIPRJMOD}/XLR.lib)(options "")(descr ""))
 )
