@@ -1443,11 +1443,11 @@ Wire Wire Line
 	4950 7500 4800 7500
 Connection ~ 4950 7500
 Wire Wire Line
-	5450 7200 5650 7200
+	5450 7200 6000 7200
 Wire Wire Line
-	5650 7200 5650 6400
+	6000 7200 6000 6400
 Wire Wire Line
-	5650 6400 5450 6400
+	6000 6400 5450 6400
 Connection ~ 5450 7200
 Connection ~ 5450 6400
 Wire Wire Line
@@ -1479,14 +1479,14 @@ DMX_Receive
 $Comp
 L Device:R R_termination1
 U 1 1 5F6B00F6
-P 5250 6650
-F 0 "R_termination1" H 4900 6700 50  0000 C CNN
-F 1 "120R DNP" H 5000 6600 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5180 6650 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2563624.pdf" H 5250 6650 50  0001 C CNN
-F 4 "MCWR12X1200FTL" V 5250 6650 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mcwr12x1200ftl/res-120r-1-0-25w-thick-film/dp/2447462" V 5250 6650 50  0001 C CNN "Seller"
-	1    5250 6650
+P 5350 6650
+F 0 "R_termination1" H 5000 6700 50  0000 C CNN
+F 1 "120R DNP" H 5100 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5280 6650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2563624.pdf" H 5350 6650 50  0001 C CNN
+F 4 "MCWR12X1200FTL" V 5350 6650 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mcwr12x1200ftl/res-120r-1-0-25w-thick-film/dp/2447462" V 5350 6650 50  0001 C CNN "Seller"
+	1    5350 6650
 	-1   0    0    1   
 $EndComp
 Text GLabel 1150 3500 0    50   Input ~ 0
@@ -1547,10 +1547,10 @@ Wire Wire Line
 Wire Wire Line
 	5150 6500 4800 6500
 Wire Wire Line
-	5150 6500 5250 6500
+	5150 6500 5350 6500
 Connection ~ 5150 6500
 Wire Wire Line
-	5100 6800 5250 6800
+	5100 6800 5350 6800
 Connection ~ 5100 6800
 Wire Wire Line
 	5100 6800 5100 6700
@@ -1624,16 +1624,16 @@ Wire Wire Line
 	2450 6400 2450 7200
 Wire Wire Line
 	2450 6050 2450 6400
-Text GLabel 5300 6500 2    50   Input ~ 0
+Text GLabel 5600 6500 2    50   Input ~ 0
 DMX+
-Text GLabel 5300 6800 2    50   Input ~ 0
+Text GLabel 5600 6800 2    50   Input ~ 0
 DMX-
 Wire Wire Line
-	5250 6500 5300 6500
-Connection ~ 5250 6500
+	5350 6500 5600 6500
+Connection ~ 5350 6500
 Wire Wire Line
-	5250 6800 5300 6800
-Connection ~ 5250 6800
+	5350 6800 5600 6800
+Connection ~ 5350 6800
 Text GLabel 3500 6700 0    50   Input ~ 0
 DMX_RE
 Text GLabel 3500 6900 0    50   Input ~ 0
@@ -1777,4 +1777,6 @@ Wire Wire Line
 	6800 7150 6800 7200
 Wire Wire Line
 	6200 7150 6200 7200
+Text Notes 7450 5700 2    50   ~ 0
+Fix a nice switch\n 
 $EndSCHEMATC
