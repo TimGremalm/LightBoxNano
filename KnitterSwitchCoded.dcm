@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DRR4010
+D Rotary switch, 4-bit encoding, 10 positions, Gray code
+K rotary bcd Gray
+F https://www.knitter-switch.com/var/pms/model-911/DRR%204010.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -867,172 +867,55 @@ DMX Side - Fully isolated (ADM268 have buildt in DCDC isolation)
 Wire Wire Line
 	1400 800  1400 950 
 Wire Wire Line
-	7050 3000 7000 3000
-Connection ~ 5850 3500
-Wire Wire Line
-	5650 3500 5850 3500
+	7100 3050 6950 3050
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5EF23D23
-P 5650 3500
-F 0 "#PWR?" H 5650 3350 50  0001 C CNN
-F 1 "+3.3V" H 5665 3673 50  0000 C CNN
-F 2 "" H 5650 3500 50  0001 C CNN
-F 3 "" H 5650 3500 50  0001 C CNN
-	1    5650 3500
-	1    0    0    -1  
-$EndComp
-Text GLabel 7050 4400 2    50   Input ~ 0
-SW_5
-Wire Wire Line
-	6250 4400 7050 4400
-Wire Wire Line
-	7050 4400 7050 3900
-Text GLabel 6150 4100 2    50   Input ~ 0
-SW_4
-Text GLabel 6450 4200 2    50   Input ~ 0
-SW_4
-Text GLabel 6750 4300 2    50   Input ~ 0
-SW_4
-Text GLabel 5850 3950 2    50   Input ~ 0
-SW_1
-$Comp
-L Switch:SW_Rotary12 5_way_pos1
-U 1 1 5E47EEBD
-P 6450 4900
-F 0 "5_way_pos1" H 6350 5681 50  0000 C CNN
-F 1 "SW_Rotary12" H 6350 5590 50  0000 C CNN
-F 2 "" H 6250 5600 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 6250 5600 50  0001 C CNN
-F 4 "" H 6450 4900 50  0001 C CNN "Article Number"
-F 5 "" H 6450 4900 50  0001 C CNN "Seller"
-	1    6450 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6250 4500 6250 4400
-Wire Wire Line
-	6750 4300 6750 3900
-Wire Wire Line
-	6150 4300 6750 4300
-Wire Wire Line
-	6150 4500 6150 4300
-Wire Wire Line
-	6450 4200 6450 3900
-Wire Wire Line
-	6050 4200 6450 4200
-Wire Wire Line
-	6050 4500 6050 4200
-Wire Wire Line
-	6150 4100 6150 3900
-Wire Wire Line
-	5950 4100 6150 4100
-Wire Wire Line
-	5950 4500 5950 4100
-Wire Wire Line
-	5850 3900 5850 4500
-Connection ~ 6750 3500
-Wire Wire Line
-	7050 3500 7050 3600
-Wire Wire Line
-	6750 3500 7050 3500
-Connection ~ 6450 3500
-Wire Wire Line
-	6750 3500 6750 3600
-Wire Wire Line
-	6450 3500 6750 3500
-Connection ~ 6150 3500
-Wire Wire Line
-	6450 3500 6450 3600
-Wire Wire Line
-	6150 3500 6450 3500
-Wire Wire Line
-	6150 3500 6150 3600
-Wire Wire Line
-	5850 3500 6150 3500
-Wire Wire Line
-	5850 3500 5850 3600
-$Comp
-L Device:R R_sw1
+L Device:R R_sw8
 U 1 1 5E4C9983
-P 5850 3750
-F 0 "R_sw1" V 5643 3750 50  0000 C CNN
-F 1 "10k" V 5734 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5780 3750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5850 3750 50  0001 C CNN
-F 4 "MC0100W0603110K" V 5850 3750 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 5850 3750 50  0001 C CNN "Seller"
-	1    5850 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R_sw2
-U 1 1 5E4BF77A
-P 6150 3750
-F 0 "R_sw2" V 5943 3750 50  0000 C CNN
-F 1 "10k" V 6034 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6080 3750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 6150 3750 50  0001 C CNN
-F 4 "MC0100W0603110K" V 6150 3750 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 6150 3750 50  0001 C CNN "Seller"
-	1    6150 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R_sw3
-U 1 1 5E4BEFE9
-P 6450 3750
-F 0 "R_sw3" V 6243 3750 50  0000 C CNN
-F 1 "10k" V 6334 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6380 3750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 6450 3750 50  0001 C CNN
-F 4 "MC0100W0603110K" V 6450 3750 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 6450 3750 50  0001 C CNN "Seller"
-	1    6450 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R_sw5
-U 1 1 5E4BEC05
-P 7050 3750
-F 0 "R_sw5" V 6843 3750 50  0000 C CNN
-F 1 "10k" V 6934 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6980 3750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 7050 3750 50  0001 C CNN
-F 4 "MC0100W0603110K" V 7050 3750 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 7050 3750 50  0001 C CNN "Seller"
-	1    7050 3750
+P 5650 5000
+F 0 "R_sw8" V 5443 5000 50  0000 C CNN
+F 1 "10k" V 5534 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 5000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 5650 5000 50  0001 C CNN
+F 4 "MC0100W0603110K" V 5650 5000 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 5650 5000 50  0001 C CNN "Seller"
+	1    5650 5000
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R_sw4
-U 1 1 5E4BD26C
-P 6750 3750
-F 0 "R_sw4" V 6543 3750 50  0000 C CNN
-F 1 "10k" V 6634 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6680 3750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 6750 3750 50  0001 C CNN
-F 4 "MC0100W0603110K" V 6750 3750 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 6750 3750 50  0001 C CNN "Seller"
-	1    6750 3750
+U 1 1 5E4BF77A
+P 6100 5000
+F 0 "R_sw4" V 5893 5000 50  0000 C CNN
+F 1 "10k" V 5984 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6030 5000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 6100 5000 50  0001 C CNN
+F 4 "MC0100W0603110K" V 6100 5000 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 6100 5000 50  0001 C CNN "Seller"
+	1    6100 5000
 	-1   0    0    1   
 $EndComp
-NoConn ~ 6350 4500
-NoConn ~ 6550 4500
-NoConn ~ 6650 4500
-NoConn ~ 6750 4500
-NoConn ~ 6850 4500
-NoConn ~ 6950 4500
-NoConn ~ 7050 4500
+$Comp
+L Device:R R_sw1
+U 1 1 5E4BD26C
+P 7050 5000
+F 0 "R_sw1" V 6843 5000 50  0000 C CNN
+F 1 "10k" V 6934 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6980 5000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 7050 5000 50  0001 C CNN
+F 4 "MC0100W0603110K" V 7050 5000 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 7050 5000 50  0001 C CNN "Seller"
+	1    7050 5000
+	-1   0    0    1   
+$EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 5E49F4A7
-P 6650 5400
-F 0 "#PWR0115" H 6650 5150 50  0001 C CNN
-F 1 "GND" H 6655 5227 50  0000 C CNN
-F 2 "" H 6650 5400 50  0001 C CNN
-F 3 "" H 6650 5400 50  0001 C CNN
-	1    6650 5400
+P 5650 5400
+F 0 "#PWR0115" H 5650 5150 50  0001 C CNN
+F 1 "GND" H 5655 5227 50  0000 C CNN
+F 2 "" H 5650 5400 50  0001 C CNN
+F 3 "" H 5650 5400 50  0001 C CNN
+	1    5650 5400
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1062,64 +945,57 @@ Wire Wire Line
 	5100 4800 4700 4800
 Wire Wire Line
 	4950 4700 4700 4700
-NoConn ~ 1600 3100
-NoConn ~ 2200 3750
-NoConn ~ 2200 3950
-NoConn ~ 2200 4050
-NoConn ~ 2200 4150
-NoConn ~ 2200 4250
-NoConn ~ 2200 4350
-NoConn ~ 2200 4650
-NoConn ~ 2200 4750
-NoConn ~ 2200 4950
-NoConn ~ 1200 4950
-NoConn ~ 1200 4850
-NoConn ~ 1200 4550
-NoConn ~ 1200 4450
-NoConn ~ 1200 4150
-NoConn ~ 1200 3950
-NoConn ~ 1200 3750
+NoConn ~ 1600 3150
+NoConn ~ 2200 3800
+NoConn ~ 2200 4000
+NoConn ~ 2200 4100
+NoConn ~ 2200 4200
+NoConn ~ 2200 4300
+NoConn ~ 2200 4400
+NoConn ~ 2200 4700
+NoConn ~ 2200 4800
+NoConn ~ 2200 5000
+NoConn ~ 1200 4200
+NoConn ~ 1200 4000
+NoConn ~ 1200 3800
 Wire Wire Line
-	1900 3050 1900 3100
+	1900 3100 1900 3150
 Wire Wire Line
-	2000 3050 1900 3050
+	2000 3100 1900 3100
 Wire Wire Line
-	1750 3050 1750 3100
-Connection ~ 1650 5250
-Wire Wire Line
-	1750 5250 1650 5250
+	1750 3100 1750 3150
 $Comp
 L ArduinoNano:Arduino-Nano-V3 MCU_nano1
 U 1 1 5EBE5347
-P 1700 4250
-F 0 "MCU_nano1" H 1300 3350 50  0000 C CNN
-F 1 "Arduino-Nano-V3" V 1700 4250 50  0000 C CNN
-F 2 "ArduinoNano:Arduino-Nano-V3_Jumper" V 2500 4400 50  0001 C CNN
-F 3 "https://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1700 4250 50  0001 C CNN
-F 4 "A000005" H 1700 4250 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691" H 1700 4250 50  0001 C CNN "Seller"
-	1    1700 4250
+P 1700 4300
+F 0 "MCU_nano1" H 1300 3400 50  0000 C CNN
+F 1 "Arduino-Nano-V3" V 1700 4300 50  0000 C CNN
+F 2 "ArduinoNano:Arduino-Nano-V3_Jumper" V 2500 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1700 4300 50  0001 C CNN
+F 4 "A000005" H 1700 4300 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691" H 1700 4300 50  0001 C CNN "Seller"
+	1    1700 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 4550 2400 4550
+	2200 4600 2400 4600
 Wire Wire Line
-	2400 4400 2400 4550
+	2400 4450 2400 4600
 Wire Wire Line
-	2300 4450 2200 4450
+	2300 4500 2200 4500
 Wire Wire Line
-	2300 4400 2300 4450
+	2300 4450 2300 4500
 Wire Notes Line
 	2500 2500 2500 5500
 $Comp
 L power:GND #PWR?
 U 1 1 5EB39AD3
-P 1650 5250
-F 0 "#PWR?" H 1650 5000 50  0001 C CNN
-F 1 "GND" H 1650 5100 50  0000 C CNN
-F 2 "" H 1650 5250 50  0001 C CNN
-F 3 "" H 1650 5250 50  0001 C CNN
-	1    1650 5250
+P 1650 5300
+F 0 "#PWR?" H 1650 5050 50  0001 C CNN
+F 1 "GND" H 1650 5150 50  0000 C CNN
+F 2 "" H 1650 5300 50  0001 C CNN
+F 3 "" H 1650 5300 50  0001 C CNN
+	1    1650 5300
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4700 3400
@@ -1135,9 +1011,6 @@ NoConn ~ 4700 4900
 NoConn ~ 4700 5000
 NoConn ~ 4700 5100
 NoConn ~ 3300 5000
-NoConn ~ 3300 4900
-NoConn ~ 3300 4800
-NoConn ~ 3300 4700
 NoConn ~ 3300 4100
 NoConn ~ 3300 3800
 NoConn ~ 3300 3700
@@ -1154,8 +1027,6 @@ Wire Wire Line
 	3200 4000 3300 4000
 Wire Wire Line
 	3200 3900 3300 3900
-Text Notes 2650 3450 0    50   ~ 0
-IO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_ReceiveEnable\nIO23  DMX_DriveEnable\nIO25  addressable\nIO26  red\nIO27  green\nIO14  blue\nIO12  white\nIO34  POT_1\nIO35  POT_2
 $Comp
 L power:GND #PWR?
 U 1 1 5E94AB2B
@@ -1170,30 +1041,30 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E93FFB4
-P 5950 2750
-F 0 "#PWR?" H 5950 2600 50  0001 C CNN
-F 1 "+3.3V" H 5965 2923 50  0000 C CNN
-F 2 "" H 5950 2750 50  0001 C CNN
-F 3 "" H 5950 2750 50  0001 C CNN
-	1    5950 2750
+P 5800 2750
+F 0 "#PWR?" H 5800 2600 50  0001 C CNN
+F 1 "+3.3V" H 5815 2923 50  0000 C CNN
+F 2 "" H 5800 2750 50  0001 C CNN
+F 3 "" H 5800 2750 50  0001 C CNN
+	1    5800 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1150 4050 0    50   Input ~ 0
+Text GLabel 1150 4100 0    50   Input ~ 0
 Adressable
 Wire Wire Line
-	1150 4050 1200 4050
-Text GLabel 1150 4250 0    50   Input ~ 0
+	1150 4100 1200 4100
+Text GLabel 1150 4300 0    50   Input ~ 0
 Gate_red
 Wire Wire Line
-	1150 4250 1200 4250
-Text GLabel 1150 4350 0    50   Input ~ 0
+	1150 4300 1200 4300
+Text GLabel 1150 4400 0    50   Input ~ 0
 Gate_green
 Wire Wire Line
-	1150 4350 1200 4350
-Text GLabel 1150 4650 0    50   Input ~ 0
+	1150 4400 1200 4400
+Text GLabel 1150 4700 0    50   Input ~ 0
 Gate_blue
 Wire Wire Line
-	1150 4650 1200 4650
+	1150 4700 1200 4700
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8D368D
@@ -1219,31 +1090,31 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8A34E7
-P 1750 3050
-F 0 "#PWR?" H 1750 2900 50  0001 C CNN
-F 1 "+3.3V" H 1765 3223 50  0000 C CNN
-F 2 "" H 1750 3050 50  0001 C CNN
-F 3 "" H 1750 3050 50  0001 C CNN
-	1    1750 3050
+P 1750 3100
+F 0 "#PWR?" H 1750 2950 50  0001 C CNN
+F 1 "+3.3V" H 1765 3273 50  0000 C CNN
+F 2 "" H 1750 3100 50  0001 C CNN
+F 3 "" H 1750 3100 50  0001 C CNN
+	1    1750 3100
 	1    0    0    -1  
 $EndComp
-Text Notes 650  3300 0    50   ~ 0
-D1   PD0 (TX) DMX_Send\nD0   PD1 (RX) DMX_Receive\nD3   PD3 addressable\nD5   PD5 red\nD6   PD6 green\nD9   PB1 blue\nD10  PB2 white\nA1   PC1 POT_1\nA2   PC2 POT_2
+Text Notes 600  3550 0    50   ~ 0
+D1   PD0 (TX) DMX_Send\nD0   PD1 (RX) DMX_Receive\nD3   PD3 addressable\nD5   PD5 red\nD6   PD6 green\nD9   PB1 blue\nD10  PB2 white\nA1   PC1 POT_1\nA2   PC2 POT_2\nD7   PD7 SwCode1\nD8   PB0 SwCode2\nD11  PB3 SwCode4\nD12  PB4 SwCode8
 Text GLabel 3200 4000 0    50   Input ~ 0
 Gate_red
 Text GLabel 3200 3900 0    50   Input ~ 0
 Adressable
 Wire Wire Line
-	1150 4750 1200 4750
-Text GLabel 1150 4750 0    50   Input ~ 0
+	1150 4800 1200 4800
+Text GLabel 1150 4800 0    50   Input ~ 0
 Gate_white
 Wire Wire Line
-	6100 3000 6150 3000
+	5950 3050 6150 3050
 Text Notes 600  5700 0    118  ~ 0
 DMX512 Isolated
-Text GLabel 2300 4400 1    50   Input ~ 0
+Text GLabel 2300 4450 1    50   Input ~ 0
 POT_2
-Text GLabel 2400 4400 1    50   Input ~ 0
+Text GLabel 2400 4450 1    50   Input ~ 0
 POT_1
 Wire Notes Line
 	5400 2500 5400 5650
@@ -1258,12 +1129,12 @@ Wire Notes Line
 $Comp
 L power:+5V #PWR0105
 U 1 1 5DF44121
-P 2000 3050
-F 0 "#PWR0105" H 2000 2900 50  0001 C CNN
-F 1 "+5V" H 2015 3223 50  0000 C CNN
-F 2 "" H 2000 3050 50  0001 C CNN
-F 3 "" H 2000 3050 50  0001 C CNN
-	1    2000 3050
+P 2000 3100
+F 0 "#PWR0105" H 2000 2950 50  0001 C CNN
+F 1 "+5V" H 2015 3273 50  0000 C CNN
+F 2 "" H 2000 3100 50  0001 C CNN
+F 3 "" H 2000 3100 50  0001 C CNN
+	1    2000 3100
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1276,61 +1147,54 @@ Text Notes 600  2450 0    118  ~ 0
 MCU Option Nano
 Text Notes 5500 2450 0    118  ~ 0
 User Interface
-Text GLabel 7050 3000 2    50   Input ~ 0
+Text GLabel 7100 3050 2    50   Input ~ 0
 POT_2
-Text GLabel 6150 3000 2    50   Input ~ 0
+Text GLabel 6150 3050 2    50   Input ~ 0
 POT_1
 Wire Wire Line
-	5950 2800 5950 2850
-Connection ~ 5950 2800
+	5800 2800 5800 2900
+Connection ~ 5800 2800
 Wire Wire Line
-	6850 2800 6850 2850
+	6800 2800 6800 2900
 Wire Wire Line
-	5950 2800 6850 2800
+	5800 2800 6800 2800
 Wire Wire Line
-	5950 3200 5950 3150
-Connection ~ 5950 3200
-Wire Wire Line
-	6850 3200 6850 3150
-Wire Wire Line
-	5950 3200 6850 3200
-Wire Wire Line
-	5950 2750 5950 2800
+	5800 2750 5800 2800
 $Comp
 L power:GND #PWR0104
 U 1 1 5DEDA793
-P 5950 3200
-F 0 "#PWR0104" H 5950 2950 50  0001 C CNN
-F 1 "GND" H 5955 3027 50  0000 C CNN
-F 2 "" H 5950 3200 50  0001 C CNN
-F 3 "" H 5950 3200 50  0001 C CNN
-	1    5950 3200
+P 6800 3400
+F 0 "#PWR0104" H 6800 3150 50  0001 C CNN
+F 1 "GND" H 6805 3227 50  0000 C CNN
+F 2 "" H 6800 3400 50  0001 C CNN
+F 3 "" H 6800 3400 50  0001 C CNN
+	1    6800 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT RV_pot2
 U 1 1 5DE0A6EA
-P 6850 3000
-F 0 "RV_pot2" H 6780 3046 50  0000 R CNN
-F 1 "10k" H 6780 2955 50  0000 R CNN
-F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 6850 3000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/317977.pdf?_ga=2.253999944.1391520159.1585828864-167263916.1529948031" H 6850 3000 50  0001 C CNN
-F 4 "29 0001" H 6850 3000 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735" H 6850 3000 50  0001 C CNN "Seller"
-	1    6850 3000
+P 6800 3050
+F 0 "RV_pot2" H 7150 2950 50  0000 R CNN
+F 1 "10k" H 7000 2850 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 6800 3050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/317977.pdf?_ga=2.253999944.1391520159.1585828864-167263916.1529948031" H 6800 3050 50  0001 C CNN
+F 4 "29 0001" H 6800 3050 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735" H 6800 3050 50  0001 C CNN "Seller"
+	1    6800 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT RV_pot1
 U 1 1 5DE0985A
-P 5950 3000
-F 0 "RV_pot1" H 5880 3046 50  0000 R CNN
-F 1 "10k" H 5880 2955 50  0000 R CNN
-F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 5950 3000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/317977.pdf?_ga=2.253999944.1391520159.1585828864-167263916.1529948031" H 5950 3000 50  0001 C CNN
-F 4 "https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735" H 5950 3000 50  0001 C CNN "Seller"
-F 5 "29 0001" H 5950 3000 50  0001 C CNN "Article Number"
-	1    5950 3000
+P 5800 3050
+F 0 "RV_pot1" H 6150 2950 50  0000 R CNN
+F 1 "10k" H 6000 2850 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 5800 3050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/317977.pdf?_ga=2.253999944.1391520159.1585828864-167263916.1529948031" H 5800 3050 50  0001 C CNN
+F 4 "https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735" H 5800 3050 50  0001 C CNN "Seller"
+F 5 "29 0001" H 5800 3050 50  0001 C CNN "Article Number"
+	1    5800 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1461,10 +1325,10 @@ F 5 "https://se.farnell.com/multicomp/mcwr12x1200ftl/res-120r-1-0-25w-thick-film
 	1    5200 6600
 	-1   0    0    1   
 $EndComp
-Text GLabel 1150 3650 0    50   Input ~ 0
+Text GLabel 1150 3700 0    50   Input ~ 0
 DMX_Receive
 Wire Wire Line
-	1150 3650 1200 3650
+	1150 3700 1200 3700
 Text GLabel 4950 4500 1    50   Input ~ 0
 POT_2
 Wire Wire Line
@@ -1583,12 +1447,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 5550 8850 5550
 Wire Wire Line
-	6650 5400 6550 5400
-Wire Wire Line
-	6550 5400 6550 5500
-Wire Wire Line
-	6550 5500 6450 5500
-Wire Wire Line
 	1250 7100 1350 7100
 Connection ~ 1350 7100
 Connection ~ 2300 6350
@@ -1684,10 +1542,10 @@ Wire Wire Line
 	1050 6250 1200 6250
 Wire Wire Line
 	1050 6350 1200 6350
-Text GLabel 1150 3550 0    50   Input ~ 0
+Text GLabel 1150 3600 0    50   Input ~ 0
 DMX_Send
 Wire Wire Line
-	1150 3550 1200 3550
+	1150 3600 1200 3600
 Text GLabel 5400 7450 2    50   Input ~ 0
 DMXgnd
 Connection ~ 5300 7450
@@ -1697,7 +1555,6 @@ Text GLabel 6800 6300 1    50   Input ~ 0
 DMXgnd
 Text GLabel 6550 6650 2    50   Input ~ 0
 DMX+
-NoConn ~ 3300 4600
 NoConn ~ 3300 4200
 Text GLabel 3200 4300 0    50   Input ~ 0
 Gate_green
@@ -1749,8 +1606,6 @@ Wire Wire Line
 	6800 7100 6800 7150
 Wire Wire Line
 	6100 7100 6100 7150
-Text Notes 7450 5700 2    50   ~ 0
-Fix a nice switch\n 
 $Comp
 L XLR:XLR_3pin_Female_Ground XLR_Female1
 U 1 1 6018CB3F
@@ -1789,4 +1644,154 @@ Wire Notes Line
 	2500 5500 600  5500
 Text Notes 6900 7600 2    50   ~ 0
 * DMX Terminator resistor is 1206 for isolation.
+Wire Wire Line
+	7050 4500 7050 4850
+Wire Wire Line
+	5850 4600 6100 4600
+Wire Wire Line
+	6100 4600 6100 4850
+Wire Wire Line
+	5650 5150 5650 5250
+Wire Wire Line
+	5650 5250 6100 5250
+Wire Wire Line
+	6100 5250 6100 5150
+Connection ~ 5650 5250
+Wire Wire Line
+	5650 5250 5650 5400
+Wire Wire Line
+	6100 5250 6550 5250
+Connection ~ 6100 5250
+Wire Wire Line
+	6550 5250 7050 5250
+Wire Wire Line
+	7050 5250 7050 5150
+Connection ~ 6550 5250
+Wire Wire Line
+	5800 3300 6800 3300
+Wire Wire Line
+	6800 3200 6800 3300
+Wire Wire Line
+	5800 3300 5800 3200
+Wire Wire Line
+	6800 3400 6800 3300
+Connection ~ 6800 3300
+Text GLabel 5950 4750 3    50   Input ~ 0
+SwCode8
+Text GLabel 6400 4750 3    50   Input ~ 0
+SwCode4
+Text GLabel 6850 4750 3    50   Input ~ 0
+SwCode2
+Text GLabel 7350 4750 3    50   Input ~ 0
+SwCode1
+Wire Wire Line
+	6550 5250 6550 5150
+$Comp
+L Device:R R_sw2
+U 1 1 5E4BEFE9
+P 6550 5000
+F 0 "R_sw2" V 6343 5000 50  0000 C CNN
+F 1 "10k" V 6434 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6480 5000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 6550 5000 50  0001 C CNN
+F 4 "MC0100W0603110K" V 6550 5000 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 6550 5000 50  0001 C CNN "Seller"
+	1    6550 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 4550 6550 4850
+Wire Wire Line
+	6050 4550 6550 4550
+Wire Wire Line
+	6400 4750 6400 4600
+Wire Wire Line
+	6400 4600 6100 4600
+Connection ~ 6100 4600
+Wire Wire Line
+	6850 4750 6850 4550
+Wire Wire Line
+	6850 4550 6550 4550
+Connection ~ 6550 4550
+Wire Wire Line
+	7350 4750 7350 4500
+Wire Wire Line
+	7350 4500 7050 4500
+Connection ~ 7050 4500
+Wire Wire Line
+	5950 4750 5950 4650
+Wire Wire Line
+	5950 4650 5650 4650
+Connection ~ 5650 4650
+Wire Wire Line
+	5650 4650 5650 4850
+Wire Wire Line
+	5650 4500 5650 4650
+Wire Wire Line
+	5850 4500 5850 4600
+Wire Wire Line
+	6050 4500 6050 4550
+Wire Wire Line
+	6250 4500 7050 4500
+$Comp
+L KnitterSwitchCoded:DRR4010 SW1
+U 1 1 6048EE6B
+P 5950 4500
+F 0 "SW1" H 6300 5050 50  0000 L CNN
+F 1 "Knitter-Switch DRR4010" H 6300 4950 50  0000 L CNN
+F 2 "Knitter-Switch:DRR4010" V 5500 5200 50  0001 L CNN
+F 3 "https://www.knitter-switch.com/var/pms/model-911/DRR%204010.pdf" H 5950 4900 50  0001 C CNN
+F 4 "DRR4010" H 5950 4500 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/knitter-switch/drr4010/rotary-switch-pcb-bcd/dp/807620" H 5950 4500 50  0001 C CNN "Seller"
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF23D23
+P 6050 3700
+F 0 "#PWR?" H 6050 3550 50  0001 C CNN
+F 1 "+3.3V" H 6065 3873 50  0000 C CNN
+F 2 "" H 6050 3700 50  0001 C CNN
+F 3 "" H 6050 3700 50  0001 C CNN
+	1    6050 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 5000 0    50   Input ~ 0
+SwCode8
+Text GLabel 1150 4900 0    50   Input ~ 0
+SwCode4
+Text GLabel 1150 4600 0    50   Input ~ 0
+SwCode2
+Text GLabel 1150 4500 0    50   Input ~ 0
+SwCode1
+Wire Wire Line
+	1150 5000 1200 5000
+Wire Wire Line
+	1150 4900 1200 4900
+Wire Wire Line
+	1150 4600 1200 4600
+Wire Wire Line
+	1150 4500 1200 4500
+Text GLabel 3200 4900 0    50   Input ~ 0
+SwCode8
+Text GLabel 3200 4800 0    50   Input ~ 0
+SwCode4
+Text GLabel 3200 4700 0    50   Input ~ 0
+SwCode2
+Text GLabel 3200 4600 0    50   Input ~ 0
+SwCode1
+Wire Wire Line
+	3200 4600 3300 4600
+Wire Wire Line
+	3200 4700 3300 4700
+Wire Wire Line
+	3200 4800 3300 4800
+Wire Wire Line
+	3200 4900 3300 4900
+Wire Wire Line
+	1750 5300 1650 5300
+Connection ~ 1650 5300
+Text Notes 2600 3700 0    50   ~ 0
+IO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_ReceiveEnable\nIO23  DMX_DriveEnable\nIO25  addressable\nIO26  red\nIO27  green\nIO14  blue\nIO12  white\nIO34  POT_1\nIO35  POT_2\nIO13  SwCode1\nIO15  SwCode2\nIO2   SwCode4\nIO4   SwCode8
 $EndSCHEMATC
