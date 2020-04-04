@@ -1313,10 +1313,10 @@ U 1 1 5DE0A6EA
 P 6850 3000
 F 0 "RV_pot2" H 6780 3046 50  0000 R CNN
 F 1 "10k" H 6780 2955 50  0000 R CNN
-F 2 "" H 6850 3000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/317982.pdf" H 6850 3000 50  0001 C CNN
-F 4 "RK11K1120A4C" H 6850 3000 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/alps/rk11k1120a4c/potentiometer-10-ka/dp/1191744" H 6850 3000 50  0001 C CNN "Seller"
+F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 6850 3000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/317977.pdf?_ga=2.253999944.1391520159.1585828864-167263916.1529948031" H 6850 3000 50  0001 C CNN
+F 4 "29 0001" H 6850 3000 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735" H 6850 3000 50  0001 C CNN "Seller"
 	1    6850 3000
 	1    0    0    -1  
 $EndComp
@@ -1326,10 +1326,10 @@ U 1 1 5DE0985A
 P 5950 3000
 F 0 "RV_pot1" H 5880 3046 50  0000 R CNN
 F 1 "10k" H 5880 2955 50  0000 R CNN
-F 2 "" H 5950 3000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/317982.pdf" H 5950 3000 50  0001 C CNN
-F 4 "https://se.farnell.com/alps/rk11k1120a4c/potentiometer-10-ka/dp/1191744" H 5950 3000 50  0001 C CNN "Seller"
-F 5 "RK11K1120A4C" H 5950 3000 50  0001 C CNN "Article Number"
+F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 5950 3000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/317977.pdf?_ga=2.253999944.1391520159.1585828864-167263916.1529948031" H 5950 3000 50  0001 C CNN
+F 4 "https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735" H 5950 3000 50  0001 C CNN "Seller"
+F 5 "29 0001" H 5950 3000 50  0001 C CNN "Article Number"
 	1    5950 3000
 	1    0    0    -1  
 $EndComp

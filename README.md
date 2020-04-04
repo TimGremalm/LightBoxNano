@@ -99,10 +99,10 @@ But there is a option for mounting a ESP32 Pico Kit instead which is much more p
 # BOM (Bill Of Material)
 | Amount	| Manufacturer		| Description									| Article Number		| URL																									|
 | --------- | ----------------- | --------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------- |
-| 1			| Arduino			| Arduino Nano 3 ATmega328						| A000005				| https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691						|
-| 1			| Espressif			| ESP32 Pico Kit V4								| ESP32-PICO-KIT		| https://www.digikey.com/product-detail/en/espressif-systems/ESP32-PICO-KIT/1904-1030-ND/9381703		|
-| 2			| Alps Alpine		| 10k Log Pot									| RK11K1120A4C			| https://se.farnell.com/alps/rk11k1120a4c/potentiometer-10-ka/dp/1191744								|
-| 8			| Infineon			| N-Ch Mosfet 5A SOT-23							| IRLML6344TRPBF		| https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299					|
+| 1			| Arduino			| MCU Arduino Nano 3 ATmega328					| A000005				| https://se.farnell.com/arduino-org/a000005/arduino-nano-utv-rd-kort/dp/1848691						|
+| 1			| Espressif			| MCU ESP32 Pico Kit V4							| ESP32-PICO-KIT		| https://www.digikey.com/product-detail/en/espressif-systems/ESP32-PICO-KIT/1904-1030-ND/9381703		|
+| 2			| Alps Alpine		| Pot 10k Linear								| 29 0001				| https://se.farnell.com/alps/29-0001/potentiometer-10k-20-0-05w/dp/1191735								|
+| 8			| Infineon			| Mosfet N-Ch 5A SOT-23							| IRLML6344TRPBF		| https://se.farnell.com/infineon/irlml6344trpbf/mosfet-n-kan-30v-5a-sot23/dp/1857299					|
 | 1			| Analog Devices	| RS485 Transceiver Isolated					| ADM2687EBRIZ			| https://se.farnell.com/analog-devices/adm2687ebriz/transceiver-iso-rs485-16soic/dp/2008784			|
 | 1			| Phoenix Contact	| Connector Male 2 pin MSTBA 2,5/ 2-G-5,08		| 1757242				| https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171				|
 | 1			| Phoenix Contact	| Connector Male 3 pin MSTBA 2,5/ 3-G-5,08		| 1757255				| https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08mm/dp/3705183				|
