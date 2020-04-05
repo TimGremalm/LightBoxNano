@@ -54,16 +54,30 @@ Addressable LED strip is hooked up directly to VIN and the data pin is going to 
 | Addressable	| D3 (PD3)			| IO25	|
 
 # Control interface
-Two potentiometers can optionally be mounted. They are pulled up to 3.3V, so you won't get thw full range on the Nano.
-
-A slider switch can be optionally mounted for selecting different modes.
-
-Also a pin header of the Arduino Nano will be easily assessable for hooking up random stuff.
-
+Two potentiometers can optionally be mounted. They are pulled up to 3.3V, so you won't get the full range on the Nano.
 | Channel	| Arduino Nano		| ESP32 |
 | --------- | ----------------- | ----- |
 | POT_1		| A1 (PC1)			| IO26	|
 | POT_2		| A2 (PC2)			| IO27	|
+
+A 10 position rotary coded switch can optionally be mounted for selecting different modes.
+| Channel	| Arduino Nano		| ESP32 |
+| --------- | ----------------- | ----- |
+| SwCode1	| D7 (PD7)			| IO13	|
+| SwCode2	| D8 (PB0)			| IO15	|
+| SwCode4	| D11 (PB3)			| IO2	|
+| SwCode8	| D12 (PB4)			| IO4	|
+
+10 position switch is coded in binary.
+| Code	| 0	| 1	| 2	| 3	| 4	| 5	| 6	| 7	| 8	| 9	|
+| ----- | -	| -	| -	| -	| -	| -	| -	| -	| -	| -	|
+| 1		| 	| *	| 	| *	| 	| *	| 	| *	| 	| *	|
+| 2		| 	| 	| *	| *	| 	| 	| *	| *	| 	| 	|
+| 4		| 	| 	| 	| 	| *	| *	| *	| *	| 	| 	|
+| 8		| 	| 	| 	| 	| 	| 	| 	| 	| *	| *	|
+
+
+Also a pin header of the Arduino Nano will be easily assessable for hooking up random stuff.
 
 
 # DMX Tranceiver
@@ -71,17 +85,21 @@ A RS-485 transceiver can optionally be mounted for sending and receiveing DMX512
 It uses ADM2687E which isolates the RS-485 bus from the low voltage micro controller side. This is important as electrical errors down the bus can propagage along the bus.
 ADM2687E also isolates the power on the bus side by a buildt in DC to DC converter.
 
-The tranceiver can be set to send DMX data if the jumpers "LinkDriverOutput1" and "LinkDriverOutput12" is soldered.
+The tranceiver can be set to send DMX data if the jumper links "Link_DriverOutputA1" and "Link_DriverOutputB1" is soldered.
 
-| Jumper				| Description													|
-| --------------------- | -------------------------------------------------------------	|
-| LinkDriverOutput1		| Links the Z (Driver Inverting Output) to DMX+					|
-| LinkDriverOutput2		| Links the Y (Driver Noninverting Output) to DMX-				|
-| Receiver_Disable1		| Pulls RE (Receiver Enable) to High which disables receiver	|
-| Receiver_Enable1		| Pulls RE (Receiver Enable) to Low which enables receiver		|
-| Driver_Enable1		| Pulls DE (Driver Enable) to High which enables sender			|
-| Driver_Disable1		| Pulls DE (Driver Enable) to Low which disables sender			|
+| Jumper							| Description													|
+| --------------------------------- | -------------------------------------------------------------	|
+| Link_DriverOutputA1				| Links the Z (Driver Inverting Output) to DMX+					|
+| Link_DriverOutputB1				| Links the Y (Driver Noninverting Output) to DMX-				|
+| Receiver_Disable1					| Pulls RE (Receiver Enable) to High which disables receiver	|
+| Receiver_Enable1					| Pulls RE (Receiver Enable) to Low which enables receiver		|
+| Driver_Enable1					| Pulls DE (Driver Enable) to High which enables sender			|
+| Driver_Disable1					| Pulls DE (Driver Enable) to Low which disables sender			|
+| Link_TransceiverGnd_To_DMXgnd1	| Links DMX bus Gnd to ADM2687E Gnd2							|
+| Link_DMXgnd_To_DMXchassignd1		| Links DMX ground shield to ADM2687E Gnd2						|
 
+DMX Send and Receive can be hooked up to UART channels on a MCU.
+Receiver Enable and Driver Enable can also be driven by the micro controller (only ESP32).
 | Channel			| Arduino Nano		| ESP32 |
 | ----------------- | ----------------- | ----- |
 | DMX_Send			| D1 TX (PD0)		| IO21	|

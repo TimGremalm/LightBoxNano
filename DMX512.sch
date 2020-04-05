@@ -137,8 +137,8 @@ L Jumper:SolderJumper_2_Open LinkDriverOutput?
 U 1 1 60A6460C
 P 9650 4750
 AR Path="/60A6460C" Ref="LinkDriverOutput?"  Part="1" 
-AR Path="/60A21BCB/60A6460C" Ref="Link_DriverOutputB2"  Part="1" 
-F 0 "Link_DriverOutputB2" H 9650 4650 50  0000 C CNN
+AR Path="/60A21BCB/60A6460C" Ref="Link_DriverOutputB1"  Part="1" 
+F 0 "Link_DriverOutputB1" H 9650 4650 50  0000 C CNN
 F 1 "LinkDriverOutput" H 10100 4850 50  0001 C CNN
 F 2 "ConnTest:JUMPER-SOLDER-SMD" H 9650 4750 50  0001 C CNN
 F 3 "~" H 9650 4750 50  0001 C CNN
