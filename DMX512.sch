@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
+Title "LightBoxNano - DMX512"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Tim Gremalm"
+Comment1 "a generic PCB for controlling LED's both LED strip and WS2812 "
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "https://github.com/TimGremalm/LightBoxNano"
+Comment4 "http://tim.gremalm.se/"
 $EndDescr
 Text Notes 7150 4650 2    50   ~ 0
 * DMX Terminator resistor is 1206 for isolation.
@@ -44,8 +44,8 @@ L power:GND #PWR?
 U 1 1 60A645C4
 P 1750 7300
 AR Path="/60A645C4" Ref="#PWR?"  Part="1" 
-AR Path="/60A21BCB/60A645C4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1750 7050 50  0001 C CNN
+AR Path="/60A21BCB/60A645C4" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 1750 7050 50  0001 C CNN
 F 1 "GND" H 1750 7150 50  0000 C CNN
 F 2 "" H 1750 7300 50  0001 C CNN
 F 3 "" H 1750 7300 50  0001 C CNN
@@ -57,8 +57,8 @@ L power:+3.3V #PWR?
 U 1 1 60A645CB
 P 1750 6150
 AR Path="/60A645CB" Ref="#PWR?"  Part="1" 
-AR Path="/60A21BCB/60A645CB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1750 6000 50  0001 C CNN
+AR Path="/60A21BCB/60A645CB" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 1750 6000 50  0001 C CNN
 F 1 "+3.3V" H 1765 6323 50  0000 C CNN
 F 2 "" H 1750 6150 50  0001 C CNN
 F 3 "" H 1750 6150 50  0001 C CNN
@@ -173,8 +173,8 @@ F 5 "https://se.farnell.com/multicomp/mcwr12x1200ftl/res-120r-1-0-25w-thick-film
 	1    9650 3250
 	-1   0    0    1   
 $EndComp
-Text Notes 7800 4750 2    50   ~ 0
-* Place capacitors as close to ADM2687E for noise suppression.
+Text Notes 5300 2400 0    50   ~ 0
+* Place capacitors as close to ADM2687E for noise suppression.\n* Avoid sharp corners around the isolation barrier and\nground plane.\nSee Analogs application notes for further tips:\nhttps://www.analog.com/media/en/technical-documentation/\napplication-notes/AN-0971.pdf
 Connection ~ 6050 4050
 Wire Wire Line
 	5850 4050 6050 4050
@@ -198,8 +198,8 @@ L Device:C C?
 U 1 1 60A6463B
 P 6500 4200
 AR Path="/60A6463B" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6463B" Ref="C?"  Part="1" 
-F 0 "C?" H 6600 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A6463B" Ref="C9"  Part="1" 
+F 0 "C9" H 6600 4250 50  0000 L CNN
 F 1 "10µF" H 6600 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6538 4050 50  0001 C CNN
 F 3 "~" H 6500 4200 50  0001 C CNN
@@ -213,8 +213,8 @@ L Device:C C?
 U 1 1 60A64643
 P 6500 2900
 AR Path="/60A64643" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64643" Ref="C?"  Part="1" 
-F 0 "C?" H 6600 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A64643" Ref="C8"  Part="1" 
+F 0 "C8" H 6600 2950 50  0000 L CNN
 F 1 "100nF" H 6600 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6538 2750 50  0001 C CNN
 F 3 "~" H 6500 2900 50  0001 C CNN
@@ -228,8 +228,8 @@ L Device:C C?
 U 1 1 60A6464B
 P 6050 4200
 AR Path="/60A6464B" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6464B" Ref="C?"  Part="1" 
-F 0 "C?" H 6150 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A6464B" Ref="C7"  Part="1" 
+F 0 "C7" H 6150 4250 50  0000 L CNN
 F 1 "100nF" H 6150 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 4050 50  0001 C CNN
 F 3 "~" H 6050 4200 50  0001 C CNN
@@ -247,8 +247,8 @@ L Device:C C?
 U 1 1 60A64657
 P 6050 2900
 AR Path="/60A64657" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64657" Ref="C?"  Part="1" 
-F 0 "C?" H 6150 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A64657" Ref="C6"  Part="1" 
+F 0 "C6" H 6150 2950 50  0000 L CNN
 F 1 "10nF" H 6150 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 2750 50  0001 C CNN
 F 3 "~" H 6050 2900 50  0001 C CNN
@@ -280,8 +280,8 @@ L Device:C C?
 U 1 1 60A6466B
 P 4250 4200
 AR Path="/60A6466B" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6466B" Ref="C?"  Part="1" 
-F 0 "C?" H 4350 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A6466B" Ref="C5"  Part="1" 
+F 0 "C5" H 4350 4250 50  0000 L CNN
 F 1 "100nF" H 4350 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4288 4050 50  0001 C CNN
 F 3 "~" H 4250 4200 50  0001 C CNN
@@ -295,8 +295,8 @@ L Device:C C?
 U 1 1 60A64673
 P 3800 4200
 AR Path="/60A64673" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64673" Ref="C?"  Part="1" 
-F 0 "C?" H 3900 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A64673" Ref="C3"  Part="1" 
+F 0 "C3" H 3900 4250 50  0000 L CNN
 F 1 "10µF" H 3900 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3838 4050 50  0001 C CNN
 F 3 "~" H 3800 4200 50  0001 C CNN
@@ -315,8 +315,8 @@ L Device:C C?
 U 1 1 60A6467E
 P 4250 2900
 AR Path="/60A6467E" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6467E" Ref="C?"  Part="1" 
-F 0 "C?" H 4350 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A6467E" Ref="C4"  Part="1" 
+F 0 "C4" H 4350 2950 50  0000 L CNN
 F 1 "10nF" H 4350 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4288 2750 50  0001 C CNN
 F 3 "~" H 4250 2900 50  0001 C CNN
@@ -330,8 +330,8 @@ L Device:C C?
 U 1 1 60A64686
 P 3800 2900
 AR Path="/60A64686" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64686" Ref="C?"  Part="1" 
-F 0 "C?" H 3900 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A64686" Ref="C2"  Part="1" 
+F 0 "C2" H 3900 2950 50  0000 L CNN
 F 1 "100nF" H 3900 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3838 2750 50  0001 C CNN
 F 3 "~" H 3800 2900 50  0001 C CNN
@@ -349,8 +349,8 @@ L power:+3.3V #PWR?
 U 1 1 60A6468E
 P 3300 2700
 AR Path="/60A6468E" Ref="#PWR?"  Part="1" 
-AR Path="/60A21BCB/60A6468E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 2550 50  0001 C CNN
+AR Path="/60A21BCB/60A6468E" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 3300 2550 50  0001 C CNN
 F 1 "+3.3V" H 3315 2873 50  0000 C CNN
 F 2 "" H 3300 2700 50  0001 C CNN
 F 3 "" H 3300 2700 50  0001 C CNN
@@ -362,8 +362,8 @@ L power:GND #PWR?
 U 1 1 60A64694
 P 3500 2800
 AR Path="/60A64694" Ref="#PWR?"  Part="1" 
-AR Path="/60A21BCB/60A64694" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3500 2550 50  0001 C CNN
+AR Path="/60A21BCB/60A64694" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 3500 2550 50  0001 C CNN
 F 1 "GND" H 3500 2650 50  0000 C CNN
 F 2 "" H 3500 2800 50  0001 C CNN
 F 3 "" H 3500 2800 50  0001 C CNN
@@ -375,8 +375,8 @@ L power:GND #PWR?
 U 1 1 60A6469A
 P 3300 4500
 AR Path="/60A6469A" Ref="#PWR?"  Part="1" 
-AR Path="/60A21BCB/60A6469A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 4250 50  0001 C CNN
+AR Path="/60A21BCB/60A6469A" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 3300 4250 50  0001 C CNN
 F 1 "GND" H 3300 4350 50  0000 C CNN
 F 2 "" H 3300 4500 50  0001 C CNN
 F 3 "" H 3300 4500 50  0001 C CNN
@@ -628,22 +628,22 @@ Wire Wire Line
 	9800 4450 10350 4450
 Text HLabel 1750 2200 0    50   Input ~ 0
 DMX_Send
-Text HLabel 1750 2500 0    50   Input ~ 0
+Text HLabel 1750 2550 0    50   Input ~ 0
 DMX_Receive
-Text HLabel 1750 2650 0    50   Input ~ 0
+Text HLabel 1750 2700 0    50   Input ~ 0
 DMX_Enable_Receive
 Text HLabel 1750 2350 0    50   Input ~ 0
 DMX_Enable_Send
 Text Label 1950 2200 0    50   ~ 0
 DMX_Send
-Text Label 1950 2650 0    50   ~ 0
+Text Label 1950 2700 0    50   ~ 0
 DMX_RE
 Text Label 1950 2350 0    50   ~ 0
 DMX_DE
 Wire Wire Line
-	1750 2650 1950 2650
+	1750 2700 1950 2700
 Wire Wire Line
-	1750 2500 1950 2500
+	1750 2550 1950 2550
 Wire Wire Line
 	1750 2350 1950 2350
 Wire Wire Line
@@ -754,11 +754,11 @@ For enabling sending on the DMX bus, these two jumper links must be\nsoldered.
 Text Notes 8150 5650 0    50   ~ 0
 Options for linking ground and shield of XLR connectors with RS-485\nside of the transceiver.
 Text Notes 750  5850 0    50   ~ 0
-To receive data on the DMX bus; RE (Receiver Enable) must be pulled low, or high\nfor disable.\nFor sending data; Tx to Rx link must be enabled, and DE (Driver Enable) must be\npulled high, or low to disable.\n\nRE and De can be controlled from the MCU, or hard coded via these jumper links.
+To receive data on the DMX bus; RE (Receiver Enable) must be pulled low, or high\nfor disable.\nFor sending data; Tx to Rx link must be enabled, and DE (Driver Enable) must be\npulled high, or low to disable.\n\nRE and DE can be controlled from the MCU, or hard coded via these jumper links.
 Wire Notes Line
 	700  3650 2700 3650
 Wire Notes Line
 	2700 1900 700  1900
-Text Label 1950 2500 0    50   ~ 0
+Text Label 1950 2550 0    50   ~ 0
 DMX_Receive
 $EndSCHEMATC

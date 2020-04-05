@@ -761,10 +761,10 @@ Wire Wire Line
 Wire Notes Line
 	3800 2500 3800 5250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5EB39AD3
 P 2700 5000
-F 0 "#PWR?" H 2700 4750 50  0001 C CNN
+F 0 "#PWR0103" H 2700 4750 50  0001 C CNN
 F 1 "GND" H 2700 4850 50  0000 C CNN
 F 2 "" H 2700 5000 50  0001 C CNN
 F 3 "" H 2700 5000 50  0001 C CNN
@@ -801,10 +801,10 @@ Wire Wire Line
 Wire Wire Line
 	5200 3900 5300 3900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 5E94AB2B
 P 5900 5400
-F 0 "#PWR?" H 5900 5150 50  0001 C CNN
+F 0 "#PWR0107" H 5900 5150 50  0001 C CNN
 F 1 "GND" H 5905 5227 50  0000 C CNN
 F 2 "" H 5900 5400 50  0001 C CNN
 F 3 "" H 5900 5400 50  0001 C CNN
@@ -820,10 +820,10 @@ Wire Wire Line
 Wire Wire Line
 	2200 4400 2250 4400
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0108
 U 1 1 5E8D368D
 P 6200 2800
-F 0 "#PWR?" H 6200 2650 50  0001 C CNN
+F 0 "#PWR0108" H 6200 2650 50  0001 C CNN
 F 1 "+3.3V" H 6215 2973 50  0000 C CNN
 F 2 "" H 6200 2800 50  0001 C CNN
 F 3 "" H 6200 2800 50  0001 C CNN
@@ -831,10 +831,10 @@ F 3 "" H 6200 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0109
 U 1 1 5E8D2999
 P 5900 2800
-F 0 "#PWR?" H 5900 2650 50  0001 C CNN
+F 0 "#PWR0109" H 5900 2650 50  0001 C CNN
 F 1 "+5V" H 5915 2973 50  0000 C CNN
 F 2 "" H 5900 2800 50  0001 C CNN
 F 3 "" H 5900 2800 50  0001 C CNN
@@ -842,10 +842,10 @@ F 3 "" H 5900 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0116
 U 1 1 5E8A34E7
 P 2800 2800
-F 0 "#PWR?" H 2800 2650 50  0001 C CNN
+F 0 "#PWR0116" H 2800 2650 50  0001 C CNN
 F 1 "+3.3V" H 2815 2973 50  0000 C CNN
 F 2 "" H 2800 2800 50  0001 C CNN
 F 3 "" H 2800 2800 50  0001 C CNN
@@ -1042,7 +1042,7 @@ Populate the Arduino Nano for simpler\njobs like DMX controlling etc.
 Text Notes 650  1150 0    50   ~ 0
 Make sure to feed Vin with voltage that\nthe LED strip can handle.\nTwo connector options for power:\n* Phoenix Contact MSTBA\n* Barrel Jack 2x6.4mm
 Text Notes 7650 1350 0    50   ~ 0
-LED driver  is made for LED strip that have red, green, blue and white channels that\nhave a common positive rail like +12V.\n\nThe LED driver can drive 4 output channels in constant voltage mode at 5A each.\nThe channel can drive up to 10A current if an optional IRLML6344 is mounted.\nA 5m LED strip consisting of 300 LED's will draw 6A (20mAx300) when fully lit.\nA full RGB strip 18A, and a RGBW strip 24A.
+LED driver  is made for LED strip that have red, green, blue and white channels that\nhave a common positive rail like +12V.\n\nThe LED driver can drive 4 output channels in constant voltage mode at 5A each.\nThe channel can drive up to 10A current if an optional IRLML6344 is mounted.\nOne color channel on a 5m LED strip consisting of 300 LED's will draw\n6A (20mA x 300px) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
 Text Notes 5050 950  0    50   ~ 0
 The 5V buck converter will feed the\nmicro controllers with 5V DC.
 Text Notes 7650 6150 0    50   ~ 0
@@ -1086,10 +1086,10 @@ Wire Notes Line
 Wire Notes Line
 	3950 6000 3950 7700
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0120
 U 1 1 5EF23D23
 P 2400 5900
-F 0 "#PWR?" H 2400 5750 50  0001 C CNN
+F 0 "#PWR0120" H 2400 5750 50  0001 C CNN
 F 1 "+3.3V" H 2415 6073 50  0000 C CNN
 F 2 "" H 2400 5900 50  0001 C CNN
 F 3 "" H 2400 5900 50  0001 C CNN
@@ -1311,10 +1311,10 @@ Wire Wire Line
 Wire Wire Line
 	950  7050 1000 7050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0121
 U 1 1 5E93FFB4
 P 800 6750
-F 0 "#PWR?" H 800 6600 50  0001 C CNN
+F 0 "#PWR0121" H 800 6600 50  0001 C CNN
 F 1 "+3.3V" H 815 6923 50  0000 C CNN
 F 2 "" H 800 6750 50  0001 C CNN
 F 3 "" H 800 6750 50  0001 C CNN

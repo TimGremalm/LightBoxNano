@@ -36,7 +36,7 @@ https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=572687AF787DDED1
 # RGBW driver
 This is made for LED strip that have red, green, blue and white channels that have a common positive rail like +12V.
 The LED driver can drive 4 output channels in constant voltage mode at 5A each. The channel can drive up to 10A current if an optional IRLML6344 is mounted.
-A 5m LED strip consisting of 300 LED's will draw 6A (20mAx300) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
+One color channel on a 5m LED strip consisting of 300 LED's will draw 6A (20mA x 300px) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
 
 | Channel	| Arduino Nano		| ESP32 |
 | --------- | ----------------- | ----- |
