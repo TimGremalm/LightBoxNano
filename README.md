@@ -67,9 +67,9 @@ Also a pin header of the Arduino Nano will be easily assessable for hooking up r
 
 
 # DMX Tranceiver
-A DMX transiver (RS-485) can optionally be mounted for receiveing an sending DMX512.
+A RS-485 transceiver can optionally be mounted for sending and receiveing DMX512.
 It uses ADM2687E which isolates the RS-485 bus from the low voltage micro controller side. This is important as electrical errors down the bus can propagage along the bus.
-ADM2687E also isolates the poer on the bus side by a buildt in DC to DC converter.
+ADM2687E also isolates the power on the bus side by a buildt in DC to DC converter.
 
 The tranceiver can be set to send DMX data if the jumpers "LinkDriverOutput1" and "LinkDriverOutput12" is soldered.
 
