@@ -199,7 +199,7 @@ AR Path="/60A6463B" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A6463B" Ref="Cdmx8"  Part="1" 
 F 0 "Cdmx8" H 6600 4250 50  0000 L CNN
 F 1 "10µF" H 6600 4150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6538 4050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6538 4050 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2756457.pdf?_ga=2.173650019.1391520159.1585828864-167263916.1529948031" H 6500 4200 50  0001 C CNN
 F 4 "A767MU107M1HLAE027" H 6500 4200 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL" H 6500 4200 50  0001 C CNN "Seller"
@@ -214,7 +214,7 @@ AR Path="/60A64643" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A64643" Ref="Cdmx6"  Part="1" 
 F 0 "Cdmx6" H 6600 2950 50  0000 L CNN
 F 1 "100nF" H 6600 2850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6538 2750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6538 2750 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 6500 2900 50  0001 C CNN
 F 4 "MC0603B104J160CT" H 6500 2900 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 6500 2900 50  0001 C CNN "Seller"
@@ -229,7 +229,7 @@ AR Path="/60A6464B" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A6464B" Ref="Cdmx7"  Part="1" 
 F 0 "Cdmx7" H 6150 4250 50  0000 L CNN
 F 1 "100nF" H 6150 4150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 4050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 4050 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 6050 4200 50  0001 C CNN
 F 4 "MC0603B104J160CT" H 6050 4200 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 6050 4200 50  0001 C CNN "Seller"
@@ -248,7 +248,7 @@ AR Path="/60A64657" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A64657" Ref="Cdmx5"  Part="1" 
 F 0 "Cdmx5" H 6150 2950 50  0000 L CNN
 F 1 "10nF" H 6150 2850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 2750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 2750 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2873548.pdf?_ga=2.86089560.1391520159.1585828864-167263916.1529948031" H 6050 2900 50  0001 C CNN
 F 4 "MCU0603R103KCT" H 6050 2900 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/multicomp/mcu0603r103kct/cap-0-01-f-50v-10-x7r-0603/dp/9406182RL" H 6050 2900 50  0001 C CNN "Seller"
@@ -281,7 +281,7 @@ AR Path="/60A6466B" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A6466B" Ref="Cdmx4"  Part="1" 
 F 0 "Cdmx4" H 4350 4250 50  0000 L CNN
 F 1 "100nF" H 4350 4150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4288 4050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4288 4050 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 4250 4200 50  0001 C CNN
 F 4 "MC0603B104J160CT" H 4250 4200 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 4250 4200 50  0001 C CNN "Seller"
@@ -296,7 +296,7 @@ AR Path="/60A64673" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A64673" Ref="Cdmx3"  Part="1" 
 F 0 "Cdmx3" H 3900 4250 50  0000 L CNN
 F 1 "10µF" H 3900 4150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3838 4050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3838 4050 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2756457.pdf?_ga=2.173650019.1391520159.1585828864-167263916.1529948031" H 3800 4200 50  0001 C CNN
 F 4 "A767MU107M1HLAE027" H 3800 4200 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL" H 3800 4200 50  0001 C CNN "Seller"
@@ -316,7 +316,7 @@ AR Path="/60A6467E" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A6467E" Ref="Cdmx2"  Part="1" 
 F 0 "Cdmx2" H 4350 2950 50  0000 L CNN
 F 1 "10nF" H 4350 2850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4288 2750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4288 2750 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2873548.pdf?_ga=2.86089560.1391520159.1585828864-167263916.1529948031" H 4250 2900 50  0001 C CNN
 F 4 "MCU0603R103KCT" H 4250 2900 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/multicomp/mcu0603r103kct/cap-0-01-f-50v-10-x7r-0603/dp/9406182RL" H 4250 2900 50  0001 C CNN "Seller"
@@ -331,7 +331,7 @@ AR Path="/60A64686" Ref="C?"  Part="1"
 AR Path="/60A21BCB/60A64686" Ref="Cdmx1"  Part="1" 
 F 0 "Cdmx1" H 3900 2950 50  0000 L CNN
 F 1 "100nF" H 3900 2850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3838 2750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3838 2750 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 3800 2900 50  0001 C CNN
 F 4 "MC0603B104J160CT" H 3800 2900 50  0001 C CNN "Article Number"
 F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 3800 2900 50  0001 C CNN "Seller"
