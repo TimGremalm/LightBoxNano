@@ -99,7 +99,7 @@ Wire Notes Line
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
 Text Notes 2400 1500 0    50   ~ 0
-Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Place mounting holes\n* Shorten designators\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
+Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
 $Comp
 L power:GND #PWR0106
 U 1 1 5DF44892
@@ -1388,4 +1388,48 @@ Wire Wire Line
 	6950 1400 6850 1400
 Wire Wire Line
 	6850 1400 6850 1250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EB7CEAB
+P 6950 5800
+F 0 "H1" H 7050 5846 50  0000 L CNN
+F 1 "MountingHole" H 7050 5755 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 5800 50  0001 C CNN
+F 3 "~" H 6950 5800 50  0001 C CNN
+	1    6950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EB8008A
+P 6950 6000
+F 0 "H2" H 7050 6046 50  0000 L CNN
+F 1 "MountingHole" H 7050 5955 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 6000 50  0001 C CNN
+F 3 "~" H 6950 6000 50  0001 C CNN
+	1    6950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EB80344
+P 6950 6200
+F 0 "H3" H 7050 6246 50  0000 L CNN
+F 1 "MountingHole" H 7050 6155 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 6200 50  0001 C CNN
+F 3 "~" H 6950 6200 50  0001 C CNN
+	1    6950 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EB8064C
+P 6950 6400
+F 0 "H4" H 7050 6446 50  0000 L CNN
+F 1 "MountingHole" H 7050 6355 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 6400 50  0001 C CNN
+F 3 "~" H 6950 6400 50  0001 C CNN
+	1    6950 6400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
