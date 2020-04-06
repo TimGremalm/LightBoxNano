@@ -42,8 +42,8 @@ One color channel on a 5m LED strip consisting of 300 LED's will draw 6A (20mA x
 | --------- | ----------------- | ----- |
 | Red		| D5 (PD5)			| IO26	|
 | Green		| D6 (PD6)			| IO27	|
-| Blue		| D9 (PB1)			| IO14	|
-| White		| D10 (PB2)			| IO12	|
+| Blue		| D9 (PB1)			| IO13	|
+| White		| D10 (PB2)			| IO15	|
 
 
 # Addressable LED driver
@@ -63,8 +63,8 @@ Two potentiometers can optionally be mounted. They are pulled up to 3.3V, so you
 A 10 position rotary coded switch can optionally be mounted for selecting different modes.
 | Channel	| Arduino Nano		| ESP32 |
 | --------- | ----------------- | ----- |
-| SwCode1	| D7 (PD7)			| IO13	|
-| SwCode2	| D8 (PB0)			| IO15	|
+| SwCode1	| D7 (PD7)			| IO14	|
+| SwCode2	| D8 (PB0)			| IO12	|
 | SwCode4	| D11 (PB3)			| IO2	|
 | SwCode8	| D12 (PB4)			| IO4	|
 

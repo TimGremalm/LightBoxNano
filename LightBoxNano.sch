@@ -743,9 +743,9 @@ NoConn ~ 5300 3600
 NoConn ~ 5300 3500
 NoConn ~ 5300 3400
 Wire Wire Line
-	5200 4500 5300 4500
+	5200 4700 5300 4700
 Wire Wire Line
-	5200 4400 5300 4400
+	5200 4600 5300 4600
 Wire Wire Line
 	5200 4300 5300 4300
 Wire Wire Line
@@ -888,9 +888,9 @@ Wire Wire Line
 Wire Wire Line
 	2200 4200 2250 4200
 Wire Wire Line
-	5200 4600 5300 4600
+	5200 4400 5300 4400
 Wire Wire Line
-	5200 4700 5300 4700
+	5200 4500 5300 4500
 Wire Wire Line
 	5200 4800 5300 4800
 Wire Wire Line
@@ -899,7 +899,7 @@ Wire Wire Line
 	2800 5000 2700 5000
 Connection ~ 2700 5000
 Text Notes 4000 4050 0    50   ~ 0
-Ports:\nIO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_Enable_Receive\nIO23  DMX_Enable_Send\nIO25  addressable\nIO26  red\nIO27  green\nIO14  blue\nIO12  white\nIO34  POT_1\nIO35  POT_2\nIO13  SwCode1\nIO15  SwCode2\nIO2   SwCode4\nIO4   SwCode8
+Ports:\nIO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_Enable_Receive\nIO23  DMX_Enable_Send\nIO25  addressable\nIO26  red\nIO27  green\nIO13  blue\nIO15  white\nIO34  POT_1\nIO35  POT_2\nIO14  SwCode1\nIO12  SwCode2\nIO2   SwCode4\nIO4   SwCode8
 $Sheet
 S 5600 1150 900  750 
 U 5DE1594D
@@ -951,17 +951,17 @@ Text Label 2200 4400 2    50   ~ 0
 Gate_blue
 Text Label 2200 4500 2    50   ~ 0
 Gate_white
-Text Label 5200 4600 2    50   ~ 0
+Text Label 5200 4400 2    50   ~ 0
 SwCode1
-Text Label 5200 4700 2    50   ~ 0
+Text Label 5200 4500 2    50   ~ 0
 SwCode2
 Text Label 5200 4800 2    50   ~ 0
 SwCode4
 Text Label 5200 4900 2    50   ~ 0
 SwCode8
-Text Label 5200 4400 2    50   ~ 0
+Text Label 5200 4600 2    50   ~ 0
 Gate_blue
-Text Label 5200 4500 2    50   ~ 0
+Text Label 5200 4700 2    50   ~ 0
 Gate_white
 Text Label 8300 3800 2    50   ~ 0
 Gate_blue

@@ -566,7 +566,7 @@ P 9650 5850
 AR Path="/60FEA1F2" Ref="LinkDriverOutput?"  Part="1" 
 AR Path="/60A21BCB/60FEA1F2" Ref="Link_TransceiverGnd_To_DMXgnd1"  Part="1" 
 F 0 "Link_TransceiverGnd_To_DMXgnd1" H 9650 5750 50  0000 C CNN
-F 1 "LinkDriverOutput" H 9650 5964 50  0001 C CNN
+F 1 "LinkTransceiverGndToDmxGnd" H 9650 5964 50  0001 C CNN
 F 2 "ConnTest:JUMPER-SOLDER-SMD" H 9650 5850 50  0001 C CNN
 F 3 "~" H 9650 5850 50  0001 C CNN
 	1    9650 5850
@@ -593,7 +593,7 @@ P 9650 6150
 AR Path="/61015394" Ref="LinkTransieverToDMXGround?"  Part="1" 
 AR Path="/60A21BCB/61015394" Ref="Link_DMXgnd_To_DMXchassignd1"  Part="1" 
 F 0 "Link_DMXgnd_To_DMXchassignd1" H 9650 6050 50  0000 C CNN
-F 1 "LinkDriverOutput" H 9650 6264 50  0001 C CNN
+F 1 "LinkDmxGndToChassiGnd" H 9650 6264 50  0001 C CNN
 F 2 "ConnTest:JUMPER-SOLDER-SMD" H 9650 6150 50  0001 C CNN
 F 3 "~" H 9650 6150 50  0001 C CNN
 	1    9650 6150
