@@ -16,15 +16,15 @@ $EndDescr
 $Comp
 L Connector:Barrel_Jack_Switch Jb1
 U 1 1 5DE03891
-P 1150 1550
-F 0 "Jb1" H 1150 1350 50  0000 C CNN
-F 1 "Barrel Jack Switch 5A 2mm" H 1150 1750 50  0000 C CNN
-F 2 "LightBoxNanoFootprints:BarrelJack_SPC21364" H 1200 1510 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1200 1510 50  0001 C CNN
-F 4 "Multicomp" H 1150 1550 50  0001 C CNN "Manufacturer"
-F 5 "SPC21364" H 1150 1550 50  0001 C CNN "Article Number"
-F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1150 1550 50  0001 C CNN "Seller"
-	1    1150 1550
+P 1150 1750
+F 0 "Jb1" H 1150 1550 50  0000 C CNN
+F 1 "Barrel Jack Switch 5A 2mm" H 1150 1950 50  0000 C CNN
+F 2 "LightBoxNanoFootprints:BarrelJack_SPC21364" H 1200 1710 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1200 1710 50  0001 C CNN
+F 4 "Multicomp" H 1150 1750 50  0001 C CNN "Manufacturer"
+F 5 "SPC21364" H 1150 1750 50  0001 C CNN "Article Number"
+F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1150 1750 50  0001 C CNN "Seller"
+	1    1150 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -53,8 +53,6 @@ F 3 "" H 6650 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 1400 6650 1400
-Wire Wire Line
-	6650 1400 6650 1250
 $Comp
 L Device:CP Cvin1
 U 1 1 5DE52230
@@ -131,7 +129,7 @@ F 5 "https://se.farnell.com/phoenix-contact/1757271/header-right-angle-5-08mm-5w
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 1650 1650 1650
+	1450 1850 1650 1850
 Wire Wire Line
 	9500 1500 9500 1450
 $Comp
@@ -641,12 +639,12 @@ Wire Notes Line
 $Comp
 L power:GND #PWR0119
 U 1 1 5DE6183E
-P 1650 1650
-F 0 "#PWR0119" H 1650 1400 50  0001 C CNN
-F 1 "GND" H 1655 1477 50  0000 C CNN
-F 2 "" H 1650 1650 50  0001 C CNN
-F 3 "" H 1650 1650 50  0001 C CNN
-	1    1650 1650
+P 1650 1950
+F 0 "#PWR0119" H 1650 1700 50  0001 C CNN
+F 1 "GND" H 1655 1777 50  0000 C CNN
+F 2 "" H 1650 1950 50  0001 C CNN
+F 3 "" H 1650 1950 50  0001 C CNN
+	1    1650 1950
 	1    0    0    -1  
 $EndComp
 Connection ~ 5900 5400
@@ -846,14 +844,14 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 Jc1
 U 1 1 5DE0534D
-P 2000 1450
-F 0 "Jc1" H 2000 1200 50  0000 C CNN
-F 1 "MSTBA2" H 2000 1550 50  0000 C CNN
-F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_2pole" H 2000 1450 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 2000 1450 50  0001 C CNN
-F 4 "1757242" H 2000 1450 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171" H 2000 1450 50  0001 C CNN "Seller"
-	1    2000 1450
+P 2050 1650
+F 0 "Jc1" H 2050 1400 50  0000 C CNN
+F 1 "MSTBA2" H 2050 1750 50  0000 C CNN
+F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_2pole" H 2050 1650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 2050 1650 50  0001 C CNN
+F 4 "1757242" H 2050 1650 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171" H 2050 1650 50  0001 C CNN "Seller"
+	1    2050 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -911,7 +909,7 @@ F2 "BuckVin" I L 5600 1400 50
 F3 "Buck5VOut" I R 6500 1400 50 
 F4 "BuckGND" I L 5600 1700 50 
 $EndSheet
-Text Label 1750 1300 1    50   ~ 0
+Text Label 1750 1350 1    50   ~ 0
 Vin
 Text Label 4000 1650 0    50   ~ 0
 Vin
@@ -1297,21 +1295,21 @@ Text Notes 650  5900 0    50   ~ 0
 Text Notes 7650 6450 0    50   ~ 0
 Place ESD diodes on connector pins.
 Wire Wire Line
-	4000 1550 3450 1550
+	4000 1550 3850 1550
 Wire Wire Line
 	4000 1650 3850 1650
 Wire Wire Line
-	1650 1550 1650 1650
+	1650 1750 1650 1850
 Wire Wire Line
-	1650 1550 1800 1550
-Connection ~ 1650 1650
+	1650 1750 1850 1750
+Connection ~ 1650 1850
 Wire Wire Line
-	1750 1300 1750 1450
+	1750 1350 1750 1650
 Wire Wire Line
-	1450 1450 1750 1450
-Connection ~ 1750 1450
+	1450 1650 1750 1650
+Connection ~ 1750 1650
 Wire Wire Line
-	1750 1450 1800 1450
+	1750 1650 1850 1650
 Connection ~ 3850 1650
 Wire Wire Line
 	3850 1650 3450 1650
@@ -1324,4 +1322,70 @@ Wire Wire Line
 Connection ~ 3850 1950
 Wire Wire Line
 	3450 1750 3550 1750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E8EAED4
+P 1800 1350
+F 0 "#FLG0101" H 1800 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1523 50  0001 C CNN
+F 2 "" H 1800 1350 50  0001 C CNN
+F 3 "~" H 1800 1350 50  0001 C CNN
+	1    1800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1350 1750 1350
+Wire Wire Line
+	1650 1850 1650 1950
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E91DEF0
+P 1900 1950
+F 0 "#FLG0102" H 1900 2025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 2123 50  0001 C CNN
+F 2 "" H 1900 1950 50  0001 C CNN
+F 3 "~" H 1900 1950 50  0001 C CNN
+	1    1900 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 1950 1900 1850
+Wire Wire Line
+	1900 1850 1650 1850
+NoConn ~ 1450 1750
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E94B7E7
+P 6750 1250
+F 0 "#FLG0103" H 6750 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 1423 50  0001 C CNN
+F 2 "" H 6750 1250 50  0001 C CNN
+F 3 "~" H 6750 1250 50  0001 C CNN
+	1    6750 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1250 6750 1400
+Wire Wire Line
+	3850 1650 3850 1550
+Connection ~ 3850 1550
+Wire Wire Line
+	3850 1550 3450 1550
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5E975B8B
+P 6300 2800
+F 0 "#FLG0104" H 6300 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 2973 50  0001 C CNN
+F 2 "" H 6300 2800 50  0001 C CNN
+F 3 "~" H 6300 2800 50  0001 C CNN
+	1    6300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2800 6200 2800
+Wire Wire Line
+	6750 1400 6650 1400
+Wire Wire Line
+	6650 1400 6650 1250
 $EndSCHEMATC
