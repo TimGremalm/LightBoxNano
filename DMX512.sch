@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 "https://github.com/TimGremalm/LightBoxNano"
 Comment4 "http://tim.gremalm.se/"
 $EndDescr
-Text Notes 7150 4650 2    50   ~ 0
-* DMX Terminator resistor is 1206 for isolation.
 Wire Wire Line
 	8900 1600 8950 1600
 $Comp
@@ -166,10 +164,10 @@ AR Path="/60A6461A" Ref="R_termination?"  Part="1"
 AR Path="/60A21BCB/60A6461A" Ref="R_termination1"  Part="1" 
 F 0 "R_termination1" H 9300 3300 50  0000 C CNN
 F 1 "120R DNP" H 9400 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 9580 3250 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2563624.pdf" H 9650 3250 50  0001 C CNN
-F 4 "MCWR12X1200FTL" V 9650 3250 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mcwr12x1200ftl/res-120r-1-0-25w-thick-film/dp/2447462" V 9650 3250 50  0001 C CNN "Seller"
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9580 3250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.241278018.1391520159.1585828864-167263916.1529948031" H 9650 3250 50  0001 C CNN
+F 4 "MC0100W06031120R" V 9650 3250 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w06031120r/motst-tjockfilm-120r-1-0-063w/dp/2845766" V 9650 3250 50  0001 C CNN "Seller"
 	1    9650 3250
 	-1   0    0    1   
 $EndComp
@@ -198,13 +196,13 @@ L Device:C C?
 U 1 1 60A6463B
 P 6500 4200
 AR Path="/60A6463B" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6463B" Ref="C9"  Part="1" 
-F 0 "C9" H 6600 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A6463B" Ref="Cdmx8"  Part="1" 
+F 0 "Cdmx8" H 6600 4250 50  0000 L CNN
 F 1 "10µF" H 6600 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6538 4050 50  0001 C CNN
-F 3 "~" H 6500 4200 50  0001 C CNN
-F 4 "" H 6500 4200 50  0001 C CNN "Article Number"
-F 5 "" H 6500 4200 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2756457.pdf?_ga=2.173650019.1391520159.1585828864-167263916.1529948031" H 6500 4200 50  0001 C CNN
+F 4 "A767MU107M1HLAE027" H 6500 4200 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL" H 6500 4200 50  0001 C CNN "Seller"
 	1    6500 4200
 	1    0    0    -1  
 $EndComp
@@ -213,13 +211,13 @@ L Device:C C?
 U 1 1 60A64643
 P 6500 2900
 AR Path="/60A64643" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64643" Ref="C8"  Part="1" 
-F 0 "C8" H 6600 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A64643" Ref="Cdmx6"  Part="1" 
+F 0 "Cdmx6" H 6600 2950 50  0000 L CNN
 F 1 "100nF" H 6600 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6538 2750 50  0001 C CNN
-F 3 "~" H 6500 2900 50  0001 C CNN
-F 4 "" H 6500 2900 50  0001 C CNN "Article Number"
-F 5 "" H 6500 2900 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 6500 2900 50  0001 C CNN
+F 4 "MC0603B104J160CT" H 6500 2900 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 6500 2900 50  0001 C CNN "Seller"
 	1    6500 2900
 	1    0    0    -1  
 $EndComp
@@ -228,13 +226,13 @@ L Device:C C?
 U 1 1 60A6464B
 P 6050 4200
 AR Path="/60A6464B" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6464B" Ref="C7"  Part="1" 
-F 0 "C7" H 6150 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A6464B" Ref="Cdmx7"  Part="1" 
+F 0 "Cdmx7" H 6150 4250 50  0000 L CNN
 F 1 "100nF" H 6150 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 4050 50  0001 C CNN
-F 3 "~" H 6050 4200 50  0001 C CNN
-F 4 "" H 6050 4200 50  0001 C CNN "Article Number"
-F 5 "" H 6050 4200 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 6050 4200 50  0001 C CNN
+F 4 "MC0603B104J160CT" H 6050 4200 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 6050 4200 50  0001 C CNN "Seller"
 	1    6050 4200
 	1    0    0    -1  
 $EndComp
@@ -247,13 +245,13 @@ L Device:C C?
 U 1 1 60A64657
 P 6050 2900
 AR Path="/60A64657" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64657" Ref="C6"  Part="1" 
-F 0 "C6" H 6150 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A64657" Ref="Cdmx5"  Part="1" 
+F 0 "Cdmx5" H 6150 2950 50  0000 L CNN
 F 1 "10nF" H 6150 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 2750 50  0001 C CNN
-F 3 "~" H 6050 2900 50  0001 C CNN
-F 4 "" H 6050 2900 50  0001 C CNN "Article Number"
-F 5 "" H 6050 2900 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2873548.pdf?_ga=2.86089560.1391520159.1585828864-167263916.1529948031" H 6050 2900 50  0001 C CNN
+F 4 "MCU0603R103KCT" H 6050 2900 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mcu0603r103kct/cap-0-01-f-50v-10-x7r-0603/dp/9406182RL" H 6050 2900 50  0001 C CNN "Seller"
 	1    6050 2900
 	1    0    0    -1  
 $EndComp
@@ -280,13 +278,13 @@ L Device:C C?
 U 1 1 60A6466B
 P 4250 4200
 AR Path="/60A6466B" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6466B" Ref="C5"  Part="1" 
-F 0 "C5" H 4350 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A6466B" Ref="Cdmx4"  Part="1" 
+F 0 "Cdmx4" H 4350 4250 50  0000 L CNN
 F 1 "100nF" H 4350 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4288 4050 50  0001 C CNN
-F 3 "~" H 4250 4200 50  0001 C CNN
-F 4 "" H 4250 4200 50  0001 C CNN "Article Number"
-F 5 "" H 4250 4200 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 4250 4200 50  0001 C CNN
+F 4 "MC0603B104J160CT" H 4250 4200 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 4250 4200 50  0001 C CNN "Seller"
 	1    4250 4200
 	1    0    0    -1  
 $EndComp
@@ -295,13 +293,13 @@ L Device:C C?
 U 1 1 60A64673
 P 3800 4200
 AR Path="/60A64673" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64673" Ref="C3"  Part="1" 
-F 0 "C3" H 3900 4250 50  0000 L CNN
+AR Path="/60A21BCB/60A64673" Ref="Cdmx3"  Part="1" 
+F 0 "Cdmx3" H 3900 4250 50  0000 L CNN
 F 1 "10µF" H 3900 4150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3838 4050 50  0001 C CNN
-F 3 "~" H 3800 4200 50  0001 C CNN
-F 4 "" H 3800 4200 50  0001 C CNN "Article Number"
-F 5 "" H 3800 4200 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2756457.pdf?_ga=2.173650019.1391520159.1585828864-167263916.1529948031" H 3800 4200 50  0001 C CNN
+F 4 "A767MU107M1HLAE027" H 3800 4200 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL" H 3800 4200 50  0001 C CNN "Seller"
 	1    3800 4200
 	1    0    0    -1  
 $EndComp
@@ -315,13 +313,13 @@ L Device:C C?
 U 1 1 60A6467E
 P 4250 2900
 AR Path="/60A6467E" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A6467E" Ref="C4"  Part="1" 
-F 0 "C4" H 4350 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A6467E" Ref="Cdmx2"  Part="1" 
+F 0 "Cdmx2" H 4350 2950 50  0000 L CNN
 F 1 "10nF" H 4350 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4288 2750 50  0001 C CNN
-F 3 "~" H 4250 2900 50  0001 C CNN
-F 4 "" H 4250 2900 50  0001 C CNN "Article Number"
-F 5 "" H 4250 2900 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2873548.pdf?_ga=2.86089560.1391520159.1585828864-167263916.1529948031" H 4250 2900 50  0001 C CNN
+F 4 "MCU0603R103KCT" H 4250 2900 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mcu0603r103kct/cap-0-01-f-50v-10-x7r-0603/dp/9406182RL" H 4250 2900 50  0001 C CNN "Seller"
 	1    4250 2900
 	1    0    0    -1  
 $EndComp
@@ -330,13 +328,13 @@ L Device:C C?
 U 1 1 60A64686
 P 3800 2900
 AR Path="/60A64686" Ref="C?"  Part="1" 
-AR Path="/60A21BCB/60A64686" Ref="C2"  Part="1" 
-F 0 "C2" H 3900 2950 50  0000 L CNN
+AR Path="/60A21BCB/60A64686" Ref="Cdmx1"  Part="1" 
+F 0 "Cdmx1" H 3900 2950 50  0000 L CNN
 F 1 "100nF" H 3900 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3838 2750 50  0001 C CNN
-F 3 "~" H 3800 2900 50  0001 C CNN
-F 4 "" H 3800 2900 50  0001 C CNN "Article Number"
-F 5 "" H 3800 2900 50  0001 C CNN "Seller"
+F 3 "http://www.farnell.com/datasheets/2860632.pdf?_ga=2.144285557.1391520159.1585828864-167263916.1529948031" H 3800 2900 50  0001 C CNN
+F 4 "MC0603B104J160CT" H 3800 2900 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813" H 3800 2900 50  0001 C CNN "Seller"
 	1    3800 2900
 	1    0    0    -1  
 $EndComp
@@ -496,19 +494,6 @@ Wire Wire Line
 	2950 6750 2800 6750
 Wire Wire Line
 	1900 6750 1750 6750
-$Comp
-L Connector_Generic:Conn_01x04 J_DMX?
-U 1 1 60A645BB
-P 2050 3100
-AR Path="/60A645BB" Ref="J_DMX?"  Part="1" 
-AR Path="/60A21BCB/60A645BB" Ref="J_DMX_Breakout1"  Part="1" 
-F 0 "J_DMX_Breakout1" H 1968 2675 50  0000 C CNN
-F 1 "Conn_04" H 1968 2766 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2050 3100 50  0001 C CNN
-F 3 "~" H 2050 3100 50  0001 C CNN
-	1    2050 3100
-	1    0    0    -1  
-$EndComp
 Text Label 1700 3000 2    50   ~ 0
 DMX_Receive
 Text Label 1700 3100 2    50   ~ 0
@@ -761,4 +746,17 @@ Wire Notes Line
 	2700 1900 700  1900
 Text Label 1950 2550 0    50   ~ 0
 DMX_Receive
+$Comp
+L Connector_Generic:Conn_01x04 J_DMX?
+U 1 1 60A645BB
+P 2050 3100
+AR Path="/60A645BB" Ref="J_DMX?"  Part="1" 
+AR Path="/60A21BCB/60A645BB" Ref="J_DMX_Breakout1"  Part="1" 
+F 0 "J_DMX_Breakout1" H 1968 2675 50  0000 C CNN
+F 1 "Conn_04" H 1968 2766 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2050 3100 50  0001 C CNN
+F 3 "~" H 2050 3100 50  0001 C CNN
+	1    2050 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

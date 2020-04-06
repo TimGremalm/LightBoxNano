@@ -132,14 +132,18 @@ But there is a option for mounting a ESP32 Pico Kit instead which is much more p
 | 1			| Multicomp			| Barrel Jack Switch 5A 2mm						| SPC21364				| https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842									|
 | 1			| Neutrik			| XLR 3-pole female Horizontal PCB mount		| NC3FAAH2				| https://se.farnell.com/neutrik/nc3faah2/socket-xlr-pcb-horizontal-3pole/dp/1310023					|
 | 1			| Neutrik			| XLR 3-pole male Horizontal PCB mount			| NC3MAAH				| https://se.farnell.com/neutrik/nc3maah/plug-xlr-pcb-horizontal-3pole/dp/1310044						|
-| 1			| Panasonic			| Cap 18µF 50V 35mΩ								| 50SVPF18M				| https://se.farnell.com/panasonic/50svpf18m/cap-18-f-50v-20-radial/dp/2354813							|
-| 1			| AVX				| Cap 4.7µF 10V 1.4Ω 1206						| TPSA475K010R1400		| https://se.farnell.com/avx/tpsa475k010r1400/cap-4-7-f-10v-10-1206-smd/dp/1135104						|
 | 1			| Littelfuse		| Schottky 200V 10A								| MBRD10200CT			| https://se.farnell.com/littelfuse/mbrd10200ct/schottky-rect-200v-10a-to-252/dp/2773825				|
 | 1			| Vishay-Dale		| Inductor 47µH 42.7mΩ							| IHLP6767GZER470M11	| https://se.farnell.com/vishay/ihlp6767gzer470m11/inductor-47uh-8-6a-20/dp/1845598						|
 | 1			| Texas Instruments	| Buck 5V 3A									| LM2596SX-5.0/NOPB		| https://se.farnell.com/texas-instruments/lm2596sx-5-0-nopb/dc-dc-conv-buck-150khz-to-263/dp/2781829	|
-| 1			| Multicomp			| 120R 1206										| MCWR12X1200FTL		| https://se.farnell.com/multicomp/mcwr12x1200ftl/res-120r-1-0-25w-thick-film/dp/2447462				|
-| ?			| Multicomp			| 300R 0603										| MC0100W06031300R		| https://se.farnell.com/multicomp/mc0100w06031300r/motst-tjockfilm-300r-1-0-063w/dp/2845860			|
-| ?			| Multicomp			| 1k 0603										| MC0100W060311K		| https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750			|
-| ?			| Multicomp			| 10k 0603										| MC0100W0603110K		| https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751			|
-| ?			| Multicomp			| 33k 0603										| MC0100W0603133K		| https://se.farnell.com/multicomp/mc0100w0603133k/motst-tjockfilm-33k-1-0-063w-0603/dp/2845872			|
-| ?			| Multicomp			| 47k 0603										| MC0100W0603147K		| https://se.farnell.com/multicomp/mc0100w0603147k/motst-tjockfilm-47k-1-0-063w-0603/dp/2845909			|
+| 2			| Multicomp Pro		| Cap 10nF 50V 0603								| MCU0603R103KCT		| https://se.farnell.com/multicomp/mcu0603r103kct/cap-0-01-f-50v-10-x7r-0603/dp/9406182RL				|
+| 4			| Multicomp Pro		| Cap 100nF 16V 0603							| MC0603B104J160CT		| https://se.farnell.com/multicomp/mc0603b104j160ct/cap-0-1-f-16v-5-x7r-0603/dp/2320813					|
+| 1			| AVX				| Cap 4.7µF 10V 1.4Ω 1206 Solid Electrolyte		| TPSA475K010R1400		| https://se.farnell.com/avx/tpsa475k010r1400/cap-4-7-f-10v-10-1206-smd/dp/1135104						|
+| 2			| Taiyo Yuden		| Cap 10µF 10V 0603								| LMK107BBJ106MALT		| https://se.farnell.com/taiyo-yuden/lmk107bbj106malt/cap-10-f-10v-20-x5r-0603/dp/2113070				|
+| 1			| Panasonic			| Cap 18µF 50V 35mΩ Aluminium Electrolytic		| 50SVPF18M				| https://se.farnell.com/panasonic/50svpf18m/cap-18-f-50v-20-radial/dp/2354813							|
+| 1			| Kemet				| Cap 100µF 50V 27mΩ Aluminium Electrolytic		| A767MU107M1HLAE027	| https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL			|
+| 1			| Multicomp			| Resistor 120R 0603							| MC0100W06031120R		| https://se.farnell.com/multicomp/mc0100w06031120r/motst-tjockfilm-120r-1-0-063w/dp/2845766			|
+| ?			| Multicomp			| Resistor 300R 0603							| MC0100W06031300R		| https://se.farnell.com/multicomp/mc0100w06031300r/motst-tjockfilm-300r-1-0-063w/dp/2845860			|
+| ?			| Multicomp			| Resistor 1k 0603								| MC0100W060311K		| https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750			|
+| ?			| Multicomp			| Resistor 10k 0603								| MC0100W0603110K		| https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751			|
+| ?			| Multicomp			| Resistor 33k 0603								| MC0100W0603133K		| https://se.farnell.com/multicomp/mc0100w0603133k/motst-tjockfilm-33k-1-0-063w-0603/dp/2845872			|
+| ?			| Multicomp			| Resistor 47k 0603								| MC0100W0603147K		| https://se.farnell.com/multicomp/mc0100w0603147k/motst-tjockfilm-47k-1-0-063w-0603/dp/2845909			|

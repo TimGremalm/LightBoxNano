@@ -14,24 +14,24 @@ Comment3 "https://github.com/TimGremalm/LightBoxNano"
 Comment4 "http://tim.gremalm.se/"
 $EndDescr
 $Comp
-L Connector:Barrel_Jack_Switch J_power_jack1
+L Connector:Barrel_Jack_Switch Jb1
 U 1 1 5DE03891
-P 1250 1850
-F 0 "J_power_jack1" H 1250 1650 50  0000 C CNN
-F 1 "Barrel Jack Switch 5A 2mm" H 1250 2050 50  0000 C CNN
-F 2 "LightBoxNanoFootprints:BarrelJack_SPC21364" H 1300 1810 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1300 1810 50  0001 C CNN
-F 4 "Multicomp" H 1250 1850 50  0001 C CNN "Manufacturer"
-F 5 "SPC21364" H 1250 1850 50  0001 C CNN "Article Number"
-F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1250 1850 50  0001 C CNN "Seller"
-	1    1250 1850
+P 1150 1550
+F 0 "Jb1" H 1150 1350 50  0000 C CNN
+F 1 "Barrel Jack Switch 5A 2mm" H 1150 1750 50  0000 C CNN
+F 2 "LightBoxNanoFootprints:BarrelJack_SPC21364" H 1200 1510 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1692886.pdf?_ga=2.231332955.599385452.1575057425-167263916.1529948031" H 1200 1510 50  0001 C CNN
+F 4 "Multicomp" H 1150 1550 50  0001 C CNN "Manufacturer"
+F 5 "SPC21364" H 1150 1550 50  0001 C CNN "Article Number"
+F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 1150 1550 50  0001 C CNN "Seller"
+	1    1150 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J_addressable1
+L Connector_Generic:Conn_01x03 Jadd1
 U 1 1 5DE05544
 P 10750 6100
-F 0 "J_addressable1" H 10750 6300 50  0000 C CNN
+F 0 "Jadd1" H 10750 6300 50  0000 C CNN
 F 1 "MSTBA3" H 10750 5900 50  0000 C CNN
 F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_3pole" H 10750 6100 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 10750 6100 50  0001 C CNN
@@ -52,42 +52,22 @@ F 3 "" H 6650 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 1750 1850 1750
-Wire Wire Line
 	6500 1400 6650 1400
 Wire Wire Line
 	6650 1400 6650 1250
 $Comp
-L Device:CP C1
+L Device:CP Cvin1
 U 1 1 5DE52230
-P 4600 1700
-F 0 "C1" H 4718 1746 50  0000 L CNN
-F 1 "100µF" H 4718 1655 50  0000 L CNN
-F 2 "" H 4638 1550 50  0001 C CNN
-F 3 "~" H 4600 1700 50  0001 C CNN
-F 4 "" H 4600 1700 50  0001 C CNN "Article Number"
-F 5 "" H 4600 1700 50  0001 C CNN "Seller"
-	1    4600 1700
+P 3850 1800
+F 0 "Cvin1" H 3968 1846 50  0000 L CNN
+F 1 "100µF 50V 27mΩ" H 3968 1755 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_10x10.5" H 3888 1650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2756457.pdf?_ga=2.147362935.1391520159.1585828864-167263916.1529948031" H 3850 1800 50  0001 C CNN
+F 4 "A767MU107M1HLAE027" H 3850 1800 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL" H 3850 1800 50  0001 C CNN "Seller"
+	1    3850 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 1450 1850 1750
-Wire Wire Line
-	1350 1450 1850 1450
-Connection ~ 1850 1450
-$Comp
-L power:GND #PWR0102
-U 1 1 5DE6746F
-P 1750 1200
-F 0 "#PWR0102" H 1750 950 50  0001 C CNN
-F 1 "GND" H 1755 1027 50  0000 C CNN
-F 2 "" H 1750 1200 50  0001 C CNN
-F 3 "" H 1750 1200 50  0001 C CNN
-	1    1750 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 1350 1350 1350
 Wire Notes Line
 	2200 750  2200 2200
 Wire Notes Line
@@ -118,12 +98,10 @@ Wire Notes Line
 	2350 750  2350 2200
 Wire Notes Line
 	4900 750  4900 2200
-Wire Wire Line
-	3050 1900 3250 1900
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
-Text Notes 2400 1300 0    50   ~ 0
-* P-Fet fuse here\n* Polarity protection\n* Add Power LED\n* Test pads\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
+Text Notes 2400 1500 0    50   ~ 0
+Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Place mounting holes\n* Shorten designators\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
 $Comp
 L power:GND #PWR0106
 U 1 1 5DF44892
@@ -140,10 +118,10 @@ Wire Wire Line
 Wire Wire Line
 	5450 1700 5600 1700
 $Comp
-L Connector_Generic:Conn_01x05 J_RGBW1
+L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
 P 10600 1700
-F 0 "J_RGBW1" H 10680 1742 50  0000 L CNN
+F 0 "Jrgbw1" H 10680 1742 50  0000 L CNN
 F 1 "MSTBA5" H 10680 1651 50  0000 L CNN
 F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_5pole" H 10600 1700 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 10600 1700 50  0001 C CNN
@@ -153,7 +131,7 @@ F 5 "https://se.farnell.com/phoenix-contact/1757271/header-right-angle-5-08mm-5w
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 1950 1750 1950
+	1450 1650 1650 1650
 Wire Wire Line
 	9500 1500 9500 1450
 $Comp
@@ -168,10 +146,10 @@ F 3 "" H 9000 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Q_red1
+L ProjectSpecific:IRLML6344 Qr1
 U 1 1 5E00B511
 P 8900 1700
-F 0 "Q_red1" H 9050 1550 50  0000 L CNN
+F 0 "Qr1" H 9050 1550 50  0000 L CNN
 F 1 "IRLML6344" H 9104 1655 50  0001 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9100 1610 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8900 1700 50  0001 L CNN
@@ -236,10 +214,10 @@ Connection ~ 9000 2200
 Wire Wire Line
 	9000 2200 9000 1900
 $Comp
-L ProjectSpecific:IRLML6344 Q_red_optional1
+L ProjectSpecific:IRLML6344 Qr2
 U 1 1 5DFE38F5
 P 9400 1700
-F 0 "Q_red_optional1" H 9550 1550 50  0000 L CNN
+F 0 "Qr2" H 9550 1550 50  0000 L CNN
 F 1 "IRLML6344" H 9550 1450 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9600 1610 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9400 1700 50  0001 L CNN
@@ -268,10 +246,10 @@ F 3 "" H 9000 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Q_green1
+L ProjectSpecific:IRLML6344 Qg1
 U 1 1 5E09EC75
 P 8900 2750
-F 0 "Q_green1" H 9050 2600 50  0000 L CNN
+F 0 "Qg1" H 9050 2600 50  0000 L CNN
 F 1 "IRLML6344" H 9104 2705 50  0001 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9100 2660 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8900 2750 50  0001 L CNN
@@ -337,10 +315,10 @@ Connection ~ 9000 3250
 Wire Wire Line
 	9000 3250 9000 2950
 $Comp
-L ProjectSpecific:IRLML6344 Q_green_optional1
+L ProjectSpecific:IRLML6344 Qg2
 U 1 1 5E09ECA8
 P 9400 2750
-F 0 "Q_green_optional1" H 9550 2600 50  0000 L CNN
+F 0 "Qg2" H 9550 2600 50  0000 L CNN
 F 1 "IRLML6344" H 9550 2500 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9600 2660 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9400 2750 50  0001 L CNN
@@ -369,10 +347,10 @@ F 3 "" H 9000 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Q_blue1
+L ProjectSpecific:IRLML6344 Qb1
 U 1 1 5E0DB47C
 P 8900 3800
-F 0 "Q_blue1" H 9050 3650 50  0000 L CNN
+F 0 "Qb1" H 9050 3650 50  0000 L CNN
 F 1 "IRLML6344" H 9104 3755 50  0001 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9100 3710 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8900 3800 50  0001 L CNN
@@ -432,10 +410,10 @@ Connection ~ 9000 4300
 Wire Wire Line
 	9000 4300 9000 4000
 $Comp
-L ProjectSpecific:IRLML6344 Q_blue_optional1
+L ProjectSpecific:IRLML6344 Qb2
 U 1 1 5E0DB4AF
 P 9400 3800
-F 0 "Q_blue_optional1" H 9550 3650 50  0000 L CNN
+F 0 "Qb2" H 9550 3650 50  0000 L CNN
 F 1 "IRLML6344" H 9550 3550 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9600 3710 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9400 3800 50  0001 L CNN
@@ -462,10 +440,10 @@ F 3 "" H 9000 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProjectSpecific:IRLML6344 Q_white1
+L ProjectSpecific:IRLML6344 Qw1
 U 1 1 5E1058D0
 P 8900 4850
-F 0 "Q_white1" H 9050 4700 50  0000 L CNN
+F 0 "Qw1" H 9050 4700 50  0000 L CNN
 F 1 "IRLML6344" H 9104 4805 50  0001 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9100 4760 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8900 4850 50  0001 L CNN
@@ -531,10 +509,10 @@ Connection ~ 9000 5350
 Wire Wire Line
 	9000 5350 9000 5050
 $Comp
-L ProjectSpecific:IRLML6344 Q_white_optional1
+L ProjectSpecific:IRLML6344 Qw2
 U 1 1 5E105903
 P 9400 4850
-F 0 "Q_white_optional1" H 9550 4700 50  0000 L CNN
+F 0 "Qw2" H 9550 4700 50  0000 L CNN
 F 1 "IRLML6344" H 9550 4600 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9600 4760 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9400 4850 50  0001 L CNN
@@ -570,10 +548,10 @@ Wire Wire Line
 Wire Wire Line
 	10200 6100 10550 6100
 $Comp
-L Device:R R_addressable1
+L Device:R Radd1
 U 1 1 5E225DC9
 P 10050 6100
-F 0 "R_addressable1" V 9950 6100 50  0000 C CNN
+F 0 "Radd1" V 9950 6100 50  0000 C CNN
 F 1 "1k" V 9850 6100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 9980 6100 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 10050 6100 50  0001 C CNN
@@ -600,10 +578,10 @@ Wire Wire Line
 Text Notes 7600 5800 0    118  ~ 0
 Addressable LED
 $Comp
-L Connector_Generic:Conn_01x02 J_5V1
+L Connector_Generic:Conn_01x02 J5V1
 U 1 1 5DE4F57E
 P 6850 1600
-F 0 "J_5V1" H 6930 1592 50  0000 L CNN
+F 0 "J5V1" H 6930 1592 50  0000 L CNN
 F 1 "Conn_02 DNP" H 6930 1501 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6850 1600 50  0001 C CNN
 F 3 "~" H 6850 1600 50  0001 C CNN
@@ -629,41 +607,27 @@ Wire Wire Line
 	6650 1600 6650 1400
 Connection ~ 6650 1400
 $Comp
-L Connector_Generic:Conn_01x03 J_vin_vfused1
+L Connector_Generic:Conn_01x03 Jvoltagebreakout1
 U 1 1 5DE93F0E
-P 3600 1450
-F 0 "J_vin_vfused1" V 3564 1262 50  0000 R CNN
-F 1 "Conn_03 DNP" V 3473 1262 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3600 1450 50  0001 C CNN
-F 3 "~" H 3600 1450 50  0001 C CNN
-F 4 "" V 3600 1450 50  0001 C CNN "Article Number"
-F 5 "" V 3600 1450 50  0001 C CNN "Seller"
-	1    3600 1450
-	0    -1   -1   0   
+P 3250 1650
+F 0 "Jvoltagebreakout1" H 4000 1600 50  0000 R CNN
+F 1 "Conn_03 DNP" H 3850 1700 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3250 1650 50  0001 C CNN
+F 3 "~" H 3250 1650 50  0001 C CNN
+F 4 "" V 3250 1650 50  0001 C CNN "Article Number"
+F 5 "" V 3250 1650 50  0001 C CNN "Seller"
+	1    3250 1650
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3250 1800 3250 1900
-Connection ~ 3250 1900
-Wire Wire Line
-	3250 1900 4000 1900
-Wire Wire Line
-	3700 1650 3700 1800
-Wire Wire Line
-	3700 1800 4000 1800
-Wire Wire Line
-	4000 1800 4000 1900
-Connection ~ 4000 1900
-Wire Wire Line
-	4000 1900 4150 1900
 $Comp
 L power:GND #PWR0118
 U 1 1 5DEA77D9
-P 2700 1700
-F 0 "#PWR0118" H 2700 1450 50  0001 C CNN
-F 1 "GND" H 2705 1527 50  0000 C CNN
-F 2 "" H 2700 1700 50  0001 C CNN
-F 3 "" H 2700 1700 50  0001 C CNN
-	1    2700 1700
+P 3850 2000
+F 0 "#PWR0118" H 3850 1750 50  0001 C CNN
+F 1 "GND" H 3855 1827 50  0000 C CNN
+F 2 "" H 3850 2000 50  0001 C CNN
+F 3 "" H 3850 2000 50  0001 C CNN
+	1    3850 2000
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -674,27 +638,17 @@ Wire Notes Line
 	11100 6500 11100 5850
 Wire Notes Line
 	11100 5850 7600 5850
-Wire Wire Line
-	1850 1450 1950 1450
 $Comp
 L power:GND #PWR0119
 U 1 1 5DE6183E
-P 1750 1950
-F 0 "#PWR0119" H 1750 1700 50  0001 C CNN
-F 1 "GND" H 1755 1777 50  0000 C CNN
-F 2 "" H 1750 1950 50  0001 C CNN
-F 3 "" H 1750 1950 50  0001 C CNN
-	1    1750 1950
+P 1650 1650
+F 0 "#PWR0119" H 1650 1400 50  0001 C CNN
+F 1 "GND" H 1655 1477 50  0000 C CNN
+F 2 "" H 1650 1650 50  0001 C CNN
+F 3 "" H 1650 1650 50  0001 C CNN
+	1    1650 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 1700 3500 1700
-Wire Wire Line
-	3500 1700 3500 1650
-Wire Wire Line
-	3600 1800 3600 1650
-Wire Wire Line
-	3250 1800 3600 1800
 Connection ~ 5900 5400
 Wire Wire Line
 	5900 5400 6100 5400
@@ -890,17 +844,17 @@ Wire Wire Line
 Wire Wire Line
 	7100 4500 7100 4800
 $Comp
-L Connector_Generic:Conn_01x02 J_power_terminal1
+L Connector_Generic:Conn_01x02 Jc1
 U 1 1 5DE0534D
-P 1150 1450
-F 0 "J_power_terminal1" H 1150 1550 50  0000 C CNN
-F 1 "MSTBA2" H 1150 1250 50  0000 C CNN
-F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_2pole" H 1150 1450 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 1150 1450 50  0001 C CNN
-F 4 "1757242" H 1150 1450 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171" H 1150 1450 50  0001 C CNN "Seller"
-	1    1150 1450
-	-1   0    0    1   
+P 2000 1450
+F 0 "Jc1" H 2000 1200 50  0000 C CNN
+F 1 "MSTBA2" H 2000 1550 50  0000 C CNN
+F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_2pole" H 2000 1450 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 2000 1450 50  0001 C CNN
+F 4 "1757242" H 2000 1450 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2way/dp/3705171" H 2000 1450 50  0001 C CNN "Seller"
+	1    2000 1450
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10200 2500 10200 1700
@@ -957,11 +911,11 @@ F2 "BuckVin" I L 5600 1400 50
 F3 "Buck5VOut" I R 6500 1400 50 
 F4 "BuckGND" I L 5600 1700 50 
 $EndSheet
-Text Label 1950 1450 0    50   ~ 0
+Text Label 1750 1300 1    50   ~ 0
 Vin
-Text Label 3050 1900 2    50   ~ 0
+Text Label 4000 1650 0    50   ~ 0
 Vin
-Text Label 4150 1900 0    50   ~ 0
+Text Label 4000 1550 0    50   ~ 0
 Vin_fused
 Text Label 5450 1400 2    50   ~ 0
 Vin_fused
@@ -1039,14 +993,14 @@ Text Notes 4000 2700 0    50   ~ 0
 Populate the ESP32 if you want plenty of\npower or WiFi capabillities.
 Text Notes 650  2700 0    50   ~ 0
 Populate the Arduino Nano for simpler\njobs like DMX controlling etc.
-Text Notes 650  1150 0    50   ~ 0
-Make sure to feed Vin with voltage that\nthe LED strip can handle.\nTwo connector options for power:\n* Phoenix Contact MSTBA\n* Barrel Jack 2x6.4mm
+Text Notes 650  1200 0    50   ~ 0
+Make sure to feed Vin with voltage that\nthe LED strip can handle 5-30VDC.\nTwo connector options for power:\n* Phoenix Contact MSTBA\n* Barrel Jack 2x6.4mm
 Text Notes 7650 1350 0    50   ~ 0
 LED driver  is made for LED strip that have red, green, blue and white channels that\nhave a common positive rail like +12V.\n\nThe LED driver can drive 4 output channels in constant voltage mode at 5A each.\nThe channel can drive up to 10A current if an optional IRLML6344 is mounted.\nOne color channel on a 5m LED strip consisting of 300 LED's will draw\n6A (20mA x 300px) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
 Text Notes 5050 950  0    50   ~ 0
 The 5V buck converter will feed the\nmicro controllers with 5V DC.
-Text Notes 7650 6150 0    50   ~ 0
-Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.
+Text Notes 7650 6200 0    50   ~ 0
+Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace cennector close to Vin_fused.
 Wire Wire Line
 	9700 6000 10550 6000
 Wire Wire Line
@@ -1336,12 +1290,38 @@ Wire Wire Line
 Wire Wire Line
 	9950 1600 10400 1600
 Connection ~ 9500 1450
-Wire Wire Line
-	1450 1200 1450 1350
-Wire Wire Line
-	1750 1200 1450 1200
 Text Notes 4000 6250 0    50   ~ 0
 A RS-485 transceiver can optionally be mounted for sending and\nreceiveing DMX512.\nSee sheet DMX512 for configuration.
 Text Notes 650  5900 0    50   ~ 0
 2 potentiometers can be utilized to hue and brightness for example.\nThe pot's give out max 3.3V.\nThere is also a 10 position rotary coded\nswitch that can be used for modes.
+Text Notes 7650 6450 0    50   ~ 0
+Place ESD diodes on connector pins.
+Wire Wire Line
+	4000 1550 3450 1550
+Wire Wire Line
+	4000 1650 3850 1650
+Wire Wire Line
+	1650 1550 1650 1650
+Wire Wire Line
+	1650 1550 1800 1550
+Connection ~ 1650 1650
+Wire Wire Line
+	1750 1300 1750 1450
+Wire Wire Line
+	1450 1450 1750 1450
+Connection ~ 1750 1450
+Wire Wire Line
+	1750 1450 1800 1450
+Connection ~ 3850 1650
+Wire Wire Line
+	3850 1650 3450 1650
+Wire Wire Line
+	3850 1950 3850 2000
+Wire Wire Line
+	3850 1950 3550 1950
+Wire Wire Line
+	3550 1950 3550 1750
+Connection ~ 3850 1950
+Wire Wire Line
+	3450 1750 3550 1750
 $EndSCHEMATC
