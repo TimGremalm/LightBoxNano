@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "LightBoxNano - Main"
 Date ""
 Rev ""
@@ -53,19 +53,6 @@ F 3 "" H 6850 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 1400 6850 1400
-$Comp
-L Device:CP Cvin1
-U 1 1 5DE52230
-P 3850 1800
-F 0 "Cvin1" H 3968 1846 50  0000 L CNN
-F 1 "100µF 50V 27mΩ" H 3968 1755 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_10x10.5" H 3888 1650 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2756457.pdf?_ga=2.147362935.1391520159.1585828864-167263916.1529948031" H 3850 1800 50  0001 C CNN
-F 4 "A767MU107M1HLAE027" H 3850 1800 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/kemet/a767mu107m1hlae027/kond-alu-polymer-100-f-50v-rad/dp/2614195RL" H 3850 1800 50  0001 C CNN "Seller"
-	1    3850 1800
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	2200 750  2200 2200
 Wire Notes Line
@@ -98,8 +85,8 @@ Wire Notes Line
 	4900 750  4900 2200
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
-Text Notes 2400 1500 0    50   ~ 0
-Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\nhttps://www.mouser.se/ProductDetail/Infineon-IR/AUIR3315STRL/\nhttps://www.mouser.se/datasheet/2/196/auir3315-1225292.pdf
+Text Notes 2500 -150 0    50   ~ 0
+Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\nhttps://se.farnell.com/infineon/auir3315strl/effektbrytare-aec-q100-32v-to/dp/2803442\nhttp://www.farnell.com/datasheets/1441787.pdf
 $Comp
 L power:GND #PWR0106
 U 1 1 5DF44892
@@ -604,30 +591,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 1600 6850 1400
 Connection ~ 6850 1400
-$Comp
-L Connector_Generic:Conn_01x03 Jvoltagebreakout1
-U 1 1 5DE93F0E
-P 3250 1650
-F 0 "Jvoltagebreakout1" H 4000 1600 50  0000 R CNN
-F 1 "Conn_03 DNP" H 3850 1700 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3250 1650 50  0001 C CNN
-F 3 "~" H 3250 1650 50  0001 C CNN
-F 4 "" V 3250 1650 50  0001 C CNN "Article Number"
-F 5 "" V 3250 1650 50  0001 C CNN "Seller"
-	1    3250 1650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5DEA77D9
-P 3850 2000
-F 0 "#PWR0118" H 3850 1750 50  0001 C CNN
-F 1 "GND" H 3855 1827 50  0000 C CNN
-F 2 "" H 3850 2000 50  0001 C CNN
-F 3 "" H 3850 2000 50  0001 C CNN
-	1    3850 2000
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	7600 5850 7600 6500
 Wire Notes Line
@@ -901,6 +864,14 @@ Connection ~ 2700 5000
 Text Notes 4000 4050 0    50   ~ 0
 Ports:\nIO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_Enable_Receive\nIO23  DMX_Enable_Send\nIO25  addressable\nIO26  red\nIO27  green\nIO13  blue\nIO15  white\nIO34  POT_1\nIO35  POT_2\nIO14  SwCode1\nIO12  SwCode2\nIO2   SwCode4\nIO4   SwCode8
 $Sheet
+S 2950 1200 1300 550 
+U 5EB9FA1E
+F0 "Input Protection" 50
+F1 "input_protection.sch" 50
+F2 "Vin_fused" I R 4250 1350 50 
+F3 "Vin" I L 2950 1350 50 
+$EndSheet
+$Sheet
 S 5600 1150 900  750 
 U 5DE1594D
 F0 "Buck Converter" 50
@@ -911,10 +882,6 @@ F4 "BuckGND" I L 5600 1700 50
 $EndSheet
 Text Label 1750 1350 1    50   ~ 0
 Vin
-Text Label 4000 1650 0    50   ~ 0
-Vin
-Text Label 4000 1550 0    50   ~ 0
-Vin_fused
 Text Label 5450 1400 2    50   ~ 0
 Vin_fused
 Text Label 10400 1500 2    50   ~ 0
@@ -1295,10 +1262,6 @@ Text Notes 650  5900 0    50   ~ 0
 Text Notes 7650 6450 0    50   ~ 0
 Place ESD diodes on connector pins.
 Wire Wire Line
-	4000 1550 3850 1550
-Wire Wire Line
-	4000 1650 3850 1650
-Wire Wire Line
 	1650 1750 1650 1850
 Wire Wire Line
 	1650 1750 1850 1750
@@ -1310,18 +1273,6 @@ Wire Wire Line
 Connection ~ 1750 1650
 Wire Wire Line
 	1750 1650 1850 1650
-Connection ~ 3850 1650
-Wire Wire Line
-	3850 1650 3450 1650
-Wire Wire Line
-	3850 1950 3850 2000
-Wire Wire Line
-	3850 1950 3550 1950
-Wire Wire Line
-	3550 1950 3550 1750
-Connection ~ 3850 1950
-Wire Wire Line
-	3450 1750 3550 1750
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E8EAED4
@@ -1366,11 +1317,6 @@ F 3 "~" H 6950 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6950 1250 6950 1400
-Wire Wire Line
-	3850 1650 3850 1550
-Connection ~ 3850 1550
-Wire Wire Line
-	3850 1550 3450 1550
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5E975B8B
@@ -1432,4 +1378,12 @@ F 3 "~" H 6950 6400 50  0001 C CNN
 	1    6950 6400
 	1    0    0    -1  
 $EndComp
+Text Label 4450 1350 0    50   ~ 0
+Vin_fused
+Text Label 2700 1350 2    50   ~ 0
+Vin
+Wire Wire Line
+	2700 1350 2950 1350
+Wire Wire Line
+	4250 1350 4450 1350
 $EndSCHEMATC
