@@ -30,16 +30,16 @@ $EndComp
 $Comp
 L power:+5V #PWR0101
 U 1 1 5DE4A501
-P 7050 1250
-F 0 "#PWR0101" H 7050 1100 50  0001 C CNN
-F 1 "+5V" H 7065 1423 50  0000 C CNN
-F 2 "" H 7050 1250 50  0001 C CNN
-F 3 "" H 7050 1250 50  0001 C CNN
-	1    7050 1250
+P 7000 1550
+F 0 "#PWR0101" H 7000 1400 50  0001 C CNN
+F 1 "+5V" H 7015 1723 50  0000 C CNN
+F 2 "" H 7000 1550 50  0001 C CNN
+F 3 "" H 7000 1550 50  0001 C CNN
+	1    7000 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 1400 7050 1400
+	6650 1700 7000 1700
 Wire Notes Line
 	2200 750  2200 2200
 Wire Notes Line
@@ -57,7 +57,7 @@ Wire Notes Line
 Text Notes 5000 700  0    118  ~ 0
 5V Buck
 Wire Wire Line
-	5650 1400 5800 1400
+	5600 1700 5750 1700
 Wire Notes Line
 	600  2200 2200 2200
 Wire Notes Line
@@ -73,22 +73,7 @@ Wire Notes Line
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
 Text Notes 2500 -150 0    50   ~ 0
-Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\nhttps://se.farnell.com/infineon/auir3315strl/effektbrytare-aec-q100-32v-to/dp/2803442\nhttp://www.farnell.com/datasheets/1441787.pdf
-$Comp
-L power:GND #PWR0106
-U 1 1 5DF44892
-P 5500 1950
-F 0 "#PWR0106" H 5500 1700 50  0001 C CNN
-F 1 "GND" H 5505 1777 50  0000 C CNN
-F 2 "" H 5500 1950 50  0001 C CNN
-F 3 "" H 5500 1950 50  0001 C CNN
-	1    5500 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 1950 5500 1700
-Wire Wire Line
-	5500 1700 5800 1700
+Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\n* Pin breakout for MCU?\n* Solder islands for prototyping\nhttps://se.farnell.com/infineon/auir3315strl/effektbrytare-aec-q100-32v-to/dp/2803442\nhttp://www.farnell.com/datasheets/1441787.pdf
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
@@ -796,17 +781,16 @@ F2 "Vin_fused" I R 4250 1550 50
 F3 "Vin" I L 2950 1550 50 
 $EndSheet
 $Sheet
-S 5800 1150 900  750 
+S 5750 1450 900  600 
 U 5DE1594D
 F0 "Buck Converter" 50
 F1 "buck_converter.sch" 50
-F2 "BuckVin" I L 5800 1400 50 
-F3 "Buck5VOut" I R 6700 1400 50 
-F4 "BuckGND" I L 5800 1700 50 
+F2 "BuckVin" I L 5750 1700 50 
+F3 "Buck5VOut" I R 6650 1700 50 
 $EndSheet
 Text Label 1750 1350 1    50   ~ 0
 Vin
-Text Label 5650 1400 2    50   ~ 0
+Text Label 5600 1700 2    50   ~ 0
 Vin_fused
 Text Label 10500 2150 3    50   ~ 0
 Vin_fused
@@ -882,8 +866,8 @@ Text Notes 650  1200 0    50   ~ 0
 Make sure to feed Vin with voltage that\nthe LED strip can handle 5-30VDC.\nTwo connector options for power:\n* Phoenix Contact MSTBA\n* Barrel Jack 2x6.4mm
 Text Notes 7650 1350 0    50   ~ 0
 LED driver  is made for LED strip that have red, green, blue and white channels that\nhave a common positive rail like +12V.\n\nThe LED driver can drive 4 output channels in constant voltage mode at 5A each.\nThe channel can drive up to 10A current if an optional IRLML6344 is mounted.\nOne color channel on a 5m LED strip consisting of 300 LED's will draw\n6A (20mA x 300px) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
-Text Notes 5050 950  0    50   ~ 0
-The 5V buck converter will feed the\nmicro controllers with 5V DC.
+Text Notes 5050 1200 0    50   ~ 0
+The 5V buck converter will feed the micro controller with\n5V DC.\nThere is 2 options for 5V:\n* Use buck to lower Vin to 5V\n* Direct connection to 5V from Vin
 Text Notes 7650 6200 0    50   ~ 0
 Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace cennector close to Vin_fused.
 Wire Wire Line
@@ -1219,12 +1203,12 @@ NoConn ~ 1450 1750
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5E94B7E7
-P 7150 1250
-F 0 "#FLG0103" H 7150 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 7150 1423 50  0001 C CNN
-F 2 "" H 7150 1250 50  0001 C CNN
-F 3 "~" H 7150 1250 50  0001 C CNN
-	1    7150 1250
+P 7100 1550
+F 0 "#FLG0103" H 7100 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 7100 1723 50  0001 C CNN
+F 2 "" H 7100 1550 50  0001 C CNN
+F 3 "~" H 7100 1550 50  0001 C CNN
+	1    7100 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1241,7 +1225,7 @@ $EndComp
 Wire Wire Line
 	6300 2800 6200 2800
 Wire Wire Line
-	7050 1400 7050 1250
+	7000 1700 7000 1550
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EB7CEAB
@@ -1295,8 +1279,8 @@ Wire Wire Line
 Wire Wire Line
 	4250 1550 4450 1550
 Wire Wire Line
-	7150 1250 7050 1250
-Connection ~ 7050 1250
+	7100 1550 7000 1550
+Connection ~ 7000 1550
 Text Notes 2400 1050 0    50   ~ 0
 There is 2 options for input protection:\n* A classic fuse\n* Highside High Current Power Switch
 Wire Wire Line

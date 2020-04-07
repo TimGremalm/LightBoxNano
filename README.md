@@ -4,7 +4,6 @@ a generic LED controller that can be populated for either RGBW LED strip or addr
 It has the option for populating a pair of potentiometer, and a 5 way slider switch for controlling light modes.
 
 An Arduino Nano is mounted using ordinary 2.54mm pitch pin headers.
-
 Optionally a ESP32 Pico Kit can be mounted instead of the Nano, this is much more expensive it is a more powerful MCU and have WiFi.
 
 A RS485 receiver and a pair of XLR connectors can also transform the LED controller into a DMX driver.
@@ -15,6 +14,8 @@ The input voltage to LightBoxNano are called VIN and can range from 5 to 30V.
 
 Make sure to only feed LightBoxNano with a voltage that the LED strip can handle. The maximum voltage is limited by the maximum voltage of the IRLML6344 Mosfets and of what the LED strip can handle.
 
+If using 5V on Vin you need to read "Logic rail" to populate it correctly.
+
 ## RGBW rail
 The positive rail for the LED strip driver is directly fed from VIN, it's usually 12V.
 
@@ -22,8 +23,14 @@ The positive rail for the LED strip driver is directly fed from VIN, it's usuall
 The positive rail for the addressable LED strip driver is directly fed from VIN, it's usually 5V.
 
 ## Logic rail
-The micro controller is powered by a 5V buck converter using TI's guide:
+The logic rail should be 5V and feed the micro controller.
 
+There is 2 options for the logic rail:
+* Use buck, when Vin is greater than 5.5V.
+* Use direct jumper link when Vin is 5V.
+
+
+The buck converter using TI's guide:
 https://webench.ti.com/power-designer/switching-regulator/select
 
 https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=572687AF787DDED1
@@ -53,6 +60,7 @@ Addressable LED strip is hooked up directly to VIN and the data pin is going to 
 | ------------- | ----------------- | ----- |
 | Addressable	| D3 (PD3)			| IO25	|
 
+
 # Control interface
 Two potentiometers can optionally be mounted. They are pulled up to 3.3V, so you won't get the full range on the Nano.
 | Channel	| Arduino Nano		| ESP32 |
@@ -75,7 +83,6 @@ A 10 position rotary coded switch can optionally be mounted for selecting differ
 | 2		| 	| 	| *	| *	| 	| 	| *	| *	| 	| 	|
 | 4		| 	| 	| 	| 	| *	| *	| *	| *	| 	| 	|
 | 8		| 	| 	| 	| 	| 	| 	| 	| 	| *	| *	|
-
 
 Also a pin header of the Arduino Nano will be easily assessable for hooking up random stuff.
 
@@ -111,7 +118,7 @@ Receiver Enable and Driver Enable can also be driven by the micro controller (on
 # MCU
 An Arduino Nano V3 (ATmega328) is selected because it's cheap, available and have enough power for most applications.
 
-But there is a option for mounting a ESP32 Pico Kit instead which is much more powerful and have built in WiFi.
+Another option is to mount a ESP32 Pico Kit instead which is much more powerful and have built in WiFi.
 
 
 # BOM (Bill Of Material)
