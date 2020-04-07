@@ -28,19 +28,6 @@ F 6 "https://se.farnell.com/multicomp/spc21364/connector-power/dp/1654842" H 115
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 Jadd1
-U 1 1 5DE05544
-P 10750 6100
-F 0 "Jadd1" H 10750 6300 50  0000 C CNN
-F 1 "MSTBA3" H 10750 5900 50  0000 C CNN
-F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_3pole" H 10750 6100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 10750 6100 50  0001 C CNN
-F 4 "1757255" H 10750 6100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08mm/dp/3705183" H 10750 6100 50  0001 C CNN "Seller"
-	1    10750 6100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 5DE4A501
 P 7050 1250
@@ -105,14 +92,14 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
-P 10600 1700
-F 0 "Jrgbw1" H 10680 1742 50  0000 L CNN
-F 1 "MSTBA5" H 10680 1651 50  0000 L CNN
-F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_5pole" H 10600 1700 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 10600 1700 50  0001 C CNN
-F 4 "1757271" H 10600 1700 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/phoenix-contact/1757271/header-right-angle-5-08mm-5way/dp/3705201" H 10600 1700 50  0001 C CNN "Seller"
-	1    10600 1700
+P 10700 1650
+F 0 "Jrgbw1" H 10780 1692 50  0000 L CNN
+F 1 "MSTBA5" H 10780 1601 50  0000 L CNN
+F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_5pole" H 10700 1650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 10700 1650 50  0001 C CNN
+F 4 "1757271" H 10700 1650 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/phoenix-contact/1757271/header-right-angle-5-08mm-5way/dp/3705201" H 10700 1650 50  0001 C CNN "Seller"
+	1    10700 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -218,7 +205,7 @@ $EndComp
 Wire Wire Line
 	9500 2550 9500 2500
 Wire Wire Line
-	9500 2500 10200 2500
+	9500 2500 10100 2500
 $Comp
 L power:GND #PWR0111
 U 1 1 5E09EC67
@@ -319,7 +306,7 @@ $EndComp
 Wire Wire Line
 	9500 3600 9500 3550
 Wire Wire Line
-	9500 3550 10300 3550
+	9500 3550 10200 3550
 $Comp
 L power:GND #PWR0112
 U 1 1 5E0DB46E
@@ -511,13 +498,11 @@ F 9 "IRLML6344TRPBF" H 9400 4850 50  0001 C CNN "Article Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 1700 10400 1700
+	10100 1550 10500 1550
 Wire Wire Line
-	10300 1800 10400 1800
+	10200 1650 10500 1650
 Wire Wire Line
-	10400 1900 10400 4600
-Wire Wire Line
-	9500 4600 10400 4600
+	9500 4600 10300 4600
 Wire Notes Line
 	7600 750  11100 750 
 Wire Notes Line
@@ -528,38 +513,6 @@ Wire Notes Line
 	7600 5600 7600 750 
 Text Notes 7600 700  0    118  ~ 0
 RGBW LED Driver (CV-mode, Optional)
-Wire Wire Line
-	10400 6200 10550 6200
-Wire Wire Line
-	10200 6100 10550 6100
-$Comp
-L Device:R Radd1
-U 1 1 5E225DC9
-P 10050 6100
-F 0 "Radd1" V 9950 6100 50  0000 C CNN
-F 1 "1k" V 9850 6100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 9980 6100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 10050 6100 50  0001 C CNN
-F 4 "MC0100W060311K" V 10050 6100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 10050 6100 50  0001 C CNN "Seller"
-	1    10050 6100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9700 6100 9900 6100
-$Comp
-L power:GND #PWR0114
-U 1 1 5E2158AC
-P 10400 6250
-F 0 "#PWR0114" H 10400 6000 50  0001 C CNN
-F 1 "GND" H 10405 6077 50  0000 C CNN
-F 2 "" H 10400 6250 50  0001 C CNN
-F 3 "" H 10400 6250 50  0001 C CNN
-	1    10400 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10400 6250 10400 6200
 Text Notes 7600 5800 0    118  ~ 0
 Addressable LED (Optional)
 Wire Notes Line
@@ -789,9 +742,9 @@ F 5 "https://se.farnell.com/phoenix-contact/1757242/header-right-angle-5-08mm-2w
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 2500 10200 1700
+	10100 2500 10100 1550
 Wire Wire Line
-	10300 3550 10300 1800
+	10200 3550 10200 1650
 Wire Wire Line
 	2200 3300 2250 3300
 NoConn ~ 5300 4200
@@ -855,12 +808,8 @@ Text Label 1750 1350 1    50   ~ 0
 Vin
 Text Label 5650 1400 2    50   ~ 0
 Vin_fused
-Text Label 10400 1500 2    50   ~ 0
+Text Label 10500 2150 3    50   ~ 0
 Vin_fused
-Text Label 9700 6000 2    50   ~ 0
-Vin_fused
-Text Label 9700 6100 2    50   ~ 0
-Addressable
 Text Label 5200 3900 2    50   ~ 0
 Addressable
 Text Label 2200 3800 2    50   ~ 0
@@ -937,8 +886,6 @@ Text Notes 5050 950  0    50   ~ 0
 The 5V buck converter will feed the\nmicro controllers with 5V DC.
 Text Notes 7650 6200 0    50   ~ 0
 Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace cennector close to Vin_fused.
-Wire Wire Line
-	9700 6000 10550 6000
 Wire Wire Line
 	6200 7000 6100 7000
 Wire Wire Line
@@ -1219,12 +1166,6 @@ Wire Wire Line
 	9200 3500 9200 3800
 Wire Wire Line
 	9200 3500 8700 3500
-Wire Wire Line
-	9500 1450 9950 1450
-Wire Wire Line
-	9950 1450 9950 1600
-Wire Wire Line
-	9950 1600 10400 1600
 Connection ~ 9500 1450
 Text Notes 4000 6250 0    50   ~ 0
 A RS-485 transceiver can optionally be mounted for sending and\nreceiveing DMX512.\nSee sheet DMX512 for configuration.
@@ -1358,4 +1299,63 @@ Wire Wire Line
 Connection ~ 7050 1250
 Text Notes 2400 1050 0    50   ~ 0
 There is 2 options for input protection:\n* A classic fuse\n* Highside High Current Power Switch
+Wire Wire Line
+	10300 1750 10300 4600
+Wire Wire Line
+	10300 1750 10500 1750
+Wire Wire Line
+	9500 1450 10500 1450
+Wire Wire Line
+	10500 2150 10500 1850
+Wire Wire Line
+	9800 6200 9800 6250
+Wire Wire Line
+	9650 6000 10500 6000
+Text Label 10500 6100 0    50   ~ 0
+Addressable
+Text Label 10500 6000 0    50   ~ 0
+Vin_fused
+$Comp
+L power:GND #PWR0114
+U 1 1 5E2158AC
+P 9800 6250
+F 0 "#PWR0114" H 9800 6000 50  0001 C CNN
+F 1 "GND" H 9805 6077 50  0000 C CNN
+F 2 "" H 9800 6250 50  0001 C CNN
+F 3 "" H 9800 6250 50  0001 C CNN
+	1    9800 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 6100 10050 6100
+$Comp
+L Device:R Radd1
+U 1 1 5E225DC9
+P 10200 6100
+F 0 "Radd1" V 10100 6100 50  0000 C CNN
+F 1 "1k" V 10000 6100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10130 6100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 10200 6100 50  0001 C CNN
+F 4 "MC0100W060311K" V 10200 6100 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 10200 6100 50  0001 C CNN "Seller"
+	1    10200 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10350 6100 10500 6100
+Wire Wire Line
+	9650 6200 9800 6200
+$Comp
+L Connector_Generic:Conn_01x03 Jadd1
+U 1 1 5DE05544
+P 9450 6100
+F 0 "Jadd1" H 9450 6300 50  0000 C CNN
+F 1 "MSTBA3" H 9450 5900 50  0000 C CNN
+F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_3pole" H 9450 6100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 9450 6100 50  0001 C CNN
+F 4 "1757255" H 9450 6100 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08mm/dp/3705183" H 9450 6100 50  0001 C CNN "Seller"
+	1    9450 6100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
