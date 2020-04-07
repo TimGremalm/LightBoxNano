@@ -47,14 +47,14 @@ Wire Notes Line
 Text Notes 600  700  0    118  ~ 0
 Input Connectors
 Wire Notes Line
-	5000 750  5000 2200
+	5100 750  5100 2200
 Wire Notes Line
-	5000 750  7500 750 
+	5100 750  7500 750 
 Wire Notes Line
 	7500 750  7500 2200
 Wire Notes Line
-	7500 2200 5000 2200
-Text Notes 5000 700  0    118  ~ 0
+	7500 2200 5100 2200
+Text Notes 5100 700  0    118  ~ 0
 5V Buck
 Wire Wire Line
 	5600 1700 5750 1700
@@ -63,17 +63,17 @@ Wire Notes Line
 Wire Notes Line
 	600  750  2200 750 
 Wire Notes Line
-	2350 2200 4900 2200
+	2350 2200 4950 2200
 Wire Notes Line
-	4900 750  2350 750 
+	4950 750  2350 750 
 Wire Notes Line
 	2350 750  2350 2200
 Wire Notes Line
-	4900 750  4900 2200
+	4950 750  4950 2200
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
-Text Notes 2500 -150 0    50   ~ 0
-Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protection (built in high side switch?)\n* Add Power LED\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\n* Pin breakout for MCU?\n* Solder islands for prototyping\nhttps://se.farnell.com/infineon/auir3315strl/effektbrytare-aec-q100-32v-to/dp/2803442\nhttp://www.farnell.com/datasheets/1441787.pdf
+Text Notes 4200 2200 0    50   ~ 0
+Todo:\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\n* Pin breakout for MCU?\n* Solder islands for prototyping
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
@@ -549,9 +549,7 @@ NoConn ~ 3250 3800
 NoConn ~ 3250 3900
 NoConn ~ 3250 4000
 NoConn ~ 3250 4100
-NoConn ~ 3250 4400
 NoConn ~ 3250 4500
-NoConn ~ 3250 4700
 NoConn ~ 2250 3900
 NoConn ~ 2250 3700
 NoConn ~ 2250 3500
@@ -604,8 +602,6 @@ NoConn ~ 6700 4300
 NoConn ~ 6700 4400
 NoConn ~ 6700 4500
 NoConn ~ 6700 4600
-NoConn ~ 6700 4900
-NoConn ~ 6700 5000
 NoConn ~ 6700 5100
 NoConn ~ 5300 5000
 NoConn ~ 5300 4100
@@ -676,8 +672,8 @@ F 3 "" H 2800 2800 50  0001 C CNN
 	1    2800 2800
 	1    0    0    -1  
 $EndComp
-Text Notes 650  3900 0    50   ~ 0
-Ports:\nD1   PD0 (TX) DMX_Send\nD0   PD1 (RX) DMX_Receive\nD3   PD3 addressable\nD5   PD5 red\nD6   PD6 green\nD9   PB1 blue\nD10  PB2 white\nA1   PC1 POT_1\nA2   PC2 POT_2\nD7   PD7 SwCode1\nD8   PB0 SwCode2\nD11  PB3 SwCode4\nD12  PB4 SwCode8
+Text Notes 650  4050 0    50   ~ 0
+Ports:\nA0   PC0 Current_Feedback\nD13  PB5 Enable_Vin_fused\nD1   PD0 (TX) DMX_Send\nD0   PD1 (RX) DMX_Receive\nD3   PD3 addressable\nD5   PD5 red\nD6   PD6 green\nD9   PB1 blue\nD10  PB2 white\nA1   PC1 POT_1\nA2   PC2 POT_2\nD7   PD7 SwCode1\nD8   PB0 SwCode2\nD11  PB3 SwCode4\nD12  PB4 SwCode8
 Wire Wire Line
 	2200 4500 2250 4500
 Wire Notes Line
@@ -770,15 +766,17 @@ Wire Wire Line
 Wire Wire Line
 	2800 5000 2700 5000
 Connection ~ 2700 5000
-Text Notes 4000 4050 0    50   ~ 0
-Ports:\nIO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_Enable_Receive\nIO23  DMX_Enable_Send\nIO25  addressable\nIO26  red\nIO27  green\nIO13  blue\nIO15  white\nIO34  POT_1\nIO35  POT_2\nIO14  SwCode1\nIO12  SwCode2\nIO2   SwCode4\nIO4   SwCode8
+Text Notes 4000 4200 0    50   ~ 0
+Ports:\nIO38  Current_Feedback\nIO37  Enable_Vin_fused\nIO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_Enable_Receive\nIO23  DMX_Enable_Send\nIO25  addressable\nIO26  red\nIO27  green\nIO13  blue\nIO15  white\nIO34  POT_1\nIO35  POT_2\nIO14  SwCode1\nIO12  SwCode2\nIO2   SwCode4\nIO4   SwCode8
 $Sheet
-S 2950 1400 1300 550 
+S 3150 1350 950  600 
 U 5EB9FA1E
 F0 "Input Protection" 50
 F1 "input_protection.sch" 50
-F2 "Vin_fused" I R 4250 1550 50 
-F3 "Vin" I L 2950 1550 50 
+F2 "Vin_fused" I R 4100 1500 50 
+F3 "Vin" I L 3150 1500 50 
+F4 "Enable_Vin_fused" I L 3150 1800 50 
+F5 "Current_Feedback" I R 4100 1650 50 
 $EndSheet
 $Sheet
 S 5750 1450 900  600 
@@ -790,8 +788,6 @@ F3 "Buck5VOut" I R 6650 1700 50
 $EndSheet
 Text Label 1750 1350 1    50   ~ 0
 Vin
-Text Label 5600 1700 2    50   ~ 0
-Vin_fused
 Text Label 10500 2150 3    50   ~ 0
 Vin_fused
 Text Label 5200 3900 2    50   ~ 0
@@ -866,7 +862,7 @@ Text Notes 650  1200 0    50   ~ 0
 Make sure to feed Vin with voltage that\nthe LED strip can handle 5-30VDC.\nTwo connector options for power:\n* Phoenix Contact MSTBA\n* Barrel Jack 2x6.4mm
 Text Notes 7650 1350 0    50   ~ 0
 LED driver  is made for LED strip that have red, green, blue and white channels that\nhave a common positive rail like +12V.\n\nThe LED driver can drive 4 output channels in constant voltage mode at 5A each.\nThe channel can drive up to 10A current if an optional IRLML6344 is mounted.\nOne color channel on a 5m LED strip consisting of 300 LED's will draw\n6A (20mA x 300px) when fully lit. A full RGB strip 18A, and a RGBW strip 24A.
-Text Notes 5050 1200 0    50   ~ 0
+Text Notes 5150 1200 0    50   ~ 0
 The 5V buck converter will feed the micro controller with\n5V DC.\nThere is 2 options for 5V:\n* Use buck to lower Vin to 5V\n* Direct connection to 5V from Vin
 Text Notes 7650 6200 0    50   ~ 0
 Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace cennector close to Vin_fused.
@@ -1270,14 +1266,14 @@ F 3 "~" H 6950 6400 50  0001 C CNN
 	1    6950 6400
 	1    0    0    -1  
 $EndComp
-Text Label 4450 1550 0    50   ~ 0
+Text Label 4200 1500 0    50   ~ 0
 Vin_fused
-Text Label 2700 1550 2    50   ~ 0
+Text Label 3000 1500 2    50   ~ 0
 Vin
 Wire Wire Line
-	2700 1550 2950 1550
+	3000 1500 3150 1500
 Wire Wire Line
-	4250 1550 4450 1550
+	4100 1500 4200 1500
 Wire Wire Line
 	7100 1550 7000 1550
 Connection ~ 7000 1550
@@ -1342,4 +1338,40 @@ F 5 "https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08
 	1    9450 6100
 	-1   0    0    1   
 $EndComp
+Text Label 4200 1650 0    50   ~ 0
+Current_Feedback
+Text Label 3050 1800 2    50   ~ 0
+Enable_Vin_fused
+Wire Wire Line
+	4200 1650 4100 1650
+Wire Wire Line
+	3050 1800 3150 1800
+Text Label 5600 1700 2    50   ~ 0
+Vin
+Text Label 3650 4150 1    50   ~ 0
+Current_Feedback
+Text Label 7250 4750 1    50   ~ 0
+Current_Feedback
+Text Label 3600 5150 1    50   ~ 0
+Enable_Vin_fused
+Text Label 7400 4750 1    50   ~ 0
+Enable_Vin_fused
+Wire Wire Line
+	3650 4150 3650 4400
+Wire Wire Line
+	3650 4400 3250 4400
+Wire Wire Line
+	3600 5150 3350 5150
+Wire Wire Line
+	3350 5150 3350 4700
+Wire Wire Line
+	3350 4700 3250 4700
+Wire Wire Line
+	6700 4900 7250 4900
+Wire Wire Line
+	7250 4900 7250 4750
+Wire Wire Line
+	7400 4750 7400 5000
+Wire Wire Line
+	7400 5000 6700 5000
 $EndSCHEMATC

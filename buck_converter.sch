@@ -13,134 +13,134 @@ Comment2 ""
 Comment3 "https://github.com/TimGremalm/LightBoxNano"
 Comment4 "http://tim.gremalm.se/"
 $EndDescr
-Text HLabel 1250 1700 0    50   Input ~ 0
+Text HLabel 1900 1800 0    50   Input ~ 0
 BuckVin
 $Comp
 L Regulator_Switching:LM2596S-5 Ubuck1
 U 1 1 5DE17061
-P 4750 2250
-F 0 "Ubuck1" H 4750 2617 50  0000 C CNN
-F 1 "LM2596SX 5V 3A" H 4750 2526 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin3" H 4800 2000 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 4750 2250 50  0001 C CNN
-F 4 "Texas Instruments" H 4750 2250 50  0001 C CNN "Manufacturer"
-F 5 "LM2596SX-5.0/NOPB" H 4750 2250 50  0001 C CNN "Article Number"
-F 6 "https://se.farnell.com/texas-instruments/lm2596sx-5-0-nopb/dc-dc-conv-buck-150khz-to-263/dp/2781829" H 4750 2250 50  0001 C CNN "Seller"
-	1    4750 2250
+P 3600 1900
+F 0 "Ubuck1" H 3600 2267 50  0000 C CNN
+F 1 "LM2596SX 5V 3A" H 3600 2176 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin3" H 3650 1650 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 3600 1900 50  0001 C CNN
+F 4 "Texas Instruments" H 3600 1900 50  0001 C CNN "Manufacturer"
+F 5 "LM2596SX-5.0/NOPB" H 3600 1900 50  0001 C CNN "Article Number"
+F 6 "https://se.farnell.com/texas-instruments/lm2596sx-5-0-nopb/dc-dc-conv-buck-150khz-to-263/dp/2781829" H 3600 1900 50  0001 C CNN "Seller"
+	1    3600 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP Cbo1
 U 1 1 5DE18AEA
-P 6650 2900
-F 0 "Cbo1" H 6768 2946 50  0000 L CNN
-F 1 "4.7µF 10V 1.4Ω" H 6768 2855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6688 2750 50  0001 C CNN
-F 3 "https://www.farnell.com/datasheets/2068142.pdf" H 6650 2900 50  0001 C CNN
-F 4 "AVX" H 6650 2900 50  0001 C CNN "Manufacturer"
-F 5 "TPSA475K010R1400" H 6650 2900 50  0001 C CNN "Article Number"
-F 6 "https://se.farnell.com/avx/tpsa475k010r1400/cap-4-7-f-10v-10-1206-smd/dp/1135104" H 6650 2900 50  0001 C CNN "Seller"
-	1    6650 2900
+P 5500 2550
+F 0 "Cbo1" H 5618 2596 50  0000 L CNN
+F 1 "4.7µF 10V 1.4Ω" H 5618 2505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5538 2400 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/2068142.pdf" H 5500 2550 50  0001 C CNN
+F 4 "AVX" H 5500 2550 50  0001 C CNN "Manufacturer"
+F 5 "TPSA475K010R1400" H 5500 2550 50  0001 C CNN "Article Number"
+F 6 "https://se.farnell.com/avx/tpsa475k010r1400/cap-4-7-f-10v-10-1206-smd/dp/1135104" H 5500 2550 50  0001 C CNN "Seller"
+	1    5500 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Schottky Db1
 U 1 1 5DE1A597
-P 5500 2900
-F 0 "Db1" V 5454 2979 50  0000 L CNN
-F 1 "Schottky 200V 10A" V 5545 2979 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-252-2_Rectifier" H 5500 2900 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/power_semiconductors/littelfuse_power_semiconductor_schottky_diode_mbrd10200ct_datasheet.pdf.pdf" H 5500 2900 50  0001 C CNN
-F 4 "Littelfuse" V 5500 2900 50  0001 C CNN "Manufacturer"
-F 5 "MBRD10200CT" V 5500 2900 50  0001 C CNN "Article Number"
-F 6 "https://se.farnell.com/littelfuse/mbrd10200ct/schottky-rect-200v-10a-to-252/dp/2773825" V 5500 2900 50  0001 C CNN "Seller"
-	1    5500 2900
+P 4350 2550
+F 0 "Db1" V 4304 2629 50  0000 L CNN
+F 1 "Schottky 200V 10A" V 4395 2629 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2_Rectifier" H 4350 2550 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/power_semiconductors/littelfuse_power_semiconductor_schottky_diode_mbrd10200ct_datasheet.pdf.pdf" H 4350 2550 50  0001 C CNN
+F 4 "Littelfuse" V 4350 2550 50  0001 C CNN "Manufacturer"
+F 5 "MBRD10200CT" V 4350 2550 50  0001 C CNN "Article Number"
+F 6 "https://se.farnell.com/littelfuse/mbrd10200ct/schottky-rect-200v-10a-to-252/dp/2773825" V 4350 2550 50  0001 C CNN "Seller"
+	1    4350 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:L Lbuck1
 U 1 1 5DE1B486
-P 6050 2350
-F 0 "Lbuck1" V 6150 2350 50  0000 C CNN
-F 1 "Inductor 47µH 42.7mΩ" V 5950 2350 50  0000 C CNN
-F 2 "LightBoxNanoFootprints:Inductor_IHLP6767GZER470M11" H 6050 2350 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/34306/lp67dz11.pdf" H 6050 2350 50  0001 C CNN
-F 4 "Vishay-Dale" V 6050 2350 50  0001 C CNN "Manufacturer"
-F 5 "IHLP6767GZER470M11" V 6050 2350 50  0001 C CNN "Article Number"
-F 6 "https://se.farnell.com/vishay/ihlp6767gzer470m11/inductor-47uh-8-6a-20/dp/1845598" V 6050 2350 50  0001 C CNN "Seller"
-	1    6050 2350
+P 4900 2000
+F 0 "Lbuck1" V 5000 2000 50  0000 C CNN
+F 1 "Inductor 47µH 42.7mΩ" V 4800 2000 50  0000 C CNN
+F 2 "LightBoxNanoFootprints:Inductor_IHLP6767GZER470M11" H 4900 2000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/34306/lp67dz11.pdf" H 4900 2000 50  0001 C CNN
+F 4 "Vishay-Dale" V 4900 2000 50  0001 C CNN "Manufacturer"
+F 5 "IHLP6767GZER470M11" V 4900 2000 50  0001 C CNN "Article Number"
+F 6 "https://se.farnell.com/vishay/ihlp6767gzer470m11/inductor-47uh-8-6a-20/dp/1845598" V 4900 2000 50  0001 C CNN "Seller"
+	1    4900 2000
 	0    -1   -1   0   
 $EndComp
-Text HLabel 10400 1850 2    50   Input ~ 0
+Text HLabel 9650 1500 2    50   Input ~ 0
 Buck5VOut
 Wire Wire Line
-	2900 2150 3400 2150
+	1900 1800 2250 1800
 Wire Wire Line
-	3400 2150 4250 2150
-Connection ~ 3400 2150
+	2250 1800 3100 1800
+Connection ~ 2250 1800
 Wire Wire Line
-	2900 3550 3400 3550
-Connection ~ 3400 3550
+	1900 3200 2250 3200
+Connection ~ 2250 3200
 Wire Wire Line
-	4750 3550 4750 2550
+	3600 3200 3600 2200
 Wire Wire Line
-	3400 3550 4750 3550
-NoConn ~ 4250 2350
+	2250 3200 3600 3200
+NoConn ~ 3100 2000
 Wire Wire Line
-	5250 2350 5500 2350
+	4100 2000 4350 2000
 Wire Wire Line
-	5500 2750 5500 2350
-Connection ~ 5500 2350
+	4350 2400 4350 2000
+Connection ~ 4350 2000
 Wire Wire Line
-	5500 2350 5900 2350
+	4350 2000 4750 2000
 Wire Wire Line
-	5500 3050 5500 3550
+	4350 2700 4350 3200
 Wire Wire Line
-	5500 3550 4750 3550
-Connection ~ 4750 3550
+	4350 3200 3600 3200
+Connection ~ 3600 3200
 Wire Wire Line
-	6200 2350 6650 2350
+	5050 2000 5500 2000
 Wire Wire Line
-	6650 2350 6650 2750
+	5500 2000 5500 2400
 Wire Wire Line
-	6650 3050 6650 3550
+	5500 2700 5500 3200
 Wire Wire Line
-	6650 3550 5500 3550
-Connection ~ 5500 3550
+	5500 3200 4350 3200
+Connection ~ 4350 3200
 Wire Wire Line
-	10400 1850 10000 1850
-Connection ~ 6650 2350
+	9650 1500 9250 1500
+Connection ~ 5500 2000
 Wire Wire Line
-	3400 3000 3400 3550
+	2250 2650 2250 3200
 Wire Wire Line
-	3400 2150 3400 2700
+	2250 1800 2250 2350
 $Comp
 L Device:CP Cbi1
 U 1 1 5DE18376
-P 3400 2850
-F 0 "Cbi1" H 3518 2896 50  0000 L CNN
-F 1 "18µF 50V 35mΩ" H 3518 2805 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_8x10" H 3438 2700 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/content/data/CP/PDF/OS-CON/S_OS-CON_SVPF_e.pdf" H 3400 2850 50  0001 C CNN
-F 4 "Panasonic" H 3400 2850 50  0001 C CNN "Manufacturer"
-F 5 "50SVPF18M" H 3400 2850 50  0001 C CNN "Article Number"
-F 6 "8.0mm" H 3400 2850 50  0001 C CNN "Diameter"
-F 7 "6.9mm" H 3400 2850 50  0001 C CNN "Length"
-F 8 "E7" H 3400 2850 50  0001 C CNN "FootprintSize"
-F 9 "https://se.farnell.com/panasonic/50svpf18m/cap-18-f-50v-20-radial/dp/2354813" H 3400 2850 50  0001 C CNN "Seller"
-	1    3400 2850
+P 2250 2500
+F 0 "Cbi1" H 2368 2546 50  0000 L CNN
+F 1 "18µF 50V 35mΩ" H 2368 2455 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10" H 2288 2350 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/content/data/CP/PDF/OS-CON/S_OS-CON_SVPF_e.pdf" H 2250 2500 50  0001 C CNN
+F 4 "Panasonic" H 2250 2500 50  0001 C CNN "Manufacturer"
+F 5 "50SVPF18M" H 2250 2500 50  0001 C CNN "Article Number"
+F 6 "8.0mm" H 2250 2500 50  0001 C CNN "Diameter"
+F 7 "6.9mm" H 2250 2500 50  0001 C CNN "Length"
+F 8 "E7" H 2250 2500 50  0001 C CNN "FootprintSize"
+F 9 "https://se.farnell.com/panasonic/50svpf18m/cap-18-f-50v-20-radial/dp/2354813" H 2250 2500 50  0001 C CNN "Seller"
+	1    2250 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 2150 6650 2150
+	4100 1800 5500 1800
 Wire Wire Line
-	6650 2150 6650 2350
-Text Notes 2800 4850 0    59   ~ 0
+	5500 1800 5500 2000
+Text Notes 1650 4500 0    59   ~ 0
 Using TI's LM2596 guide:\nVin: 30V\nVout: 5V\nIout: 3A\nEfficiency: 77.1%\nDuty Cycle: 19.95%\nFrequency: 150kHz\nVout p-p: 945.86mV\nhttps://webench.ti.com/power-designer/switching-regulator/select\nhttps://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=572687AF787DDED1
-Text Notes 6700 3100 0    50   ~ 0
+Text Notes 5550 2750 0    50   ~ 0
 AVX Solid Electrolyte Marking:
 $Bitmap
-Pos 7200 3350
+Pos 6050 3000
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 1E 00 00 00 64 08 06 00 00 00 50 07 5F 
@@ -389,171 +389,150 @@ $EndBitmap
 $Comp
 L Device:LED LEDpwr?
 U 1 1 5E98A9FB
-P 9300 2150
+P 8550 1800
 AR Path="/5E98A9FB" Ref="LEDpwr?"  Part="1" 
 AR Path="/5DE1594D/5E98A9FB" Ref="LEDpwr1"  Part="1" 
-F 0 "LEDpwr1" V 9300 2400 50  0000 C CNN
-F 1 "LED Red" V 9200 2400 50  0000 C CNN
-F 2 "LEDs:LED_0603_HandSoldering" H 9300 2150 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2045843.pdf?_ga=2.248537031.1391520159.1585828864-167263916.1529948031" H 9300 2150 50  0001 C CNN
-F 4 "KP-1608SURCK" H 9300 2150 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/kingbright/kp-1608surck/led-red-80mcd-630nm-smd/dp/2449786" H 9300 2150 50  0001 C CNN "Seller"
-	1    9300 2150
+F 0 "LEDpwr1" V 8550 2050 50  0000 C CNN
+F 1 "LED Red" V 8450 2050 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 8550 1800 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2045843.pdf?_ga=2.248537031.1391520159.1585828864-167263916.1529948031" H 8550 1800 50  0001 C CNN
+F 4 "KP-1608SURCK" H 8550 1800 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/kingbright/kp-1608surck/led-red-80mcd-630nm-smd/dp/2449786" H 8550 1800 50  0001 C CNN "Seller"
+	1    8550 1800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R Rled?
 U 1 1 5E98AA09
-P 9300 2600
+P 8550 2250
 AR Path="/5E98AA09" Ref="Rled?"  Part="1" 
 AR Path="/5DE1594D/5E98AA09" Ref="Rled1"  Part="1" 
-F 0 "Rled1" H 9500 2650 50  0000 C CNN
-F 1 "300R" H 9500 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 9230 2600 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 9300 2600 50  0001 C CNN
-F 4 "MC0100W06031300R" V 9300 2600 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w06031300r/motst-tjockfilm-300r-1-0-063w/dp/2845860" V 9300 2600 50  0001 C CNN "Seller"
-	1    9300 2600
+F 0 "Rled1" H 8750 2300 50  0000 C CNN
+F 1 "300R" H 8750 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8480 2250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8550 2250 50  0001 C CNN
+F 4 "MC0100W06031300R" V 8550 2250 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w06031300r/motst-tjockfilm-300r-1-0-063w/dp/2845860" V 8550 2250 50  0001 C CNN "Seller"
+	1    8550 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J5V?
 U 1 1 5E994EC0
-P 9800 2500
+P 9050 2150
 AR Path="/5E994EC0" Ref="J5V?"  Part="1" 
 AR Path="/5DE1594D/5E994EC0" Ref="J5V1"  Part="1" 
-F 0 "J5V1" H 9400 2400 50  0000 L CNN
-F 1 "Conn_02 DNP" H 9050 2500 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9800 2500 50  0001 C CNN
-F 3 "~" H 9800 2500 50  0001 C CNN
-F 4 "" H 9800 2500 50  0001 C CNN "Article Number"
-F 5 "" H 9800 2500 50  0001 C CNN "Seller"
-	1    9800 2500
+F 0 "J5V1" H 8650 2050 50  0000 L CNN
+F 1 "Conn_02 DNP" H 8300 2150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 2150 50  0001 C CNN
+F 3 "~" H 9050 2150 50  0001 C CNN
+F 4 "" H 9050 2150 50  0001 C CNN "Article Number"
+F 5 "" H 9050 2150 50  0001 C CNN "Seller"
+	1    9050 2150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9300 3050 9300 2750
+	8550 2700 8550 2400
 Wire Wire Line
-	9300 2450 9300 2300
+	8550 2100 8550 1950
 Wire Wire Line
-	9300 2000 9300 1850
+	8550 1650 8550 1500
 Wire Wire Line
-	9300 3050 10000 3050
+	8550 2700 9250 2700
 Wire Wire Line
-	10000 3050 10000 2500
+	9250 2700 9250 2150
 Wire Wire Line
-	10000 2400 10000 1850
-Connection ~ 10000 1850
+	9250 2050 9250 1500
+Connection ~ 9250 1500
 Wire Wire Line
-	10000 1850 9300 1850
+	9250 1500 8550 1500
 $Comp
 L Jumper:SolderJumper_2_Open Receiver_Disable?
 U 1 1 5EA93E4A
-P 4450 6400
+P 3300 6200
 AR Path="/5EA93E4A" Ref="Receiver_Disable?"  Part="1" 
 AR Path="/60A21BCB/5EA93E4A" Ref="Receiver_Disable?"  Part="1" 
 AR Path="/5DE1594D/5EA93E4A" Ref="Link_Vin_To_5V1"  Part="1" 
-F 0 "Link_Vin_To_5V1" H 4450 6250 50  0000 C CNN
-F 1 "Link Vin to 5V" H 4900 6500 50  0001 C CNN
-F 2 "ConnTest:JUMPER-SOLDER-SMD" H 4450 6400 50  0001 C CNN
-F 3 "~" H 4450 6400 50  0001 C CNN
-	1    4450 6400
+F 0 "Link_Vin_To_5V1" H 3300 6050 50  0000 C CNN
+F 1 "Link Vin to 5V" H 3750 6300 50  0001 C CNN
+F 2 "ConnTest:JUMPER-SOLDER-SMD" H 3300 6200 50  0001 C CNN
+F 3 "~" H 3300 6200 50  0001 C CNN
+	1    3300 6200
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	2550 1350 8100 1350
+	1400 1000 6950 1000
 Wire Notes Line
-	8100 1350 8100 5050
+	6950 1000 6950 4700
 Wire Notes Line
-	8100 5050 2550 5050
+	6950 4700 1400 4700
 Wire Notes Line
-	2550 5050 2550 1350
-Text Notes 2550 1300 0    118  ~ 0
+	1400 4700 1400 1000
+Text Notes 1400 950  0    118  ~ 0
 Use 5V Buck (Option 1)
-Text Notes 2600 1550 0    50   ~ 0
+Text Notes 1450 1200 0    50   ~ 0
 The buck option is used when Vin > 5.5V and needs to be lowered to 5.0V. The 5V is used for feeding the micro controller.\nExample: When using 12V on Vin to feed a 12V LED strip. 
 Wire Notes Line
-	8350 1350 11000 1350
+	7600 1000 10250 1000
 Wire Notes Line
-	11000 1350 11000 3600
+	10250 1000 10250 3250
 Wire Notes Line
-	11000 3600 8350 3600
+	10250 3250 7600 3250
 Wire Notes Line
-	8350 3600 8350 1350
-Text Notes 8350 1300 0    118  ~ 0
+	7600 3250 7600 1000
+Text Notes 7600 950  0    118  ~ 0
 5V Output
-Text Label 8750 1850 2    50   ~ 0
-5Vout
 Wire Wire Line
-	8750 1850 9300 1850
-Connection ~ 9300 1850
-Wire Notes Line
-	650  1350 2300 1350
-Wire Notes Line
-	2300 1350 2300 3600
-Wire Notes Line
-	2300 3600 650  3600
-Wire Notes Line
-	650  3600 650  1350
-Text Notes 650  1300 0    118  ~ 0
-Voltage input
-Text Label 1800 1700 0    50   ~ 0
-Vin
-Text Label 2900 2150 2    50   ~ 0
-Vin
-Wire Wire Line
-	1250 1700 1800 1700
-Text Label 7600 2350 0    50   ~ 0
-5Vout
-Wire Wire Line
-	7600 2350 6650 2350
+	6450 2000 5500 2000
 $Comp
 L power:GND #PWR0106
 U 1 1 5EAA4C9E
-P 2900 3550
-F 0 "#PWR0106" H 2900 3300 50  0001 C CNN
-F 1 "GND" H 2905 3377 50  0000 C CNN
-F 2 "" H 2900 3550 50  0001 C CNN
-F 3 "" H 2900 3550 50  0001 C CNN
-	1    2900 3550
+P 1900 3200
+F 0 "#PWR0106" H 1900 2950 50  0001 C CNN
+F 1 "GND" H 1905 3027 50  0000 C CNN
+F 2 "" H 1900 3200 50  0001 C CNN
+F 3 "" H 1900 3200 50  0001 C CNN
+	1    1900 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 5EAA5406
-P 8700 3150
-F 0 "#PWR0118" H 8700 2900 50  0001 C CNN
-F 1 "GND" H 8705 2977 50  0000 C CNN
-F 2 "" H 8700 3150 50  0001 C CNN
-F 3 "" H 8700 3150 50  0001 C CNN
-	1    8700 3150
+P 7950 2800
+F 0 "#PWR0118" H 7950 2550 50  0001 C CNN
+F 1 "GND" H 7955 2627 50  0000 C CNN
+F 2 "" H 7950 2800 50  0001 C CNN
+F 3 "" H 7950 2800 50  0001 C CNN
+	1    7950 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 3150 8700 3050
+	7950 2800 7950 2700
 Wire Wire Line
-	8700 3050 9300 3050
-Connection ~ 9300 3050
+	7950 2700 8550 2700
+Connection ~ 8550 2700
 Wire Notes Line
-	2550 5450 6550 5450
+	1400 5250 5400 5250
 Wire Notes Line
-	6550 5450 6550 7550
+	5400 5250 5400 7350
 Wire Notes Line
-	6550 7550 2550 7550
+	5400 7350 1400 7350
 Wire Notes Line
-	2550 7550 2550 5450
-Text Notes 2550 5400 0    118  ~ 0
+	1400 7350 1400 5250
+Text Notes 1400 5200 0    118  ~ 0
 Use direct 5V (Option 2)
-Text Label 3600 6400 2    50   ~ 0
-Vin
-Text Label 5400 6400 0    50   ~ 0
-5Vout
 Wire Wire Line
-	3600 6400 4300 6400
+	2450 6200 3150 6200
 Wire Wire Line
-	4600 6400 5400 6400
-Text Notes 8400 1500 0    50   ~ 0
+	3450 6200 4250 6200
+Text Notes 7650 1150 0    50   ~ 0
 5V Output feeds the micro controllers on this PCB.
-Text Notes 2600 5650 0    50   ~ 0
+Text Notes 1450 5450 0    50   ~ 0
 The direct option is pnly used when Vin is 5V and we don't need to lower the voltage.\nA typical use case is when using addressable LED strip like WS2812.
+Text HLabel 2450 6200 0    50   Input ~ 0
+BuckVin
+Text HLabel 6450 2000 2    50   Input ~ 0
+Buck5VOut
+Text HLabel 4250 6200 2    50   Input ~ 0
+Buck5VOut
 $EndSCHEMATC

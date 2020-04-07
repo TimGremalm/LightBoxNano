@@ -11,7 +11,6 @@ A RS485 receiver and a pair of XLR connectors can also transform the LED control
 # Power Supply and voltage rails
 ## Input rail
 The input voltage to LightBoxNano are called VIN and can range from 5 to 30V.
-
 Make sure to only feed LightBoxNano with a voltage that the LED strip can handle. The maximum voltage is limited by the maximum voltage of the IRLML6344 Mosfets and of what the LED strip can handle.
 
 If using 5V on Vin you need to read "Logic rail" to populate it correctly.
@@ -29,6 +28,7 @@ There is 2 options for the logic rail:
 * Use buck, when Vin is greater than 5.5V.
 * Use direct jumper link when Vin is 5V.
 
+Note that the logic rail bypasses Vin_fused.
 
 The buck converter using TI's guide:
 https://webench.ti.com/power-designer/switching-regulator/select
@@ -36,8 +36,32 @@ https://webench.ti.com/power-designer/switching-regulator/select
 https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=572687AF787DDED1
 
 ## Protection circuit
-* Polarity protection.
-* Over current protection selectable via resistor.
+There is 2 options for input protection:
+* A classic fuse
+* Highside High Current Power Switch
+
+### Classic Fuse
+A much cheaper option then the high side switch, but one time use only.
+Populate with a  appropriate 1206 fast blow fuse.
+Example: Fuse Fast Blow 10A 1206 MCCFB1206TFF/10
+
+No reverse polarity protection exist when using a classic fuse.
+
+### Highside High Current Power Switch
+The Infineon BTS50055-1TMC is a highside high current power switch with buildt in reverse
+polarity and temperature protection.
+
+It's also used to measure current consumption; Current_Feedback as analog output.
+To enable the high power switch Enable_Vin_fused must be driven low.
+
+Both Current_Feedback and Enable_Vin_fused goes to the MCU so it can act on over current
+and act as a resettable fuse.
+
+Vin_fused
+| Channel			| Arduino Nano		| ESP32 |
+| ----------------- | ----------------- | ----- |
+| Current_Feedback	| A0 (PC0)			| IO38	|
+| Enable_Vin_fused	| D13 (PB5)			| IO37	|
 
 
 # RGBW driver
