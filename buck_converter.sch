@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 3 4
 Title "LightBoxNano - Buck Converter"
 Date ""
 Rev ""
@@ -71,7 +71,7 @@ F 6 "https://se.farnell.com/vishay/ihlp6767gzer470m11/inductor-47uh-8-6a-20/dp/1
 	1    6000 2300
 	0    -1   -1   0   
 $EndComp
-Text HLabel 7300 2300 2    50   Input ~ 0
+Text HLabel 9650 2300 2    50   Input ~ 0
 Buck5VOut
 Text HLabel 2750 3500 0    50   Input ~ 0
 BuckGND
@@ -110,7 +110,7 @@ Wire Wire Line
 	6800 3500 5350 3500
 Connection ~ 5350 3500
 Wire Wire Line
-	7300 2300 6800 2300
+	9650 2300 9250 2300
 Connection ~ 6800 2300
 Wire Wire Line
 	3250 2950 3250 3500
@@ -388,4 +388,73 @@ FD 07 89 40 37 D2 55 78 10 5F 4F 24 F0 43 25 DB AA B7 FC 3F 62 E8 C5 02 48 60 2D
 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Device:LED LEDpwr?
+U 1 1 5E98A9FB
+P 8550 2600
+AR Path="/5E98A9FB" Ref="LEDpwr?"  Part="1" 
+AR Path="/5DE1594D/5E98A9FB" Ref="LEDpwr1"  Part="1" 
+F 0 "LEDpwr1" V 8550 2850 50  0000 C CNN
+F 1 "LED Red" V 8450 2850 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 8550 2600 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2045843.pdf?_ga=2.248537031.1391520159.1585828864-167263916.1529948031" H 8550 2600 50  0001 C CNN
+F 4 "KP-1608SURCK" H 8550 2600 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/kingbright/kp-1608surck/led-red-80mcd-630nm-smd/dp/2449786" H 8550 2600 50  0001 C CNN "Seller"
+	1    8550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R Rled?
+U 1 1 5E98AA09
+P 8550 3050
+AR Path="/5E98AA09" Ref="Rled?"  Part="1" 
+AR Path="/5DE1594D/5E98AA09" Ref="Rled1"  Part="1" 
+F 0 "Rled1" H 8750 3100 50  0000 C CNN
+F 1 "300R" H 8750 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8480 3050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8550 3050 50  0001 C CNN
+F 4 "MC0100W06031300R" V 8550 3050 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w06031300r/motst-tjockfilm-300r-1-0-063w/dp/2845860" V 8550 3050 50  0001 C CNN "Seller"
+	1    8550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5V?
+U 1 1 5E994EC0
+P 9050 2950
+AR Path="/5E994EC0" Ref="J5V?"  Part="1" 
+AR Path="/5DE1594D/5E994EC0" Ref="J5V1"  Part="1" 
+F 0 "J5V1" H 8650 2850 50  0000 L CNN
+F 1 "Conn_02 DNP" H 8300 2950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 2950 50  0001 C CNN
+F 3 "~" H 9050 2950 50  0001 C CNN
+F 4 "" H 9050 2950 50  0001 C CNN "Article Number"
+F 5 "" H 9050 2950 50  0001 C CNN "Seller"
+	1    9050 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 4750 9150 4600
+Wire Wire Line
+	6800 3500 8550 3500
+Wire Wire Line
+	8550 3500 8550 3200
+Connection ~ 6800 3500
+Wire Wire Line
+	8550 2900 8550 2750
+Wire Wire Line
+	8550 2450 8550 2300
+Connection ~ 8550 2300
+Wire Wire Line
+	8550 2300 6800 2300
+Wire Wire Line
+	8550 3500 9250 3500
+Wire Wire Line
+	9250 3500 9250 2950
+Connection ~ 8550 3500
+Wire Wire Line
+	9250 2850 9250 2300
+Connection ~ 9250 2300
+Wire Wire Line
+	9250 2300 8550 2300
 $EndSCHEMATC

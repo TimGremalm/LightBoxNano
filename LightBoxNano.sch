@@ -43,16 +43,16 @@ $EndComp
 $Comp
 L power:+5V #PWR0101
 U 1 1 5DE4A501
-P 6850 1250
-F 0 "#PWR0101" H 6850 1100 50  0001 C CNN
-F 1 "+5V" H 6865 1423 50  0000 C CNN
-F 2 "" H 6850 1250 50  0001 C CNN
-F 3 "" H 6850 1250 50  0001 C CNN
-	1    6850 1250
+P 7050 1250
+F 0 "#PWR0101" H 7050 1100 50  0001 C CNN
+F 1 "+5V" H 7065 1423 50  0000 C CNN
+F 2 "" H 7050 1250 50  0001 C CNN
+F 3 "" H 7050 1250 50  0001 C CNN
+	1    7050 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 1400 6850 1400
+	6700 1400 7050 1400
 Wire Notes Line
 	2200 750  2200 2200
 Wire Notes Line
@@ -70,7 +70,7 @@ Wire Notes Line
 Text Notes 5000 700  0    118  ~ 0
 5V Buck
 Wire Wire Line
-	5450 1400 5600 1400
+	5650 1400 5800 1400
 Wire Notes Line
 	600  2200 2200 2200
 Wire Notes Line
@@ -90,18 +90,18 @@ Todo:\n* Add current sense high side switch here (Fuse)\n* Add polarity protecti
 $Comp
 L power:GND #PWR0106
 U 1 1 5DF44892
-P 5450 1950
-F 0 "#PWR0106" H 5450 1700 50  0001 C CNN
-F 1 "GND" H 5455 1777 50  0000 C CNN
-F 2 "" H 5450 1950 50  0001 C CNN
-F 3 "" H 5450 1950 50  0001 C CNN
-	1    5450 1950
+P 5500 1950
+F 0 "#PWR0106" H 5500 1700 50  0001 C CNN
+F 1 "GND" H 5505 1777 50  0000 C CNN
+F 2 "" H 5500 1950 50  0001 C CNN
+F 3 "" H 5500 1950 50  0001 C CNN
+	1    5500 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 1950 5450 1700
+	5500 1950 5500 1700
 Wire Wire Line
-	5450 1700 5600 1700
+	5500 1700 5800 1700
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
@@ -527,7 +527,7 @@ Wire Notes Line
 Wire Notes Line
 	7600 5600 7600 750 
 Text Notes 7600 700  0    118  ~ 0
-RGBW LED Driver (CV-mode)
+RGBW LED Driver (CV-mode, Optional)
 Wire Wire Line
 	10400 6200 10550 6200
 Wire Wire Line
@@ -561,36 +561,7 @@ $EndComp
 Wire Wire Line
 	10400 6250 10400 6200
 Text Notes 7600 5800 0    118  ~ 0
-Addressable LED
-$Comp
-L Connector_Generic:Conn_01x02 J5V1
-U 1 1 5DE4F57E
-P 6650 1700
-F 0 "J5V1" H 6250 1600 50  0000 L CNN
-F 1 "Conn_02 DNP" H 5900 1700 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6650 1700 50  0001 C CNN
-F 3 "~" H 6650 1700 50  0001 C CNN
-F 4 "" H 6650 1700 50  0001 C CNN "Article Number"
-F 5 "" H 6650 1700 50  0001 C CNN "Seller"
-	1    6650 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5DE7A5F1
-P 6850 1950
-F 0 "#PWR0117" H 6850 1700 50  0001 C CNN
-F 1 "GND" H 6855 1777 50  0000 C CNN
-F 2 "" H 6850 1950 50  0001 C CNN
-F 3 "" H 6850 1950 50  0001 C CNN
-	1    6850 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 1950 6850 1700
-Wire Wire Line
-	6850 1600 6850 1400
-Connection ~ 6850 1400
+Addressable LED (Optional)
 Wire Notes Line
 	7600 5850 7600 6500
 Wire Notes Line
@@ -795,9 +766,9 @@ Wire Notes Line
 Wire Notes Line
 	600  2500 3800 2500
 Text Notes 3950 2450 0    118  ~ 0
-MCU Option ESP32
+MCU Option ESP32 (Option 2)
 Text Notes 600  2450 0    118  ~ 0
-MCU Option Nano
+MCU Option Nano (Option 1)
 Wire Wire Line
 	2200 3400 2250 3400
 Wire Wire Line
@@ -864,25 +835,25 @@ Connection ~ 2700 5000
 Text Notes 4000 4050 0    50   ~ 0
 Ports:\nIO21  DMX_Send\nIO22  DMX_Receive\nIO19  DMX_Enable_Receive\nIO23  DMX_Enable_Send\nIO25  addressable\nIO26  red\nIO27  green\nIO13  blue\nIO15  white\nIO34  POT_1\nIO35  POT_2\nIO14  SwCode1\nIO12  SwCode2\nIO2   SwCode4\nIO4   SwCode8
 $Sheet
-S 2950 1200 1300 550 
+S 2950 1400 1300 550 
 U 5EB9FA1E
 F0 "Input Protection" 50
 F1 "input_protection.sch" 50
-F2 "Vin_fused" I R 4250 1350 50 
-F3 "Vin" I L 2950 1350 50 
+F2 "Vin_fused" I R 4250 1550 50 
+F3 "Vin" I L 2950 1550 50 
 $EndSheet
 $Sheet
-S 5600 1150 900  750 
+S 5800 1150 900  750 
 U 5DE1594D
 F0 "Buck Converter" 50
 F1 "buck_converter.sch" 50
-F2 "BuckVin" I L 5600 1400 50 
-F3 "Buck5VOut" I R 6500 1400 50 
-F4 "BuckGND" I L 5600 1700 50 
+F2 "BuckVin" I L 5800 1400 50 
+F3 "Buck5VOut" I R 6700 1400 50 
+F4 "BuckGND" I L 5800 1700 50 
 $EndSheet
 Text Label 1750 1350 1    50   ~ 0
 Vin
-Text Label 5450 1400 2    50   ~ 0
+Text Label 5650 1400 2    50   ~ 0
 Vin_fused
 Text Label 10400 1500 2    50   ~ 0
 Vin_fused
@@ -997,7 +968,7 @@ F4 "DMX_Enable_Receive" I L 4900 7100 50
 F5 "DMX_Enable_Send" I L 4900 6750 50 
 $EndSheet
 Text Notes 3950 5950 0    118  ~ 0
-DMX512 Isolated
+DMX512 Isolated (Optional)
 Wire Notes Line
 	6850 6000 3950 6000
 Wire Notes Line
@@ -1171,7 +1142,7 @@ Wire Notes Line
 Wire Notes Line
 	600  5550 600  7700
 Text Notes 600  5500 0    118  ~ 0
-User Interface
+User Interface (Optional)
 Connection ~ 1400 7300
 Wire Wire Line
 	1400 7400 1400 7300
@@ -1307,16 +1278,14 @@ NoConn ~ 1450 1750
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5E94B7E7
-P 6950 1250
-F 0 "#FLG0103" H 6950 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 6950 1423 50  0001 C CNN
-F 2 "" H 6950 1250 50  0001 C CNN
-F 3 "~" H 6950 1250 50  0001 C CNN
-	1    6950 1250
+P 7150 1250
+F 0 "#FLG0103" H 7150 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 7150 1423 50  0001 C CNN
+F 2 "" H 7150 1250 50  0001 C CNN
+F 3 "~" H 7150 1250 50  0001 C CNN
+	1    7150 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 1250 6950 1400
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5E975B8B
@@ -1331,9 +1300,7 @@ $EndComp
 Wire Wire Line
 	6300 2800 6200 2800
 Wire Wire Line
-	6950 1400 6850 1400
-Wire Wire Line
-	6850 1400 6850 1250
+	7050 1400 7050 1250
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EB7CEAB
@@ -1378,12 +1345,17 @@ F 3 "~" H 6950 6400 50  0001 C CNN
 	1    6950 6400
 	1    0    0    -1  
 $EndComp
-Text Label 4450 1350 0    50   ~ 0
+Text Label 4450 1550 0    50   ~ 0
 Vin_fused
-Text Label 2700 1350 2    50   ~ 0
+Text Label 2700 1550 2    50   ~ 0
 Vin
 Wire Wire Line
-	2700 1350 2950 1350
+	2700 1550 2950 1550
 Wire Wire Line
-	4250 1350 4450 1350
+	4250 1550 4450 1550
+Wire Wire Line
+	7150 1250 7050 1250
+Connection ~ 7050 1250
+Text Notes 2400 1050 0    50   ~ 0
+There is 2 options for input protection:\n* A classic fuse\n* Highside High Current Power Switch
 $EndSCHEMATC
