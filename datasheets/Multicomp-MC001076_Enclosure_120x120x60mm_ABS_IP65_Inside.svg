@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="109.89388mm"
+   height="110.01681mm"
+   viewBox="0 0 389.38775 389.82333"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Multicomp-MC001076_Enclosure_120x120x60mm_ABS_IP65_Inside.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="228.69202"
+     inkscape:cy="243.10109"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1672"
+     inkscape:window-y="1192"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-108.16276,-314.59445)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#231f20;stroke-width:0.40000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 423.43784,699.89469 c 0,-5.9091 0,-11.8182 0,-17.7273 l 0,0 c 0.4875,-15.5431 12.6243,-29.8251 28.9604,-28.954 l 0,0 c 13.5431,0 27.0862,0 40.6294,0 l 0,0 c 0.7215,-0.2882 1.443,-0.5764 2.1646,-0.8646 0.5764,-0.4312 1.1528,-0.8624 1.7292,-1.2936 0.143,-0.8668 0.286,-1.7336 0.4291,-2.6004 l 0,0 c 0,-92.63682 0,-185.27367 0,-277.91051 l 0,0 c -0.1431,-0.86242 -0.2861,-1.72485 -0.4291,-2.58727 -0.5764,-0.42905 -1.1528,-0.8581 -1.7292,-1.28715 -0.7216,-0.29036 -1.4431,-0.58072 -2.1646,-0.87108 l 0,0 c -13.5432,0 -27.0863,0 -40.6294,0 l 0,0 c -16.3361,0.8776 -28.4729,-13.4109 -28.9604,-28.96053 l 0,0 c 0,-5.90695 0,-11.81391 0,-17.72086 l 0,0 c -0.1387,-0.71942 -0.2774,-1.43883 -0.4161,-2.15824 -0.5807,-0.43121 -1.1614,-0.86242 -1.7421,-1.29363 -0.7195,-0.29036 -1.4389,-0.58073 -2.1584,-0.87109 l 0,0 c -77.50977,0 -155.01952,0 -232.52928,0 l 0,0 c -0.7216,0.29036 -1.4432,0.58073 -2.1648,0.87109 -0.57637,0.43121 -1.15274,0.86242 -1.7291,1.29363 -0.14304,0.71941 -0.28607,1.43882 -0.4291,2.15824 l 0,0 c 0,5.90695 0,11.81391 0,17.72086 l 0,0 c -0.0974,15.10758 -13.2614,30.04614 -28.954,28.96053 l 0,0 c -13.5431,0 -27.0862,0 -40.6293,0 l 0,0 c -0.7194,0.29036 -1.4388,0.58072 -2.1582,0.87108 -0.58074,0.42905 -1.16147,0.8581 -1.7422,1.28715 -0.14084,0.86242 -0.28167,1.72485 -0.4225,2.58727 l 0,0 c 0,92.63684 0,185.27369 0,277.91051 l 0,0 c 0.14083,0.8668 0.28166,1.7336 0.4225,2.6004 0.58073,0.4312 1.16146,0.8624 1.7422,1.2936 0.7194,0.2882 1.4388,0.5764 2.1582,0.8646 l 0,0 c 13.5431,0 27.0862,0 40.6293,0 l 0,0 c 15.6926,-1.0856 28.863,13.8594 28.954,28.954 l 0,0 c 0,5.9091 0,11.8182 0,17.7273 l 0,0 c 0.14303,0.7195 0.28606,1.4389 0.4291,2.1583 0.57636,0.4312 1.15273,0.8624 1.7291,1.2936 0.7216,0.2904 1.4432,0.5808 2.1648,0.8712 l 0,0 c 77.50976,0 155.01951,0 232.52928,0 l 0,0 c 0.7195,-0.2904 1.4389,-0.5808 2.1584,-0.8712 0.5807,-0.4312 1.1614,-0.8624 1.7421,-1.2936 0.1387,-0.7194 0.2774,-1.4388 0.4161,-2.1583 z"
+       id="path10094-1"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
