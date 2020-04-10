@@ -72,8 +72,8 @@ Wire Notes Line
 	4950 750  4950 2200
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
-Text Notes 4200 2150 0    50   ~ 0
-Todo:\n* Place ESD diodes on connector pins\n* Shorten designators\n* Solder islands for prototyping
+Text Notes 9650 6750 0    50   ~ 0
+Todo:\n* Place ESD diodes on connector pins
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
@@ -867,194 +867,190 @@ The 5V buck converter will feed the micro controller with\n5V DC.\nThere is 2 op
 Text Notes 7650 6200 0    50   ~ 0
 Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace connector close to Vin_fused.
 Wire Wire Line
-	6200 7000 6100 7000
+	4500 6650 4600 6650
 Wire Wire Line
-	4800 6650 4900 6650
-Wire Wire Line
-	4800 6750 4900 6750
-Wire Wire Line
-	4800 7100 4900 7100
-Text Label 4800 6750 2    50   ~ 0
+	4500 7150 4600 7150
+Text Label 4400 6750 3    50   ~ 0
 DMX_Enable_Send
-Text Label 4800 7100 2    50   ~ 0
+Text Label 4200 7500 1    50   ~ 0
 DMX_Enable_Receive
-Text Label 6200 7000 0    50   ~ 0
+Text Label 5650 7050 3    50   ~ 0
 DMX_Receive
-Text Label 4800 6650 2    50   ~ 0
+Text Label 4500 6650 2    50   ~ 0
 DMX_Send
 Wire Notes Line
-	3950 7700 6850 7700
+	3950 7700 5800 7700
 $Sheet
-S 4900 6500 1200 900 
+S 4600 6500 900  850 
 U 60A21BCB
 F0 "DMX512" 50
 F1 "DMX512.sch" 50
-F2 "DMX_Send" I L 4900 6650 50 
-F3 "DMX_Receive" I R 6100 7000 50 
-F4 "DMX_Enable_Receive" I L 4900 7100 50 
-F5 "DMX_Enable_Send" I L 4900 6750 50 
+F2 "DMX_Send" I L 4600 6650 50 
+F3 "DMX_Receive" I R 5500 7000 50 
+F4 "DMX_Enable_Receive" I L 4600 7150 50 
+F5 "DMX_Enable_Send" I L 4600 6750 50 
 $EndSheet
 Text Notes 3950 5950 0    118  ~ 0
-DMX512 Isolated (Optional)
+DMX512 (Optional)
 Wire Notes Line
-	6850 6000 3950 6000
+	5800 6000 3950 6000
 Wire Notes Line
-	6850 7700 6850 6000
+	5800 7700 5800 6000
 Wire Notes Line
 	3950 6000 3950 7700
 $Comp
 L power:+3.3V #PWR0120
 U 1 1 5EF23D23
-P 2400 5900
-F 0 "#PWR0120" H 2400 5750 50  0001 C CNN
-F 1 "+3.3V" H 2415 6073 50  0000 C CNN
-F 2 "" H 2400 5900 50  0001 C CNN
-F 3 "" H 2400 5900 50  0001 C CNN
-	1    2400 5900
+P 2350 5900
+F 0 "#PWR0120" H 2350 5750 50  0001 C CNN
+F 1 "+3.3V" H 2365 6073 50  0000 C CNN
+F 2 "" H 2350 5900 50  0001 C CNN
+F 3 "" H 2350 5900 50  0001 C CNN
+	1    2350 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L KnitterSwitchCoded:DRR4010 SW1
 U 1 1 6048EE6B
-P 2300 6700
-F 0 "SW1" H 2650 7250 50  0000 L CNN
-F 1 "Knitter-Switch DRR4010" H 2650 7150 50  0000 L CNN
-F 2 "Knitter-Switch:DRR4010" V 1850 7400 50  0001 L CNN
-F 3 "https://www.knitter-switch.com/var/pms/model-911/DRR%204010.pdf" H 2300 7100 50  0001 C CNN
-F 4 "DRR4010" H 2300 6700 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/knitter-switch/drr4010/rotary-switch-pcb-bcd/dp/807620" H 2300 6700 50  0001 C CNN "Seller"
-	1    2300 6700
+P 2250 6700
+F 0 "SW1" H 2600 7250 50  0000 L CNN
+F 1 "Knitter-Switch DRR4010" H 2600 7150 50  0000 L CNN
+F 2 "Knitter-Switch:DRR4010" V 1800 7400 50  0001 L CNN
+F 3 "https://www.knitter-switch.com/var/pms/model-911/DRR%204010.pdf" H 2250 7100 50  0001 C CNN
+F 4 "DRR4010" H 2250 6700 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/knitter-switch/drr4010/rotary-switch-pcb-bcd/dp/807620" H 2250 6700 50  0001 C CNN "Seller"
+	1    2250 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 6700 3400 6700
+	2550 6700 3350 6700
 Wire Wire Line
-	2400 6700 2400 6750
+	2350 6700 2350 6750
 Wire Wire Line
-	2200 6700 2200 6800
+	2150 6700 2150 6800
 Wire Wire Line
-	2000 6700 2000 6850
+	1950 6700 1950 6850
 Wire Wire Line
-	2000 6850 2000 6950
-Connection ~ 2000 6850
+	1950 6850 1950 6950
+Connection ~ 1950 6850
 Wire Wire Line
-	2350 6850 2000 6850
+	2300 6850 1950 6850
 Wire Wire Line
-	2350 6900 2350 6850
-Connection ~ 3400 6700
+	2300 6900 2300 6850
+Connection ~ 3350 6700
 Wire Wire Line
-	3750 6700 3400 6700
+	3700 6700 3350 6700
 Wire Wire Line
-	3750 6900 3750 6700
-Connection ~ 2900 6750
+	3700 6900 3700 6700
+Connection ~ 2850 6750
 Wire Wire Line
-	3250 6750 2900 6750
+	3200 6750 2850 6750
 Wire Wire Line
-	3250 6900 3250 6750
-Connection ~ 2450 6800
+	3200 6900 3200 6750
+Connection ~ 2400 6800
 Wire Wire Line
-	2800 6800 2450 6800
+	2750 6800 2400 6800
 Wire Wire Line
-	2800 6900 2800 6800
+	2750 6900 2750 6800
 Wire Wire Line
-	2400 6750 2900 6750
+	2350 6750 2850 6750
 Wire Wire Line
-	2900 6750 2900 6950
+	2850 6750 2850 6950
 $Comp
 L Device:R R_sw2
 U 1 1 5E4BEFE9
-P 2900 7100
-F 0 "R_sw2" V 2693 7100 50  0000 C CNN
-F 1 "10k" V 2784 7100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2830 7100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2900 7100 50  0001 C CNN
-F 4 "MC0100W0603110K" V 2900 7100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 2900 7100 50  0001 C CNN "Seller"
-	1    2900 7100
+P 2850 7100
+F 0 "R_sw2" V 2643 7100 50  0000 C CNN
+F 1 "10k" V 2734 7100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2780 7100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2850 7100 50  0001 C CNN
+F 4 "MC0100W0603110K" V 2850 7100 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 2850 7100 50  0001 C CNN "Seller"
+	1    2850 7100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2900 7350 2900 7250
-Connection ~ 2900 7350
+	2850 7350 2850 7250
+Connection ~ 2850 7350
 Wire Wire Line
-	3400 7350 3400 7250
+	3350 7350 3350 7250
 Wire Wire Line
-	2900 7350 3400 7350
-Connection ~ 2450 7350
+	2850 7350 3350 7350
+Connection ~ 2400 7350
 Wire Wire Line
-	2450 7350 2900 7350
+	2400 7350 2850 7350
 Wire Wire Line
-	2000 7350 2000 7450
-Connection ~ 2000 7350
+	1950 7350 1950 7450
+Connection ~ 1950 7350
 Wire Wire Line
-	2450 7350 2450 7250
+	2400 7350 2400 7250
 Wire Wire Line
-	2000 7350 2450 7350
+	1950 7350 2400 7350
 Wire Wire Line
-	2000 7250 2000 7350
+	1950 7250 1950 7350
 Wire Wire Line
-	2450 6800 2450 6950
+	2400 6800 2400 6950
 Wire Wire Line
-	2200 6800 2450 6800
+	2150 6800 2400 6800
 Wire Wire Line
-	3400 6700 3400 6950
+	3350 6700 3350 6950
 $Comp
 L power:GND #PWR0115
 U 1 1 5E49F4A7
-P 2000 7450
-F 0 "#PWR0115" H 2000 7200 50  0001 C CNN
-F 1 "GND" H 2005 7277 50  0000 C CNN
-F 2 "" H 2000 7450 50  0001 C CNN
-F 3 "" H 2000 7450 50  0001 C CNN
-	1    2000 7450
+P 1950 7450
+F 0 "#PWR0115" H 1950 7200 50  0001 C CNN
+F 1 "GND" H 1955 7277 50  0000 C CNN
+F 2 "" H 1950 7450 50  0001 C CNN
+F 3 "" H 1950 7450 50  0001 C CNN
+	1    1950 7450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R_sw1
 U 1 1 5E4BD26C
-P 3400 7100
-F 0 "R_sw1" V 3193 7100 50  0000 C CNN
-F 1 "10k" V 3284 7100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3330 7100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 3400 7100 50  0001 C CNN
-F 4 "MC0100W0603110K" V 3400 7100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 3400 7100 50  0001 C CNN "Seller"
-	1    3400 7100
+P 3350 7100
+F 0 "R_sw1" V 3143 7100 50  0000 C CNN
+F 1 "10k" V 3234 7100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 7100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 3350 7100 50  0001 C CNN
+F 4 "MC0100W0603110K" V 3350 7100 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 3350 7100 50  0001 C CNN "Seller"
+	1    3350 7100
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R_sw4
 U 1 1 5E4BF77A
-P 2450 7100
-F 0 "R_sw4" V 2243 7100 50  0000 C CNN
-F 1 "10k" V 2334 7100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 7100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2450 7100 50  0001 C CNN
-F 4 "MC0100W0603110K" V 2450 7100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 2450 7100 50  0001 C CNN "Seller"
-	1    2450 7100
+P 2400 7100
+F 0 "R_sw4" V 2193 7100 50  0000 C CNN
+F 1 "10k" V 2284 7100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2330 7100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2400 7100 50  0001 C CNN
+F 4 "MC0100W0603110K" V 2400 7100 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 2400 7100 50  0001 C CNN "Seller"
+	1    2400 7100
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R_sw8
 U 1 1 5E4C9983
-P 2000 7100
-F 0 "R_sw8" V 1793 7100 50  0000 C CNN
-F 1 "10k" V 1884 7100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1930 7100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 2000 7100 50  0001 C CNN
-F 4 "MC0100W0603110K" V 2000 7100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 2000 7100 50  0001 C CNN "Seller"
-	1    2000 7100
+P 1950 7100
+F 0 "R_sw8" V 1743 7100 50  0000 C CNN
+F 1 "10k" V 1834 7100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1880 7100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 1950 7100 50  0001 C CNN
+F 4 "MC0100W0603110K" V 1950 7100 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w0603110k/motst-tjockfilm-10k-1-0-063w-0603/dp/2845751" V 1950 7100 50  0001 C CNN "Seller"
+	1    1950 7100
 	-1   0    0    1   
 $EndComp
-Text Label 3750 6900 3    50   ~ 0
+Text Label 3700 6900 3    50   ~ 0
 SwCode1
-Text Label 3250 6900 3    50   ~ 0
+Text Label 3200 6900 3    50   ~ 0
 SwCode2
-Text Label 2800 6900 3    50   ~ 0
+Text Label 2750 6900 3    50   ~ 0
 SwCode4
-Text Label 2350 6900 3    50   ~ 0
+Text Label 2300 6900 3    50   ~ 0
 SwCode8
 Text Label 1000 7050 0    50   ~ 0
 POT_1
@@ -1147,8 +1143,8 @@ Wire Wire Line
 Wire Wire Line
 	9200 3500 8700 3500
 Connection ~ 9500 1450
-Text Notes 4000 6250 0    50   ~ 0
-A RS-485 transceiver can optionally be mounted for sending and\nreceiveing DMX512.\nSee sheet DMX512 for configuration.
+Text Notes 4000 6300 0    50   ~ 0
+A RS-485 transceiver can optionally be\nmounted for sending and receiveing DMX512.\nSee sheet DMX512 for configuration.
 Text Notes 650  5900 0    50   ~ 0
 2 potentiometers can be utilized to hue and brightness for example.\nThe pot's give out max 3.3V.\nThere is also a 10 position rotary coded\nswitch that can be used for modes.
 Wire Wire Line
@@ -1223,45 +1219,45 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EB7CEAB
-P 6950 5800
-F 0 "H1" H 7050 5846 50  0000 L CNN
-F 1 "MountingHole" H 7050 5755 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 5800 50  0001 C CNN
-F 3 "~" H 6950 5800 50  0001 C CNN
-	1    6950 5800
+P 6100 6950
+F 0 "H1" H 6200 6996 50  0000 L CNN
+F 1 "MountingHole" H 6200 6905 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6100 6950 50  0001 C CNN
+F 3 "~" H 6100 6950 50  0001 C CNN
+	1    6100 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5EB8008A
-P 6950 6000
-F 0 "H2" H 7050 6046 50  0000 L CNN
-F 1 "MountingHole" H 7050 5955 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 6000 50  0001 C CNN
-F 3 "~" H 6950 6000 50  0001 C CNN
-	1    6950 6000
+P 6100 7150
+F 0 "H2" H 6200 7196 50  0000 L CNN
+F 1 "MountingHole" H 6200 7105 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6100 7150 50  0001 C CNN
+F 3 "~" H 6100 7150 50  0001 C CNN
+	1    6100 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5EB80344
-P 6950 6200
-F 0 "H3" H 7050 6246 50  0000 L CNN
-F 1 "MountingHole" H 7050 6155 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 6200 50  0001 C CNN
-F 3 "~" H 6950 6200 50  0001 C CNN
-	1    6950 6200
+P 6100 7350
+F 0 "H3" H 6200 7396 50  0000 L CNN
+F 1 "MountingHole" H 6200 7305 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6100 7350 50  0001 C CNN
+F 3 "~" H 6100 7350 50  0001 C CNN
+	1    6100 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5EB8064C
-P 6950 6400
-F 0 "H4" H 7050 6446 50  0000 L CNN
-F 1 "MountingHole" H 7050 6355 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6950 6400 50  0001 C CNN
-F 3 "~" H 6950 6400 50  0001 C CNN
-	1    6950 6400
+P 6100 7550
+F 0 "H4" H 6200 7596 50  0000 L CNN
+F 1 "MountingHole" H 6200 7505 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6100 7550 50  0001 C CNN
+F 3 "~" H 6100 7550 50  0001 C CNN
+	1    6100 7550
 	1    0    0    -1  
 $EndComp
 Text Label 4200 1500 0    50   ~ 0
@@ -1328,7 +1324,7 @@ L Connector_Generic:Conn_01x03 Jadd1
 U 1 1 5DE05544
 P 9450 6100
 F 0 "Jadd1" H 9450 6300 50  0000 C CNN
-F 1 "MSTBA3" H 9450 5900 50  0000 C CNN
+F 1 "MSTBA3" H 9450 6400 50  0000 C CNN
 F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_3pole" H 9450 6100 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 9450 6100 50  0001 C CNN
 F 4 "1757255" H 9450 6100 50  0001 C CNN "Article Number"
@@ -1372,4 +1368,84 @@ Wire Wire Line
 	7400 4750 7400 5000
 Wire Wire Line
 	7400 5000 6700 5000
+$Comp
+L Connector:Conn_01x03_Male PrototypeArea1
+U 1 1 5ECA1509
+P 6550 6400
+F 0 "PrototypeArea1" H 6522 6282 50  0000 R CNN
+F 1 "Conn_03" H 6522 6373 50  0000 R CNN
+F 2 "LightBoxNanoFootprints:PrototypeArea" H 6550 6400 50  0001 C CNN
+F 3 "~" H 6550 6400 50  0001 C CNN
+	1    6550 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5ECB07A1
+P 6250 6550
+F 0 "#PWR0128" H 6250 6300 50  0001 C CNN
+F 1 "GND" H 6255 6377 50  0000 C CNN
+F 2 "" H 6250 6550 50  0001 C CNN
+F 3 "" H 6250 6550 50  0001 C CNN
+	1    6250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 5ECB15CE
+P 6250 6250
+F 0 "#PWR0129" H 6250 6100 50  0001 C CNN
+F 1 "+3.3V" H 6265 6423 50  0000 C CNN
+F 2 "" H 6250 6250 50  0001 C CNN
+F 3 "" H 6250 6250 50  0001 C CNN
+	1    6250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 5ECB2477
+P 6100 6350
+F 0 "#PWR0130" H 6100 6200 50  0001 C CNN
+F 1 "+5V" H 6115 6523 50  0000 C CNN
+F 2 "" H 6100 6350 50  0001 C CNN
+F 3 "" H 6100 6350 50  0001 C CNN
+	1    6100 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6250 6250 6300
+Wire Wire Line
+	6250 6300 6350 6300
+Wire Wire Line
+	6100 6350 6100 6400
+Wire Wire Line
+	6100 6400 6350 6400
+Wire Wire Line
+	6250 6550 6250 6500
+Wire Wire Line
+	6250 6500 6350 6500
+Wire Wire Line
+	5650 7050 5650 7000
+Wire Wire Line
+	5500 7000 5650 7000
+Wire Wire Line
+	4400 6750 4600 6750
+Wire Wire Line
+	4500 7150 4500 7500
+Wire Wire Line
+	4500 7500 4200 7500
+Text Notes 5900 5950 0    118  ~ 0
+Mechanical
+Wire Notes Line
+	7450 6000 5900 6000
+Wire Notes Line
+	5900 6000 5900 7700
+Wire Notes Line
+	7450 6000 7450 6500
+Wire Notes Line
+	7450 6500 6900 6500
+Wire Notes Line
+	6900 6500 6900 7700
+Wire Notes Line
+	6900 7700 5900 7700
 $EndSCHEMATC
