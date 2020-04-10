@@ -72,8 +72,8 @@ Wire Notes Line
 	4950 750  4950 2200
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
-Text Notes 4200 2200 0    50   ~ 0
-Todo:\n* Add test pads\n* Place ESD diodes on connector pins\n* Shorten designators\n* Pin breakout for MCU?\n* Solder islands for prototyping
+Text Notes 4200 2150 0    50   ~ 0
+Todo:\n* Place ESD diodes on connector pins\n* Shorten designators\n* Solder islands for prototyping
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
@@ -865,7 +865,7 @@ LED driver  is made for LED strip that have red, green, blue and white channels 
 Text Notes 5150 1200 0    50   ~ 0
 The 5V buck converter will feed the micro controller with\n5V DC.\nThere is 2 options for 5V:\n* Use buck to lower Vin to 5V\n* Direct connection to 5V from Vin
 Text Notes 7650 6200 0    50   ~ 0
-Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace cennector close to Vin_fused.
+Make sure to feed Vin with the\nright voltage for the LED strip.\nUsually 5V for addressable LED strip.\nPlace connector close to Vin_fused.
 Wire Wire Line
 	6200 7000 6100 7000
 Wire Wire Line
@@ -1151,8 +1151,6 @@ Text Notes 4000 6250 0    50   ~ 0
 A RS-485 transceiver can optionally be mounted for sending and\nreceiveing DMX512.\nSee sheet DMX512 for configuration.
 Text Notes 650  5900 0    50   ~ 0
 2 potentiometers can be utilized to hue and brightness for example.\nThe pot's give out max 3.3V.\nThere is also a 10 position rotary coded\nswitch that can be used for modes.
-Text Notes 7650 6450 0    50   ~ 0
-Place ESD diodes on connector pins.
 Wire Wire Line
 	1650 1750 1650 1850
 Wire Wire Line
