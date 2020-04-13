@@ -38,52 +38,52 @@ Wire Notes Line
 Wire Notes Line
 	5700 3350 9600 3350
 Wire Wire Line
-	7300 4600 7500 4600
+	6600 4550 6850 4550
 Wire Wire Line
-	7500 4800 7300 4800
+	7650 4750 7450 4750
 $Comp
 L Device:R Rblue?
 U 1 1 5E8FBBFB
-P 7300 5600
+P 7450 5550
 AR Path="/5E8FBBFB" Ref="Rblue?"  Part="1" 
 AR Path="/5EB9FA1E/5E8FBBFB" Ref="Rfeedback1"  Part="1" 
-F 0 "Rfeedback1" H 7000 5650 50  0000 C CNN
-F 1 "1k" H 7150 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7230 5600 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 7300 5600 50  0001 C CNN
-F 4 "MC0100W060311K" V 7300 5600 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 7300 5600 50  0001 C CNN "Seller"
-	1    7300 5600
+F 0 "Rfeedback1" H 7150 5600 50  0000 C CNN
+F 1 "1k" H 7300 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7380 5550 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 7450 5550 50  0001 C CNN
+F 4 "MC0100W060311K" V 7450 5550 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 7450 5550 50  0001 C CNN "Seller"
+	1    7450 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E8F7D36
-P 7300 5850
+P 7450 5800
 AR Path="/5E8F7D36" Ref="#PWR?"  Part="1" 
 AR Path="/5EB9FA1E/5E8F7D36" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 7300 5600 50  0001 C CNN
-F 1 "GND" H 7305 5677 50  0000 C CNN
-F 2 "" H 7300 5850 50  0001 C CNN
-F 3 "" H 7300 5850 50  0001 C CNN
-	1    7300 5850
+F 0 "#PWR0117" H 7450 5550 50  0001 C CNN
+F 1 "GND" H 7455 5627 50  0000 C CNN
+F 2 "" H 7450 5800 50  0001 C CNN
+F 3 "" H 7450 5800 50  0001 C CNN
+	1    7450 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 4250 7800 4400
+	7950 4200 7950 4350
 Wire Wire Line
-	8400 4700 8100 4700
+	8550 4650 8250 4650
 $Comp
 L Power_Management:BTS50055-1TMC Qhigh1
 U 1 1 5E8E4AD3
-P 7800 4700
-F 0 "Qhigh1" H 7800 4425 50  0000 C CNN
-F 1 "BTS50055-1TMC" H 7800 4334 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 8600 4450 50  0001 C CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BTS50055-1TMC-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa9b0007235e9" H 7800 4300 50  0001 C CNN
-F 4 "BTS500551TMCATMA1" H 7800 4700 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/infineon/bts500551tmcatma1/effektbelastning-h-s-34v-to-220/dp/2480566" H 7800 4700 50  0001 C CNN "Seller"
-	1    7800 4700
+P 7950 4650
+F 0 "Qhigh1" H 7950 4375 50  0000 C CNN
+F 1 "BTS50055-1TMC" H 7950 4284 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 8750 4400 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BTS50055-1TMC-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa9b0007235e9" H 7950 4250 50  0001 C CNN
+F 4 "BTS500551TMCATMA1" H 7950 4650 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/infineon/bts500551tmcatma1/effektbelastning-h-s-34v-to-220/dp/2480566" H 7950 4650 50  0001 C CNN "Seller"
+	1    7950 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -171,11 +171,11 @@ F 5 "" V 3150 2700 50  0001 C CNN "Seller"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7300 5300 7300 4800
+	7450 5250 7450 4750
 Wire Wire Line
-	7300 5300 8400 5300
+	7450 5250 7900 5250
 Wire Wire Line
-	6400 4250 7800 4250
+	6600 4200 7950 4200
 $Comp
 L power:GND #PWR?
 U 1 1 5EAF0E74
@@ -193,13 +193,13 @@ Wire Wire Line
 	3250 1550 3250 1700
 Wire Wire Line
 	3250 2000 3250 2050
-Text HLabel 7300 4600 0    50   Input ~ 0
+Text HLabel 6600 4550 0    50   Input ~ 0
 Enable_Vin_fused
-Text HLabel 8400 5300 2    50   Input ~ 0
+Text HLabel 8550 5250 2    50   Input ~ 0
 Current_Feedback
-Text HLabel 8400 4700 2    50   Input ~ 0
+Text HLabel 8550 4650 2    50   Input ~ 0
 Vin_fused
-Text HLabel 6400 4250 0    50   Input ~ 0
+Text HLabel 6600 4200 0    50   Input ~ 0
 Vin
 Text HLabel 3450 2600 2    50   Input ~ 0
 Vin_fused
@@ -231,8 +231,42 @@ Wire Wire Line
 Wire Wire Line
 	3350 3550 3450 3550
 Wire Wire Line
-	7300 5300 7300 5450
-Connection ~ 7300 5300
+	7450 5250 7450 5400
+Connection ~ 7450 5250
 Wire Wire Line
-	7300 5850 7300 5750
+	7450 5800 7450 5700
+$Comp
+L Device:R Rblue?
+U 1 1 5EE51EAD
+P 8050 5250
+AR Path="/5EE51EAD" Ref="Rblue?"  Part="1" 
+AR Path="/5EB9FA1E/5EE51EAD" Ref="Rfeedback2"  Part="1" 
+F 0 "Rfeedback2" V 7950 5250 50  0000 C CNN
+F 1 "1k" V 7850 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7980 5250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 8050 5250 50  0001 C CNN
+F 4 "MC0100W060311K" V 8050 5250 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 8050 5250 50  0001 C CNN "Seller"
+	1    8050 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 5250 8550 5250
+$Comp
+L Device:R Rblue?
+U 1 1 5EEFA5CB
+P 7000 4550
+AR Path="/5EEFA5CB" Ref="Rblue?"  Part="1" 
+AR Path="/5EB9FA1E/5EEFA5CB" Ref="Renable1"  Part="1" 
+F 0 "Renable1" V 6900 4550 50  0000 C CNN
+F 1 "1k" V 6800 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6930 4550 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 7000 4550 50  0001 C CNN
+F 4 "MC0100W060311K" V 7000 4550 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 7000 4550 50  0001 C CNN "Seller"
+	1    7000 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 4550 7650 4550
 $EndSCHEMATC

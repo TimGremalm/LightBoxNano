@@ -1282,54 +1282,50 @@ Wire Wire Line
 Wire Wire Line
 	10500 2150 10500 1850
 Wire Wire Line
-	9800 6200 9800 6250
-Wire Wire Line
-	9650 6000 10500 6000
-Text Label 10500 6100 0    50   ~ 0
+	9450 5950 10500 5950
+Text Label 10500 6050 0    50   ~ 0
 Addressable
-Text Label 10500 6000 0    50   ~ 0
+Text Label 10500 5950 0    50   ~ 0
 Vin_fused
 $Comp
 L power:GND #PWR0114
 U 1 1 5E2158AC
-P 9800 6250
-F 0 "#PWR0114" H 9800 6000 50  0001 C CNN
-F 1 "GND" H 9805 6077 50  0000 C CNN
-F 2 "" H 9800 6250 50  0001 C CNN
-F 3 "" H 9800 6250 50  0001 C CNN
-	1    9800 6250
+P 9650 6250
+F 0 "#PWR0114" H 9650 6000 50  0001 C CNN
+F 1 "GND" H 9655 6077 50  0000 C CNN
+F 2 "" H 9650 6250 50  0001 C CNN
+F 3 "" H 9650 6250 50  0001 C CNN
+	1    9650 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 6100 10050 6100
+	9450 6050 9900 6050
 $Comp
 L Device:R Radd1
 U 1 1 5E225DC9
-P 10200 6100
-F 0 "Radd1" V 10100 6100 50  0000 C CNN
-F 1 "1k" V 10000 6100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10130 6100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 10200 6100 50  0001 C CNN
-F 4 "MC0100W060311K" V 10200 6100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 10200 6100 50  0001 C CNN "Seller"
-	1    10200 6100
+P 10300 6050
+F 0 "Radd1" V 10200 6050 50  0000 C CNN
+F 1 "1k" V 10100 6050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 6050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2864159.pdf?_ga=2.208960598.599385452.1575057425-167263916.1529948031" H 10300 6050 50  0001 C CNN
+F 4 "MC0100W060311K" V 10300 6050 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/multicomp/mc0100w060311k/motst-tjockfilm-1k-1-0-063w-0603/dp/2845750" V 10300 6050 50  0001 C CNN "Seller"
+	1    10300 6050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10350 6100 10500 6100
-Wire Wire Line
-	9650 6200 9800 6200
+	10450 6050 10500 6050
 $Comp
 L Connector_Generic:Conn_01x03 Jadd1
 U 1 1 5DE05544
-P 9450 6100
-F 0 "Jadd1" H 9450 6300 50  0000 C CNN
-F 1 "MSTBA3" H 9450 6400 50  0000 C CNN
-F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_3pole" H 9450 6100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 9450 6100 50  0001 C CNN
-F 4 "1757255" H 9450 6100 50  0001 C CNN "Article Number"
-F 5 "https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08mm/dp/3705183" H 9450 6100 50  0001 C CNN "Seller"
-	1    9450 6100
+P 9250 6050
+F 0 "Jadd1" H 9250 6250 50  0000 C CNN
+F 1 "MSTBA3" H 9250 6350 50  0000 C CNN
+F 2 "PhoenixContact:PhoenixContact-MSTBA_2,5_4-G-5,08_3pole" H 9250 6050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2309813.pdf" H 9250 6050 50  0001 C CNN
+F 4 "1757255" H 9250 6050 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/phoenix-contact/1757255/connector-header-tht-ra-5-08mm/dp/3705183" H 9250 6050 50  0001 C CNN "Seller"
+	1    9250 6050
 	-1   0    0    1   
 $EndComp
 Text Label 4200 1650 0    50   ~ 0
@@ -1448,4 +1444,27 @@ Wire Notes Line
 	6900 6500 6900 7700
 Wire Notes Line
 	6900 7700 5900 7700
+$Comp
+L Power_Protection:PESD5V0L4UG ESD1
+U 1 1 5EE6216A
+P 9900 6150
+F 0 "ESD1" V 10050 6100 50  0000 L CNN
+F 1 "PESD5V0X1UAB" V 10150 6100 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-523" H 9900 6150 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1508358.pdf" H 9900 6150 50  0001 C CNN
+F 4 "PESD5V0X1UAB,115" H 9900 6150 50  0001 C CNN "Article Number"
+F 5 "https://se.farnell.com/nexperia/pesd5v0x1uab-115/diode-esd-low-capacitance-sod523/dp/2069370" H 9900 6150 50  0001 C CNN "Seller"
+	1    9900 6150
+	0    1    1    0   
+$EndComp
+Connection ~ 9900 6050
+Wire Wire Line
+	9900 6050 10150 6050
+Wire Wire Line
+	9450 6150 9650 6150
+Wire Wire Line
+	9650 6150 9650 6250
+Wire Wire Line
+	9650 6250 9900 6250
+Connection ~ 9650 6250
 $EndSCHEMATC
