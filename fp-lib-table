@@ -6,4 +6,5 @@
   (lib (name ConnTest)(type KiCad)(uri ${KIPRJMOD}/conn-test.pretty)(options "")(descr ""))
   (lib (name XLR_Neutrik)(type KiCad)(uri ${KIPRJMOD}/XLR_Neutrik.pretty)(options "")(descr ""))
   (lib (name Knitter-Switch)(type KiCad)(uri ${KIPRJMOD}/Knitter-Switch.pretty)(options "")(descr ""))
+  (lib (name LightBoxNanoGraphics)(type KiCad)(uri ${KIPRJMOD}/LightBoxNanoGraphics.pretty)(options "")(descr ""))
 )

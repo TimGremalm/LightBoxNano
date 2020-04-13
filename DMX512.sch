@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "LightBoxNano - DMX512"
-Date ""
+Date "2020-04-13"
 Rev ""
 Comp "Tim Gremalm"
 Comment1 "a generic PCB for controlling LED's both LED strip and WS2812 "

@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.5)-2*
-G04 #@! TF.CreationDate,2020-04-10T18:30:35+02:00*
+G04 #@! TF.CreationDate,2020-04-13T19:32:36+02:00*
 G04 #@! TF.ProjectId,LightBoxNano,4c696768-7442-46f7-984e-616e6f2e6b69,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.5)-2) date 2020-04-10 18:30:35*
+G04 Created by KiCad (PCBNEW (5.1.5)-2) date 2020-04-13 19:32:36*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
@@ -97,9 +97,9 @@ X109220000Y-71120000D03*
 X109220000Y-50800000D03*
 X111760000Y-50800000D03*
 D11*
-X145000000Y-103600000D03*
+X144145000Y-100965000D03*
 D12*
-X145000000Y-101060000D03*
+X144145000Y-98425000D03*
 D13*
 X107264180Y-88759240D03*
 D14*

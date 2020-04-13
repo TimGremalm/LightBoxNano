@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "LightBoxNano - Main"
-Date ""
+Date "2020-04-13"
 Rev ""
 Comp "Tim Gremalm"
 Comment1 "a generic PCB for controlling LED's both LED strip and WS2812 "
@@ -72,8 +72,6 @@ Wire Notes Line
 	4950 750  4950 2200
 Text Notes 2350 700  0    118  ~ 0
 Input Protection
-Text Notes 9650 6750 0    50   ~ 0
-Todo:\n* Place ESD diodes on connector pins
 $Comp
 L Connector_Generic:Conn_01x05 Jrgbw1
 U 1 1 5DFDEA6C
